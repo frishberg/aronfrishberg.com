@@ -1,0 +1,52 @@
+body {
+	font-family:font2;
+	margin: 0;
+	padding: 0; 
+}
+#bar {
+	height:calc(5vh);
+	width:calc(100vw);
+	background-color:silver;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+@font-face {
+    font-family: Hansief;
+    src: url("Hansief.otf") format("opentype");
+}
+@font-face {
+    font-family: font2;
+    src: url("font2.ttf") format("truetype");
+}
+#thejewhimself {
+	width:calc(25vw);
+	border: 2px solid black;
+}
+@media only screen and (max-width: 1000px) {
+  #thejewhimself {
+	width:calc(50vw);
+}
+}
+#mynamebitch {
+	color:red;
+}
+hr {
+	color:black;
+	background-color:black;
+	height:3px;
+}
+li {
+	font-size:150%;
+}
+a:hover {
+	color:red;
+}
+a {
+	text-decoration:none;
+	color:blue;
+}
+.header {
+	text-align:center;
+	font-family:hansief;
+}
