@@ -1,7 +1,8 @@
-body {
+body, input, button {
 	font-family:font2;
 	margin: 0;
 	padding: 0; 
+	font-size:100%;
 }
 #bar {
 	height:calc(5vh);
@@ -23,13 +24,8 @@ body {
 	width:calc(25vw);
 	border: 2px solid black;
 }
-@media only screen and (max-width: 1000px) {
-  #thejewhimself {
-	width:calc(50vw);
-}
-}
 #mynamebitch {
-	color:red;
+	color:#DC143C;
 }
 hr {
 	color:black;
@@ -40,13 +36,37 @@ li {
 	font-size:150%;
 }
 a:hover {
-	color:red;
+	color:#DC143C;
 }
 a {
 	text-decoration:none;
-	color:blue;
+	color:#0000CD;
 }
 .header {
 	text-align:center;
-	font-family:hansief;
+}
+#award {
+	color:#DC143C;
+}
+input {
+	width:20%;
+	text-align:center;
+}
+#sidebar {
+	text-decoration:none;
+	color:black;
+	font-size:400%;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	font-family:font2;
+}
+#sidebar:hover {
+	color:#DC143C;
+}
+@media only screen and (max-width: 600px) {
+  #thejewhimself {
+	width:calc(50vw);
+  }
 }
