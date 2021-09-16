@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<head>
+<title>Pascal's Triangle - Aron Frishberg</title>
+<script>
+previousLine = [];
+setInterval(function(){
+	currentLine = []
+	for (i=0; i<previousLine.length + 1; i++) {
+  	if (i==0 || i==previousLine.length) {
+  		currentLine[i] = 1;
+  	}
+  	else {
+  		currentLine[i] = previousLine[i-1] + previousLine[i]
+		}
+	}
+	console.log(currentLine);
+  createElement(currentLine)
+	previousLine = currentLine;
+}, 100);
+
+function createElement(text) {
+	var node = document.createElement("p");
+	node.innerHTML = text;
+	document.body.appendChild(node)
+}
+
+</script>
+<style>
+h3 {
+font-size:200%;
+}
+body {
+text-align:center;
+}
+</style>
+<link rel="icon" type="image/png" href="../icon.png"/>
+<link rel="stylesheet" type="text/css" href="../css/jewish.css"></link>
+<script src="../js/jewish.js"></script>
+</head>
+<body>
+<a id="sidebar" href="../hub.html">≡</a>
+<center>
+<div style="font-size:200%; margin:0; width:calc(85vw);">
+<h1 style="color:#DC143C;">Pascal's Triangle</h1>
+</div>
+</body>
