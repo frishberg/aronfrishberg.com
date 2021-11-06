@@ -23,6 +23,7 @@ body, input, button {
 #thejewhimself {
 	width:calc(25vw);
 	border: 2px solid black;
+	border-radius: 3%;
 }
 #mynamebitch {
 	color:#DC143C;
@@ -73,4 +74,8 @@ input {
 }
 #sidebar:hover {
 	color:#DC143C;
+}
+.main {
+	position:relative;
+	left:15px;
 }
