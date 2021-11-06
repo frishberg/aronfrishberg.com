@@ -71,6 +71,9 @@ input {
 	#thejewhimself {
 		width:calc(60vw);
 	}
+	body {
+		font-size:200%;
+	}
 }
 #sidebar:hover {
 	color:#DC143C;
