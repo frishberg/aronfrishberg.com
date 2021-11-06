@@ -1,29 +1,18 @@
 <!DOCTYPE HTML>
 <head>
   <script>
-  function typeThis(inputedValue) {
-    for (var i=0; i<inputedValue.length; i++) {
-      temp = inputedValue.substring(i, i+1)
-      //setTimeout(function(){ changeValue(document.getElementById("jew").value + (temp)) }, 1000*i);
-    }
-    changeValue(inputedValue);
+  function typeThis(inputedValue, newLocation) {
+    var i=0;
+    setInterval(function(){
+      changeValue(document.getElementById("jew").value + inputedValue.substring(i, i+1))
+      i++;
+      if (i>inputedValue.length+2) {
+        redirect(newLocation+".html")
+      }
+    }, 250);
   }
   function changeValue(newValue) {
     document.getElementById("jew").setAttribute('value', newValue);
-    setTimeout(function(){
-      if (newValue=="home") {
-        redirect("index.html");
-      }
-      if (newValue=="resources") {
-        redirect("resources.html");
-      }
-      if (newValue=="stories") {
-        redirect("stories.html");
-      }
-      if (newValue=="photos") {
-        redirect("drone/index.html")
-      }
-   }, 1000);
   }
   function redirect(location) {
     window.location.href = location;
@@ -66,10 +55,10 @@
       <div class="container">
         <div class="vertical-center">
           <p>> <input id="jew" autofocus></input></p>
-          <a onClick="typeThis('home')">home</a>
-          <a onClick="typeThis('resources')">resources</a>
-          <a onClick="typeThis('stories')">stories</a>
-          <a onClick="typeThis('photos')">photos</a>
+          <a onClick="typeThis('home', 'index')">home</a>
+          <a onClick="typeThis('resources', 'resources')">resources</a>
+          <a onClick="typeThis('stories', 'stories')">stories</a>
+          <a onClick="typeThis('photos', 'drone/index')">photos</a>
         </div>
       </div>
 </body>
