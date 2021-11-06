@@ -70,9 +70,6 @@ input {
 	#thejewhimself {
 		width:calc(60vw);
 	}
-	body {
-		background-color:silver;
-	}
 }
 #sidebar:hover {
 	color:#DC143C;
