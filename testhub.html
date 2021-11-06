@@ -19,7 +19,11 @@
   }
   </script>
   <style>
-    .vertical-center {
+    @font-face {
+		font-family: computer;
+		src: url("css/computer.otf") format("opentype");
+	}
+	.vertical-center {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -31,6 +35,7 @@
       background-color:black;
       color:#41FF00;
       display:inline-block;
+	  font-family:computer;
     }
     input {
       background-color:black;
@@ -40,6 +45,7 @@
       border-width:0px;
       font-size:100%;
       border:none;
+	  font-family:computer;
     }
     .container {
       width:calc(95vw);
@@ -50,6 +56,11 @@
       text-decoration:none;
       cursor: grab;
     }
+	@media only screen and (max-width: 1000px) {
+		body {
+			font-size:200%;
+		}
+	}
   </style>
 </head>
 <body>
