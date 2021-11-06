@@ -70,6 +70,7 @@ input {
 	}
 	body {
 		font-size:200%;
+		width:calc(90vw);
 	}
 }
 #sidebar:hover {
