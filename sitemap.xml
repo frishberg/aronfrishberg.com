@@ -1,51 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.aronfrishberg.com/</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/hub.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/index.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/stories.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/stories/internship.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/drone/index.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources/nobelprizesstats.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources/stocks.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources/nobelprizes.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources/ackermann.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.aronfrishberg.com/resources/map/html/index.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.aronfrishberg.com/index.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/hub.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/stories.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/drone/index.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/pascal.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/billionaires.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/nobelprizes.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/nobelprizesstats.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/stocks.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/map/html/index.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/resources/ackermann.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.aronfrishberg.com/stories/internship.html</loc>
+  <lastmod>2021-11-06T16:03:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
