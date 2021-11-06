@@ -28,9 +28,10 @@ body, input, button {
 	color:#DC143C;
 }
 hr {
+	width:99%;
 	color:black;
 	background-color:black;
-	height:3px;
+	height:2px;
 }
 li {
 	font-size:150%;
@@ -54,19 +55,22 @@ input {
 }
 #sidebar {
 	text-decoration:none;
-	color:black;
-	font-size:400%;
+	float: right;
 	position:absolute;
-	top:0;
-	left:0;
-	margin:0;
+	color:black;
+	font-size:500%;
+	right:25px;
+	top:-0px;
 	font-family:font2;
+}
+@media only screen and (max-width: 600px) {
+	#sidebar{
+		font-size:500%;
+	}
+	#thejewhimself {
+		width:calc(60vw);
+	}
 }
 #sidebar:hover {
 	color:#DC143C;
-}
-@media only screen and (max-width: 600px) {
-  #thejewhimself {
-	width:calc(50vw);
-  }
 }
