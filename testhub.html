@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<head>
+  <script>
+  function typeThis(inputedValue) {
+    for (var i=0; i<inputedValue.length; i++) {
+      temp = inputedValue.substring(i, i+1)
+      //setTimeout(function(){ changeValue(document.getElementById("jew").value + (temp)) }, 1000*i);
+    }
+    changeValue(inputedValue);
+  }
+  function changeValue(newValue) {
+    document.getElementById("jew").setAttribute('value', newValue);
+    setTimeout(function(){
+      if (newValue=="home") {
+        redirect("index.html");
+      }
+      if (newValue=="resources") {
+        redirect("resources.html");
+      }
+      if (newValue=="stories") {
+        redirect("stories.html");
+      }
+      if (newValue=="photos") {
+        redirect("drone/index.html")
+      }
+   }, 1500);
+  }
+  function redirect(location) {
+    window.location.href = location;
+  }
+  </script>
+  <style>
+    .vertical-center {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height:100%;
+      text-align:center;
+      font-size:300%;
+    }
+    body {
+      background-color:black;
+      color:#41FF00;
+      display:inline-block;
+    }
+    input {
+      background-color:black;
+      color:#41FF00;
+      width:calc(30vw);
+      outline: none;
+      border-width:0px;
+      font-size:100%;
+      border:none;
+    }
+    .container {
+      width:calc(95vw);
+      height:calc(95vh);
+    }
+    a {
+      color:#41FF00;
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+      <div class="container">
+        <div class="vertical-center">
+          <p>> <input id="jew" autofocus></input></p>
+          <a onClick="typeThis('home')">home</a>
+          <a onClick="typeThis('resources')">resources</a>
+          <a onClick="typeThis('stories')">stories</a>
+          <a onClick="typeThis('photos')">photos</a>
+        </div>
+      </div>
+</body>
