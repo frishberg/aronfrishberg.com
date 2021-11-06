@@ -70,6 +70,8 @@ input {
 	}
 	body {
 		font-size:200%;
+	}
+	.main {
 		width:calc(95vw);
 	}
 }
