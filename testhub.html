@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <head>
+  <script src="js/cookies.js"></script>
   <script>
   function typeThis(inputedValue, newLocation) {
-    var i=0;
+    changeValue("")
+	var i=0;
     setInterval(function(){
       changeValue(document.getElementById("jew").value + inputedValue.substring(i, i+1))
       i++;
-      if (i>inputedValue.length+2) {
+      if (i>inputedValue.length+2 && newLocation!="") {
         redirect(newLocation+".html")
       }
     }, 150);
@@ -16,6 +18,11 @@
   }
   function redirect(location) {
     window.location.href = location;
+  }
+  if (getCookie("been-here")!="true") {
+    setTimeout(function(){ typeThis("click one", "") }, 500);
+    setTimeout(function(){ changeValue("") }, 4500);
+    setCookie("been-here", "true")
   }
   </script>
   <style>
