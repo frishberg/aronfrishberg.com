@@ -9,7 +9,7 @@
     setInterval(function(){
       changeValue(document.getElementById("jew").value + inputedValue.substring(i, i+1))
       i++;
-      if (i>inputedValue.length+3 && newLocation!="") {
+      if (i==(inputedValue.length+3) && newLocation!="") {
         redirect(newLocation+".html")
       }
     }, 150);
