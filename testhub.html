@@ -25,6 +25,20 @@
     setTimeout(function(){ changeValue("") }, 5500);
     setCookie("been-here", "true")
   }
+  document.addEventListener("keyup", function(event) {
+    var temp = document.getElementById("jew").value;
+    if (event.keyCode === 13) {
+      if (temp=="home"||temp=="index") {
+	      redirect("index.html");
+      }
+      if (temp=="resources"||temp=="stories") {
+	      redirect(temp+".html");
+      }
+      if (temp=="photos"||temp=="drone") {
+	      redirect("drone/index.html");
+      }
+    }
+  });
   </script>
   <style>
     @font-face {
