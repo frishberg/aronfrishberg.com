@@ -6,11 +6,11 @@ function turing(userInput) {
     final=final+current;
   }
  final="18"+final;
- return(Math.pow(final*51+819, 1.01))
+ return(Math.pow(final*51+819, 2))
 }
 
 function alan(userInput) {
-	var workspace = "" + ((Math.pow((userInput), .9900990099)-819)/51);
+	var workspace = "" + ((Math.pow((userInput), 1/2)-819)/51);
   workspace = workspace.substring(2)
   var current="";
   while (workspace.length!=0) {
