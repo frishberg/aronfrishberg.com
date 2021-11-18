@@ -9,9 +9,6 @@
         h3 {
             font-size: 200%;
         }
-        #nasa_image {
-            width:100%;
-        }
     </style>
     <link rel="icon" type="image/png" href="../icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/jewish.css">
@@ -25,6 +22,18 @@
       .then(data => jew = jew.substring(jew.indexOf("hdurl")+8))
       .then (data => jew = jew.substring(0, jew.indexOf('"')))
       .then(data => document.getElementById("nasa_image").src=jew);
+    </script>
+    <script>
+    var page_height = window.innerHeight * .95;
+    var page_width = window.innerWidth * .95;
+    var img_height = document.getElementById("nasa_image").height;
+    var img_width = document.getElementById("nasa_image").width;
+    if (img_height>page_height) {
+	    document.getElementById('nasa_image').style.height = page_height + 'px';
+    }
+    else if (img_width>page_width) {
+	    document.getElementById('nasa_image').style.width = page_width + 'px';
+    }
     </script>
 </head>
 
