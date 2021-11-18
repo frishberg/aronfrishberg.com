@@ -22,7 +22,7 @@
       .then(data => jew = jew.substring(jew.indexOf("hdurl")+8))
       .then (data => jew = jew.substring(0, jew.indexOf('"')))
       .then(data => document.getElementById("nasa_image").src=jew)
-      .then(data => document.getElementById("nasa_link").onclick=function(){redirect(jew)});
+      .then(data => document.getElementById("nasa_link").onclick=function(){window.open(jew)});
     </script>
     <script>
     setTimeout(function(){
