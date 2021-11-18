@@ -29,10 +29,8 @@
     var page_width = window.innerWidth * .6;
     var img_height = document.getElementById("nasa_image").height;
     var img_width = document.getElementById("nasa_image").width;
-    if (img_height>page_height) {
-	    document.getElementById('nasa_image').style.height = page_height + 'px';
-    }
-    else if (img_width>page_width) {
+    document.getElementById('nasa_image').style.height = page_height + 'px';
+    if (img_width>page_width) {
 	    document.getElementById('nasa_image').style.width = page_width + 'px';
     }
     }, 10);
