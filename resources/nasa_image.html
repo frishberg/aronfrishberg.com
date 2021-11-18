@@ -22,6 +22,7 @@
       .then(data => jew = jew.substring(jew.indexOf("hdurl")+8))
       .then (data => jew = jew.substring(0, jew.indexOf('"')))
       .then(data => document.getElementById("nasa_image").src=jew);
+      .then(data => document.getElementById("nasa_link").onclick=function(){alert()};);
     </script>
     <script>
     setTimeout(function(){
@@ -43,7 +44,7 @@
         <div style="font-size:200%; margin:0; width:calc(85vw);">
             <h1 style="color:#DC143C;">NASA Astronomy Image of the Day</h1>
         </div>
-        <img src="" id="nasa_image">
+	<a id="nasa_link"><img src="" id="nasa_image"></a>
     </center>
     <h1>
 </body>
