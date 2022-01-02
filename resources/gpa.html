@@ -55,7 +55,18 @@
 			sum += grade*credits
 			total_credits += credits
 		}
-		alert(sum/total_credits)
+		var gpa = sum/total_credits
+		change_gpa(gpa); //changes element
+	}
+	function change_gpa(gpa) {
+		gpa = Math.round(100*gpa)/100;
+		if ((gpa + "").length == 3) {
+			gpa = gpa + "0"
+		}
+		if (((gpa + "").length) < 3) {
+			gpa = gpa + ".00"
+		}
+		document.getElementById("gpa").innerHTML = "GPA : " + gpa
 	}
 	window.onload = () => {
     	gpa_array();
@@ -63,7 +74,7 @@
 			create_course_elem(i);
 		}
 	}
-	setInterval(function() {gpa_array()}, 500);
+	setInterval(function() {gpa_array(); calculate();}, 500);
 	function gpa_array() {
 		for (var i=1; i<14; i++) {
 			values[i-1] = document.getElementById(i).value;
@@ -95,17 +106,17 @@
 		node = document.createElement("select");
 		node.setAttribute("id", "select" + i);
 
-		//creating option (A+)
-		option = document.createElement("option");
-		option.setAttribute("value", 1);
-		textnode = document.createTextNode("A+");
-		option.append(textnode);
-		node.appendChild(option);
-
 		//creating option (A)
 		option = document.createElement("option");
 		option.setAttribute("value", 2);
 		textnode = document.createTextNode("A");
+		option.append(textnode);
+		node.appendChild(option);
+		
+		//creating option (A+)
+		option = document.createElement("option");
+		option.setAttribute("value", 1);
+		textnode = document.createTextNode("A+");
 		option.append(textnode);
 		node.appendChild(option);
 
@@ -245,9 +256,9 @@
 		<h2>Courses</h2>
 		<div id="skeleton"></div>
 		<p></p>
-		<button onClick="create_course_elem()">+ Add Course +</button>
+		<button onClick="create_course_elem(i); i++;">+ Add Course +</button>
 		<p> </p>
-		<button onClick="calculate()" id="calculate">Calculate</button>
+		<h1 id="gpa">GPA : 4.00</h1>
 	</center>
 		
 </body>
