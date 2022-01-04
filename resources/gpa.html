@@ -77,12 +77,22 @@
 		document.getElementById("gpa").innerHTML = "GPA : " + gpa
 	}
 	window.onload = () => {
-    	gpa_array();
+    		gpa_array();
 		for (i; i<6; i++) {
 			create_course_elem(i);
 		}
+		reload();
 	}
 	setInterval(function() {gpa_array(); calculate();}, 500);
+	setInterval(function() {save();}, 2000);
+	function reload() {
+		if (getCookie("numcourses")=='') {
+			i = Number(getCookie("numcourses"))
+			for (var z=1; z<i; z++) {
+				document.getElementById("coursename" + z).innerHTML = getCookie("course " + z);
+			}
+		}
+	}
 	function gpa_array() {
 		for (var i=1; i<14; i++) {
 			values[i-1] = document.getElementById(i).value;
