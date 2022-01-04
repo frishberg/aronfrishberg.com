@@ -86,7 +86,7 @@
 	setInterval(function() {gpa_array(); calculate();}, 500);
 	setInterval(function() {save();}, 2000);
 	function reload() {
-		if (getCookie("numcourses")=='') {
+		if (getCookie("numcourses")!='') {
 			i = Number(getCookie("numcourses"))
 			for (var z=1; z<i; z++) {
 				document.getElementById("coursename" + z).innerHTML = getCookie("course " + z);
