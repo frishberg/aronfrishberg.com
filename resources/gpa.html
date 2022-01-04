@@ -62,9 +62,9 @@
       			var grade = values[(document.getElementById("select" + j).value)-1]
 			var credits = Number(document.getElementById("credits" + j).value)
 			console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
-			saveCookie("course " + j, coursename + "&" + grade + "*" + credits)
+			setCookie("course " + j, coursename + "&" + grade + "*" + credits)
 		}
-		saveCookie("numcourses", i);
+		setCookie("numcourses", i);
 	}
 	function change_gpa(gpa) {
 		gpa = Math.round(100*gpa)/100;
