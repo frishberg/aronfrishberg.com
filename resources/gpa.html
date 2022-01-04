@@ -5,9 +5,7 @@
 	<meta name="keywords" content="college, high school, school, gpa, grades, a+, straight as, calculator, courses">
 	<meta name="author" content="Aron Frishberg">
 	<title>Custom Scale GPA Calculator  - Aron Frishberg</title>
-	<script>
-
-	</script>
+	<script src="js/cookies.js">
 	<link rel="icon" type="image/png" href="../icon.png" />
 	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
 	</link>
@@ -58,6 +56,16 @@
 		var gpa = sum/total_credits
 		change_gpa(gpa); //changes element
 	}
+	function save() {
+		for (var j=1; j<i; j++) {
+			var coursename = document.getElementById("coursename" + j).value
+      			var grade = values[(document.getElementById("select" + j).value)-1]
+			var credits = Number(document.getElementById("credits" + j).value)
+			console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
+			saveCookie("course " + j, coursename + "&" + grade + "*" + credits)
+		}
+		saveCookie("numcourses", i);
+	}
 	function change_gpa(gpa) {
 		gpa = Math.round(100*gpa)/100;
 		if ((gpa + "").length == 3) {
@@ -89,6 +97,7 @@
 		node = document.createElement("input");
 		node.setAttribute("style", "width:350px;");
 		node.setAttribute("placeholder", "Course Name");
+		node.setAttribute("id", "coursename" + i)
 		textnode = document.createTextNode("&nbsp;");
   		node.appendChild(textnode);
 		document.getElementById("container"+i).appendChild(node);
