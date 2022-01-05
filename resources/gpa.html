@@ -37,6 +37,9 @@
 		font-size:150%;
 		padding:5px;
 	}
+	button {
+		padding:2px;
+	}
 	</style>
 	<script>
 	var i = 1; //number of courses
@@ -91,8 +94,9 @@
 		}
 		reload();
 		setInterval(function() {gpa_array(); calculate();}, 500);
-		setInterval(function() {save();}, 2000);
+		setInterval(function() {save();}, 1000);
 	}
+	//reloads data from cookies if site has been visited before
 	function reload() {
 		if (getCookie("numcourses")!='') {
 			for (var z=1; z<i; z++) {
@@ -104,17 +108,23 @@
 			}
 		}
 	}
+	//adds values from GPA scale to "values" array
 	function gpa_array() {
 		for (var i=1; i<14; i++) {
 			values[i-1] = document.getElementById(i).value;
 		}
 		//console.log(values);
 	}
+	function remove_course(i) {
+		(document.getElementById('container'+(i-1))).remove()
+	}
 	function create_course_elem(i) {
+		//creating parent div
 		node = document.createElement("div");
   		node.setAttribute("id", "container"+i);
 		document.getElementById("skeleton").appendChild(node);
 
+		//creating course name input
 		node = document.createElement("input");
 		node.setAttribute("style", "width:350px;");
 		node.setAttribute("placeholder", "Course Name");
@@ -123,10 +133,11 @@
   		node.appendChild(textnode);
 		document.getElementById("container"+i).appendChild(node);
 
+		//creating credits input
 		node = document.createElement("input");
 		node.setAttribute("style", "width:8%;");
 		node.setAttribute("placeholder", "Credits");
-		node.setAttribute("value", "1.0");
+		node.setAttribute("value", "1");
 		node.setAttribute("id", "credits" + i);
 		textnode = document.createTextNode("&nbsp;");
   		node.appendChild(textnode);
@@ -287,6 +298,8 @@
 		<div id="skeleton"></div>
 		<p></p>
 		<button onClick="create_course_elem(i); i++;">+ Add Course +</button>
+		<p style="display:inline;">&nbsp;</p>
+		<button onClick="remove_course(i); i--;">- Remove Course -</button>
 		<p> </p>
 		<h1 id="gpa">GPA : 4.00</h1>
 	</center>
