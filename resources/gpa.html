@@ -79,7 +79,10 @@
 		document.getElementById("gpa").innerHTML = "GPA : " + gpa
 	}
 	window.onload = () => {
-    		gpa_array();
+    	gpa_array();
+		if (getCookie("numcourses")!='') {
+			i = Number(getCookie("numcourses"))
+		}
 		for (i; i<6; i++) {
 			create_course_elem(i);
 		}
@@ -89,7 +92,6 @@
 	}
 	function reload() {
 		if (getCookie("numcourses")!='') {
-			i = Number(getCookie("numcourses"))
 			for (var z=1; z<i; z++) {
 				var current = getCookie("course " + z)
 				document.getElementById('coursename' + z).value = current.substring(0, current.indexOf("&"));
