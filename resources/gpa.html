@@ -49,7 +49,7 @@
 		for (var j=1; j<i; j++) {
 			var grade = values[(document.getElementById("select" + j).value)-1]
 			var credits = Number(document.getElementById("credits" + j).value)
-			console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
+			//console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
 			sum += grade*credits
 			total_credits += credits
 		}
@@ -59,10 +59,12 @@
 	function save() {
 		for (var j=1; j<i; j++) {
 			var coursename = document.getElementById("coursename" + j).value
-      			var grade = values[(document.getElementById("select" + j).value)-1]
+      		var grade = (document.getElementById("select" + j).value)-1
 			var credits = Number(document.getElementById("credits" + j).value)
-			console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
-			setCookie("course " + j, coursename + "&" + grade + "*" + credits)
+			//console.log("Course " + j + " : " + credits + " Credits, " + grade + " Points")
+			if (coursename!="") {
+				setCookie("course " + j, coursename + "&" + grade + "*" + credits)
+			}
 		}
 		setCookie("numcourses", i);
 	}
@@ -82,14 +84,18 @@
 			create_course_elem(i);
 		}
 		reload();
+		setInterval(function() {gpa_array(); calculate();}, 500);
+		setInterval(function() {save();}, 2000);
 	}
-	setInterval(function() {gpa_array(); calculate();}, 500);
-	setInterval(function() {save();}, 2000);
 	function reload() {
 		if (getCookie("numcourses")!='') {
 			i = Number(getCookie("numcourses"))
 			for (var z=1; z<i; z++) {
-				document.getElementById("coursename" + z).innerHTML = getCookie("course " + z);
+				var current = getCookie("course " + z)
+				document.getElementById('coursename' + z).value = current.substring(0, current.indexOf("&"));
+				document.getElementById('select' + z).value = Number(current.substring(current.indexOf("&")+1, current.indexOf("*"))) + 1
+				alert(Number(current.substring(current.indexOf("&")+1, current.indexOf("*"))))
+				document.getElementById('credits' + z).value = current.substring(current.indexOf("*")+1);
 			}
 		}
 	}
@@ -124,18 +130,18 @@
 		//creating selector
 		node = document.createElement("select");
 		node.setAttribute("id", "select" + i);
-
-		//creating option (A)
-		option = document.createElement("option");
-		option.setAttribute("value", 2);
-		textnode = document.createTextNode("A");
-		option.append(textnode);
-		node.appendChild(option);
 		
 		//creating option (A+)
 		option = document.createElement("option");
 		option.setAttribute("value", 1);
 		textnode = document.createTextNode("A+");
+		option.append(textnode);
+		node.appendChild(option);
+
+		//creating option (A)
+		option = document.createElement("option");
+		option.setAttribute("value", 2);
+		textnode = document.createTextNode("A");
 		option.append(textnode);
 		node.appendChild(option);
 
