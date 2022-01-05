@@ -83,7 +83,10 @@
 		if (getCookie("numcourses")!='') {
 			i = Number(getCookie("numcourses"))
 		}
-		for (i; i<6; i++) {
+		else {
+			i = 6;
+		}
+		for (var k=1; k<i; k++) {
 			create_course_elem(i);
 		}
 		reload();
