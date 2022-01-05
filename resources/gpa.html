@@ -87,7 +87,7 @@
 			i = 6;
 		}
 		for (var k=1; k<i; k++) {
-			create_course_elem(i);
+			create_course_elem(k);
 		}
 		reload();
 		setInterval(function() {gpa_array(); calculate();}, 500);
@@ -99,7 +99,7 @@
 				var current = getCookie("course " + z)
 				document.getElementById('coursename' + z).value = current.substring(0, current.indexOf("&"));
 				document.getElementById('select' + z).value = Number(current.substring(current.indexOf("&")+1, current.indexOf("*"))) + 1
-				alert(Number(current.substring(current.indexOf("&")+1, current.indexOf("*"))))
+				//alert(Number(current.substring(current.indexOf("&")+1, current.indexOf("*"))))
 				document.getElementById('credits' + z).value = current.substring(current.indexOf("*")+1);
 			}
 		}
