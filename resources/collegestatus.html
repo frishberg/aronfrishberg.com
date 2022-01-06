@@ -42,7 +42,7 @@
 	}
 	var i=0;
 	setInterval(function () {
-		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4) + repeatCharacters(" ", 4-i%4))
+		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4) + repeatCharacters("&nbsp;", 4-i%4))
 		i++;
 	}, 600);	
 	</script>
