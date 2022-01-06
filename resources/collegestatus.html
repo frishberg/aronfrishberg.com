@@ -6,10 +6,10 @@
 	<meta name="author" content="Aron Frishberg">
 	<title>College Application Statuses - Aron Frishberg</title>
 	<style>
-	#waiting, #accepted, #rejected, #progress {
+	.waiting, #accepted, #rejected, #progress {
 		display:inline;
 	}
-	#waiting { 
+	.waiting { 
 		color:rgb(145, 145, 145);
 	}
 	#accepted {
@@ -26,6 +26,26 @@
 	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
 	</link>
 	<script src="../js/jewish.js"></script>
+	<script>
+	function repeatCharacters(character, n) {
+		result = ""
+  		for (j=0; j<n; j++) {
+  			result+=character
+  		}
+  		return result
+	}
+	function changeAll(class_name, new_text) {
+		var elems = document.getElementsByClassName(class_name);
+		for(var i = 0; i < elems.length; i++) {
+    			elems[i].innerHTML = new_text;
+		}
+	}
+	var i=0;
+	setInterval(function () {
+		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4))
+		i++;
+	}, 600);	
+	</script>
 </head>
 
 <body>
@@ -34,22 +54,22 @@
 		<div style="font-size:200%; margin:0; width:calc(85vw);">
 			<h1 style="color:#DC143C;">College Applications Statuses</h1>
 		</div>
-		<h3>Bentley : <p id="waiting">Waiting... (Late March)</p></h3>
-		<h3>Boston University : <p id="waiting">Waiting... (Late March)</p></h3>
-		<h3>Brandeis : <p id="waiting">Waiting... (4/1)</p></h3>
-		<h3>CMU (EDII) : <p id="waiting">Waiting... (2/1)</p></h3>
-		<h3>Cornell : <p id="waiting">Waiting... (Early April)</p></h3>
+		<h3>Bentley : <p class="waiting">Waiting...</p> (Late March)</h3>
+		<h3>Boston University : <p class="waiting">Waiting...</p> (Late March)</h3>
+		<h3>Brandeis : <p class="waiting">Waiting...</p> (4/1)</h3>
+		<h3>CMU (EDII) : <p class="waiting">Waiting...</p> (2/1)</h3>
+		<h3>Cornell : <p class="waiting">Waiting...</p> (Early April)</h3>
 		<h3>Drexel : <p id="accepted">Accepted!</p></h3>
-		<h3>Emory : <p id="waiting">Waiting... (4/1)</p></h3>
-		<h3>Lehigh : <p id="waiting">Waiting... (Late March)</p></h3>
+		<h3>Emory : <p class="waiting">Waiting...</p> (4/1)</h3>
+		<h3>Lehigh : <p class="waiting">Waiting...</p> (Late March)</h3>
 		<h3>NYU Stern (EDI) : <p id="rejected">Rejected.</p></h3>
-		<h3>Northeastern : <p id="waiting">Waiting... (4/1)</p></h3>
-		<h3>SUNY Binghamton : <p id="waiting">Waiting... (1/15)</p></h3>
-		<h3>UChicago : <p id="waiting">Waiting... (Late March)</p></h3>
+		<h3>Northeastern : <p class="waiting">Waiting...</p> (4/1)</h3>
+		<h3>SUNY Binghamton : <p class="waiting">Waiting...</p> (1/15)</h3>
+		<h3>UChicago : <p class="waiting">Waiting... </p>(Late March)</h3>
 		<h3>UMich : <p id="progress">Application in Progress</p></h3>
-		<h3>Notre Dame : <p id="waiting">Waiting... (Late March)</p></h3>
-		<h3>Rochester : <p id="waiting">Waiting... (4/1)</p></h3>
-		<h3>Vanderbilt : <p id="waiting">Waiting... (4/1)</p></h3>
-		<h3>WashU : <p id="waiting">Waiting... (4/1)</p></h3>
+		<h3>Notre Dame : <p class="waiting">Waiting... </p>(Late March)</h3>
+		<h3>Rochester : <p class="waiting">Waiting... </p>(4/1)</h3>
+		<h3>Vanderbilt : <p class="waiting">Waiting... </p>(4/1)</h3>
+		<h3>WashU : <p class="waiting">Waiting... </p>(4/1)</h3>
 	</center>
 </body>
