@@ -42,7 +42,7 @@
 	}
 	var i=0;
 	setInterval(function () {
-		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4))
+		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4) + repeatCharacters(" ", 4-i%4))
 		i++;
 	}, 600);	
 	</script>
@@ -65,11 +65,11 @@
 		<h3>NYU Stern (EDI) : <p id="rejected">Rejected.</p></h3>
 		<h3>Northeastern : <p class="waiting">Waiting...</p> (4/1)</h3>
 		<h3>SUNY Binghamton : <p class="waiting">Waiting...</p> (1/15)</h3>
-		<h3>UChicago : <p class="waiting">Waiting... </p>(Late March)</h3>
+		<h3>UChicago : <p class="waiting">Waiting...</p> (Late March)</h3>
 		<h3>UMich : <p id="progress">Application in Progress</p></h3>
-		<h3>Notre Dame : <p class="waiting">Waiting... </p>(Late March)</h3>
-		<h3>Rochester : <p class="waiting">Waiting... </p>(4/1)</h3>
-		<h3>Vanderbilt : <p class="waiting">Waiting... </p>(4/1)</h3>
-		<h3>WashU : <p class="waiting">Waiting... </p>(4/1)</h3>
+		<h3>Notre Dame : <p class="waiting">Waiting...</p> (Late March)</h3>
+		<h3>Rochester : <p class="waiting">Waiting...</p> (4/1)</h3>
+		<h3>Vanderbilt : <p class="waiting">Waiting...</p> (4/1)</h3>
+		<h3>WashU : <p class="waiting">Waiting...</p> (4/1)</h3>
 	</center>
 </body>
