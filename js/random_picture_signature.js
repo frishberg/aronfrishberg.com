@@ -1,4 +1,4 @@
-var num_of_pics = 3
+var num_of_pics = 8
 var random1 = Math.floor(Math.random() * (num_of_pics));
 var num_of_signatures = 4
 var random2 = Math.floor(Math.random() * (num_of_signatures));
