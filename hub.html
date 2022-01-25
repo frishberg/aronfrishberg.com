@@ -56,6 +56,56 @@
     typeThis(inputedValue, newLocation)
   }
   </script>
+<style>
+    @font-face {
+		font-family: computer;
+		src: url("https://d33wubrfki0l68.cloudfront.net/ffec92d42630c25f3ea857b47f7763e4aabd070e/c6962/css/computer.otf") format("opentype");
+	}
+	.vertical-center {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height:100%;
+      text-align:center;
+      font-size:300%;
+    }
+    body {
+      background-color:black;
+      color:#41FF00;
+      display:inline-block;
+	  font-family:computer;
+    }
+    input {
+      background-color:black;
+      color:#41FF00;
+      width:calc(30vw);
+      outline: none;
+      border-width:0px;
+      font-size:100%;
+      border:none;
+	  font-family:computer;
+    }
+    .container {
+      width:calc(95vw);
+      height:calc(95vh);
+    }
+    a {
+      color:#41FF00;
+      text-decoration:none;
+      cursor: grab;
+    }
+	a:hover {
+		color:#006400;
+	}
+	@media only screen and (max-width: 1000px) {
+		body {
+			font-size:150%;
+		}
+		input {
+			width:calc(50vw);
+		}
+	}
+  </style>
 </head>
 <body>
       <div class="container">
