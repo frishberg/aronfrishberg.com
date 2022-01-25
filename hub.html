@@ -1,17 +1,21 @@
+
 <!DOCTYPE HTML>
 <head>
   <link rel="icon" type="image/png" href="icon.png" />
   <script src="js/cookies.js"></script>
   <script src="js/jewish.js"></script>
   <script>
+  var cancel_click_one = false;
   function typeThis(inputedValue, newLocation) {
     changeValue("")
 	var i=0;
     setInterval(function(){
-      changeValue(document.getElementById("jew").value + inputedValue.substring(i, i+1))
-      i++;
-      if (i==(inputedValue.length+3) && newLocation!="") {
-        redirect(newLocation+".html")
+      if (cancel_click_one!=true || inputedValue!="click one") {
+        changeValue(document.getElementById("jew").value + inputedValue.substring(i, i+1))
+        i++;
+        if (i==(inputedValue.length+3) && newLocation!="") {
+          redirect(newLocation+".html")
+        }
       }
     }, 150);
   }
@@ -46,67 +50,22 @@
     }
     }
   });
+  function optionSelect(inputedValue, newLocation) {
+    cancel_click_one = true;
+    changeValue("")
+    typeThis(inputedValue, newLocation)
+  }
   </script>
-  <style>
-    @font-face {
-		font-family: computer;
-		src: url("css/computer.otf") format("opentype");
-	}
-	.vertical-center {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height:100%;
-      text-align:center;
-      font-size:300%;
-    }
-    body {
-      background-color:black;
-      color:#41FF00;
-      display:inline-block;
-	  font-family:computer;
-    }
-    input {
-      background-color:black;
-      color:#41FF00;
-      width:calc(30vw);
-      outline: none;
-      border-width:0px;
-      font-size:100%;
-      border:none;
-	  font-family:computer;
-    }
-    .container {
-      width:calc(95vw);
-      height:calc(95vh);
-    }
-    a {
-      color:#41FF00;
-      text-decoration:none;
-      cursor: grab;
-    }
-	a:hover {
-		color:#006400;
-	}
-	@media only screen and (max-width: 1000px) {
-		body {
-			font-size:150%;
-		}
-		input {
-			width:calc(50vw);
-		}
-	}
-  </style>
 </head>
 <body>
       <div class="container">
         <div class="vertical-center">
           <p>> <input id="jew" autofocus oninput="this.value=this.value.toLowerCase()"></input></p>
-          <a onClick="typeThis('home', 'index')">home</a>
-          <a onClick="typeThis('resources', 'resources')">resources</a>
+          <a onClick="optionSelect('home', 'index')">home</a>
+          <a onClick="optionSelect('resources', 'resources')">resources</a>
           <!--<a onClick="typeThis('stories', 'stories')">stories</a>-->
-          <a onClick="typeThis('photos', 'drone/index')">photos</a>
-          <a onClick="typeThis('coding', 'coding')">coding</a>
+          <a onClick="optionSelect('photos', 'drone/index')">photos</a>
+          <a onClick="optionSelect('coding', 'coding')">coding</a>
         </div>
       </div>
 </body>
