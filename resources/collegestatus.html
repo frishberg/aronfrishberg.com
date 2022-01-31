@@ -98,7 +98,7 @@
   		return(day - d.getDate() + (month - d.getMonth()) * 30)
 	}
 	for (var i=1; i<=dates.length; i++) {
-  		document.getElementById(i).innerHTML = dateDistance(dates[i-1]) + " Days Left"
+  		document.getElementById(i).innerHTML = "(" + dateDistance(dates[i-1]) + " Days Left)"
 	}
 	</script>
 </body>
