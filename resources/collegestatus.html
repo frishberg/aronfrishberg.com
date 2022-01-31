@@ -48,21 +48,6 @@
 		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4))
 		i++;
 	}, 600);
-	var dates = [
-	"4/2",
-	"3/31",
-	"8/9",
-	]
-
-	var d = new Date();
-	function dateDistance(curDate) {
-		var month = curDate.substring(0, curDate.indexOf("/"))
-  		var day = curDate.substring(curDate.indexOf("/") + 1)
-  		return(day - d.getDate() + (month - d.getMonth()) * 30)
-	}
-	for (var i=1; i<=dates.length; i++) {
-  		document.getElementById(i).innerHTML = dateDistance(dates[i-1]) + " Days Left"
-	}
 	</script>
 </head>
 
@@ -90,4 +75,21 @@
 		<h3>Vanderbilt : <p class="waiting">Waiting...</p> <p class="daysuntil" id="11">(4/1)</p></h3>
 		<h3>WashU : <p class="waiting">Waiting...</p> <p class="daysuntil" id="12">(4/1)</p></h3>
 	</center>
+	<script>
+	var dates = [
+	"4/2",
+	"3/31",
+	"8/9",
+	]
+
+	var d = new Date();
+	function dateDistance(curDate) {
+		var month = curDate.substring(0, curDate.indexOf("/"))
+  		var day = curDate.substring(curDate.indexOf("/") + 1)
+  		return(day - d.getDate() + (month - d.getMonth()) * 30)
+	}
+	for (var i=1; i<=dates.length; i++) {
+  		document.getElementById(i).innerHTML = dateDistance(dates[i-1]) + " Days Left"
+	}
+	</script>
 </body>
