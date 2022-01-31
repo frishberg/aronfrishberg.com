@@ -47,7 +47,22 @@
 	setInterval(function () {
 		changeAll("waiting", "Waiting" + repeatCharacters(".", i%4))
 		i++;
-	}, 600);	
+	}, 600);
+	var dates = [
+	"4/2",
+	"3/31",
+	"8/9",
+	]
+
+	var d = new Date();
+	function dateDistance(curDate) {
+		var month = curDate.substring(0, curDate.indexOf("/"))
+  		var day = curDate.substring(curDate.indexOf("/") + 1)
+  		return(day - d.getDate() + (month - d.getMonth()) * 30)
+	}
+	for (var i=1; i<=dates.length; i++) {
+  		document.getElementById(i).innerHTML = dateDistance(dates[i-1]) + " Days Left"
+	}
 	</script>
 </head>
 
