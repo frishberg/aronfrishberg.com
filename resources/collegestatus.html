@@ -95,7 +95,7 @@
 	function dateDistance(curDate) {
 		var month = curDate.substring(0, curDate.indexOf("/"))
   		var day = curDate.substring(curDate.indexOf("/") + 1)
-  		return(day - d.getDate() + ((month - (d.getMonth()) + 1)) * 30)
+  		return(day - d.getDate() + (month - ((d.getMonth()) + 1)) * 30)
 	}
 	for (var i=1; i<=dates.length; i++) {
   		document.getElementById(i).innerHTML = "(" + dateDistance(dates[i-1]) + " Days Left)"
