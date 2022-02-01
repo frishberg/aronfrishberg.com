@@ -64,18 +64,7 @@ input {
 	top:-0px;
 	font-family:font2;
 }
-@media only screen and (max-width: 900px) {
-	#thejewhimself {
-		width:calc(60vw);
-	}
-	body {
-		font-size:150%;
-	}
-	.main {
-		width:calc(95vw);
-	}
-}
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
 	#thejewhimself {
 		width:calc(60vw);
 	}
