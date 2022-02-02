@@ -96,7 +96,7 @@
   		return(parseInt((target-d)/(1000 * 3600 * 24) + 2)) 
 	}
 	for (var i=1; i<=dates.length; i++) {
-  		document.getElementById(i).innerHTML = "(" + dateDistance(dates[i-1]) + " Days Left)"
+  		document.getElementById(i).innerHTML = "(" + dateDifference(dates[i-1]) + " Days Left)"
 	}
 	</script>
 </body>
