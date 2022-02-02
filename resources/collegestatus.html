@@ -96,7 +96,10 @@
   		return(parseInt((target-d)/(1000 * 3600 * 24) + 2)) 
 	}
 	for (var i=1; i<=dates.length; i++) {
-  		document.getElementById(i).innerHTML = "(" + dateDifference(dates[i-1]) + " Days Left)"
+		var temp = dates[i-1]
+		var tempDay = Number(temp.substring(0, temp.indexOf("/")))
+		var tempMonth = Number(temp.substring(temp.indexOf("/") + 1))
+  		document.getElementById(i).innerHTML = "(" + dateDifference(tempDay, tempMonth) + " Days Left)"
 	}
 	</script>
 </body>
