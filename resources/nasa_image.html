@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta name="description" content="nasa astronomy picture of the day">
+    <meta name="keywords" content="nasa, space, images, pictures, photography">
+    <meta name="author" content="Aron Frishberg">
+    <title>NASA Astronomy Image of the Day</title>
+    <style>
+        h3 {
+            font-size: 200%;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="../icon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/jewish.css">
+    </link>
+    <script src="../js/jewish.js"></script>
+    <script>
+      var jew = "";
+      fetch('https://api.nasa.gov/planetary/apod?api_key=ClmiWOsBs0vajR7QamMr3gy9TVTEfNJgzzziJEFX')
+      .then(response => response.json())
+      .then(data => jew = (JSON.stringify(data)))
+      .then(data => jew = jew.substring(jew.indexOf("hdurl")+8))
+      .then (data => jew = jew.substring(0, jew.indexOf('"')))
+      .then(data => document.getElementById("nasa_image").src=jew)
+      .then(data => document.getElementById("nasa_link").onclick=function(){window.open(jew)});
+    </script>
+    <script>
+    setTimeout(function(){
+    var page_height = window.innerHeight * .95;
+    var page_width = window.innerWidth * .95;
+    var img_height = document.getElementById("nasa_image").height;
+    var img_width = document.getElementById("nasa_image").width;
+    document.getElementById('nasa_image').style.height = page_height + 'px';
+    if (img_width>page_width) {
+	    document.getElementById('nasa_image').style.width = page_width + 'px';
+    }
+    }, 10);
+    </script>
+</head>
+
+<body>
+    <a id="sidebar" href="../hub.html">≡</a>
+    <center>
+        <div style="font-size:200%; margin:0; width:calc(85vw);">
+            <h1 style="color:#DC143C;">NASA Astronomy Image of the Day</h1>
+        </div>
+	<a id="nasa_link"><img src="" id="nasa_image"></a>
+    </center>
+    <h1>
+</body>

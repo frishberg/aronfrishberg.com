@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta name="description" content="collatz conjecture art">
+	<meta name="keywords" content="collatz conjecture, algorithm, mathematics, advanced, art, artist, creation, generation">
+	<meta name="author" content="Aron Frishberg">
+	<title>Collatz Conjecture Art - Aron Frishberg</title>
+	<link rel="icon" type="image/png" href="../icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
+	</link>
+	<script src="../js/jewish.js"></script>
+	<style>
+		h4 {
+			width:800px;
+		}
+		p {
+			display:inline-block;
+		}
+		h1 {
+			color:#DC143C;
+		}
+		img {
+			cursor: grab;
+		}
+	</style>
+</head>
+
+<body>
+	<a id="sidebar" href="../hub.html">≡</a>
+	<center>
+		<div style="font-size:200%; margin:0; width:calc(85vw);">
+			<h1 style="color:#DC143C;">Collatz Conjecture Art</h1>
+		</div>
+		<h4>Using python and the Collatz Conjecture Algorithm, I created some art.  The code goes through digts starting at 1, calculates
+			 the number of "fluctuations" from the Collatz Conjecture and then assigns a corresponding color.  For the original version (left), I only used 5 colors and the modulus operator, 
+			 which meant that it would cycle through the colors.  With this system however, a number with 5 fluctuations and 40 fluctuations (for example) would be represented the same graphically,
+			  which means its losing some accuracy.  In the newer version (right), it starts with the hex code for red (#FF0000), and the color slowly increases, leaving us with plenty of options.
+			    Because of the thousand or so options now, modulus isn't used or needed here, so full accuracy is maintained.  It also creates a "heat map" esque design.  The purpose of this project
+				 was/is to graphically analyze the pattern of the Collatz Conjecture, which is famously unpredictable, and this goes to show that.  At least in this scope, the Collatz Conjecture remains 
+				 extremely unpredictable and inconsistent.
+		</h3>
+		<table>
+			<tr>
+				<h1><u>10x10</u></h3>
+				<img src="../img/collatz/10x10.PNG" onclick="window.open('../img/collatz/10x10.PNG');" height="200">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/10x10 heat.PNG" onclick="window.open('../img/collatz/10x10 heat.PNG');" height="200">
+			</tr>
+			<tr>
+				<h1><u>20x20</u></h3>
+				<img src="../img/collatz/20x20.PNG" onclick="window.open('../img/collatz/20x20.PNG');" height="250">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/20x20 heat.PNG" onclick="window.open('../img/collatz/20x20 heat.PNG');" height="250">
+			</tr>
+			<tr>
+				<h1><u>50x50</u></h3>
+				<img src="../img/collatz/50x50.PNG" onclick="window.open('../img/collatz/50x50.PNG');" height="300">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/50x50 heat.PNG" onclick="window.open('../img/collatz/50x50 heat.PNG');" height="300">
+			</tr>
+			<tr>
+				<h1><u>100x100</u></h3>
+				<img src="../img/collatz/100x100.PNG" onclick="window.open('../img/collatz/100x100.PNG');" height="350">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/100x100 heat.PNG" onclick="window.open('../img/collatz/100x100 heat.PNG');" height="350">
+			</tr>
+			<tr>
+				<h1><u>200x200</u></h3>
+				<img src="../img/collatz/200x200.PNG" onclick="window.open('../img/collatz/200x200.PNG');" height="400">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/200x200 heat.PNG" onclick="window.open('../img/collatz/200x200 heat.PNG');" height="400">
+			</tr>
+			<tr>
+				<h1><u>1000x1000</u></h3>
+				<img src="../img/collatz/1000x1000.PNG" onclick="window.open('../img/collatz/1000x1000.PNG');" height="450">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<img src="../img/collatz/1000x1000 heat.PNG" onclick="window.open('../img/collatz/1000x1000 heat.PNG');" height="450">
+			</tr>
+		</table>
+	</center>
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<head>
+	<link rel="icon" type="image/png" href="icon.png" />
+	<script>
+		//static variables
+		var width; var height;
+		var numofpics = 224;
+		//generate picture
+		var d = new Date();
+		var hour = d.getHours();
+		var day = d.getDay();
+		var month = d.getMonth();
+		var year = d.getFullYear();
+		var number = ((hour * day * month * year) % numofpics) + 1;
+		console.log(number);
+		setTimeout(function () { document.getElementById("jew").src = "https://imgstorage.netlify.app/dad photos/" + number + ".jpg"; }, 10);
+//height and width
+	</script>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<img src="" id="jew"></img>
+</body>

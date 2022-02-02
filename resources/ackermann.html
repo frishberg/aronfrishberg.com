@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta name="description" content="ackermann function calculator">
+	<meta name="keywords" content="ackermann, function, computer science, math, tools">
+	<meta name="author" content="Aron Frishberg">
+	<title>Ackermann Function - Aron Frishberg</title>
+	<script>
+		function Ackermann(a, b) {
+			if (a == 0) {
+				return b + 1;
+			}
+			else if (b == 0) {
+				return Ackermann(a - 1, 1);
+			}
+			else {
+				return Ackermann(a - 1, Ackermann(a, b - 1));
+			}
+		}
+		function buttonClick() {
+			var a = Number(document.getElementById("a").value);
+			var b = Number(document.getElementById("b").value);
+			if (a / a != 1 || b / b != 1) {
+				document.getElementById("result").innerHTML = "Result : really?";
+			}
+			else {
+				document.getElementById("result").innerHTML = "Result : Maximum call stack size exceeded";
+			}
+			document.getElementById("result").innerHTML = "Result : " + (Ackermann(a, b));
+		}
+	</script>
+	<style>
+		h3 {
+			font-size: 200%;
+		}
+	</style>
+	<link rel="icon" type="image/png" href="../icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
+	</link>
+	<script src="../js/jewish.js"></script>
+</head>
+
+<body>
+	<a id="sidebar" href="../hub.html">≡</a>
+	<center>
+		<div style="font-size:200%; margin:0; width:calc(85vw);">
+			<h1 style="color:#DC143C;">Ackermann Function</h1>
+		</div>
+		<img src="../img/Ackermann.jpg" style="width:calc(40vw);">
+		<h2>f(m,n)</h2>
+		<h3>m : <input id="a" style="font-family:font2; font-size:100%; text-align:center; width:calc(5vw);"></input>
+		</h3>
+		<h3>n : <input id="b" style="font-family:font2; font-size:100%; text-align:center; width:calc(5vw);"></input>
+		</h3>
+		<p> </p>
+		<button style="font-size:200%; font-family:font2;" onClick="buttonClick()">Run</button>
+		<h3 id="result">Result : x</h3>
+	</center>
+	<h1>
+</body>

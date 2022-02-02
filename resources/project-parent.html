@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title> - Aron Frishberg</title>
+	<script>
+    var modules = [
+        "Wordle",
+        "Book_Encryption",
+        "Environmental_Art",
+    ]
+    var locations = [
+        "https://replit.com/@afrishberg22/Wordle",
+        "https://replit.com/@afrishberg22/book-encryption",
+        "https://replit.com/@afrishberg22/Environmental-Art",
+    ]
+    var descriptions = [
+        "Wordle, coded in Python.  If you don't know how to play, go to https://www.powerlanguage.co.uk/wordle.",
+        "A program that encrypts and decrypts string using books.  The current default book is War and Peace.  To use it, simply input a phrase or encrypted string.",
+        "This program makes art using pictures of the environment by slowly encroching on the image from the corner.  This art is supposed to represent the effects that Global Warming is and will continue to have on the Earth.  In addition, while this seems like an simple task, it was extremely complex to code."
+    ]
+    window.onload = () => {
+        var jew = window.location.href
+        var module = jew.substring(jew.indexOf("?")+1)
+        document.title = module + " - Aron Frishberg"
+        document.getElementById("module-heading").innerHTML = module
+        document.getElementById("desc").innerHTML = descriptions[modules.indexOf(module)]
+        if (modules.indexOf(module)!=-1) { //module is in array of modules
+            document.getElementById('terminal').src = (locations[modules.indexOf(module)]) + "?embed=true";
+        }
+	}
+	</script>
+	<link rel="icon" type="image/png" href="../icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
+	</link>
+	<script src="../js/jewish.js"></script>
+</head>
+
+<body>
+	<a id="sidebar" href="../hub.html">≡</a>
+	<center>
+		<div style="font-size:200%; margin:0; width:calc(85vw);">
+			<h1 style="color:#DC143C;" id="module-heading">Loading...</h1>
+		</div>
+        <iframe frameborder="0" width="90%" height="900px" src="" id="terminal"></iframe>
+        <p id="desc" style="width:500px;"></p>
+    </center>
+</body>
