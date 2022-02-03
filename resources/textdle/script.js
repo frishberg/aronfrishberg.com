@@ -48,30 +48,21 @@ function createBox(row, col) {
     var node = document.createElement("input");
     node.setAttribute("id", row + "," + col);
     node.setAttribute("maxlength", 1);
-    //node.setAttribute("onkeyup", "jump(this.id)")
     document.getElementById("carrot").appendChild(node);
 }
+
 function createSpacer() {
     var node = document.createElement("p");
     document.getElementById("carrot").appendChild(node);
 }
 
-/*function jump(id) {
-    var row = Number(id.substring(0, id.indexOf(",")))
-    var col = Number(id.substring(id.indexOf(",") + 1))
-    if (document.getElementById(id).value == "") {
-        document.getElementById(row + "," + (col - 1)).focus()
-    }
-    else {
-        document.getElementById(row + "," + (col + 1)).focus()
-    }
-}*/
 document.addEventListener('keydown', function(event) {
     console.log(event.key)
     if (curCol<word_of_day.length && curCol>=0) {
         if (event.key == "Enter") {
             submitGuess()
         }
+        else if (event.key=="Shift") {}
         else if ((event.key == "Backspace" || event.key=="Delete")) {
             if (document.getElementById(curRow + "," + curCol).value == "" && curCol>0) { //empty delete
                 curCol-=1;
