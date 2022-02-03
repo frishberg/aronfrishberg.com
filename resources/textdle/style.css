@@ -26,8 +26,8 @@ p {
 h1 {
     margin: 0px;
 }
-@media only screen and (min-width: 800px) {
+@supports (-webkit-touch-callout: none) {
     input {
         color:red;
     }
-}
+}  
