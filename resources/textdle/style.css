@@ -1,4 +1,13 @@
-    @font-face {
+@viewport {
+    width: device-width;
+    zoom:1;
+ }
+ @media only screen and (max-width: 768px) {
+     img {
+         height:1000px;
+     }
+ }
+@font-face {
     font-family: 'font';
     src: url('font.ttf') format('truetype')
 }
@@ -26,8 +35,3 @@ p {
 h1 {
     margin: 0px;
 }
-@supports (-webkit-touch-callout: none) {
-    input {
-        color:red;
-    }
-}  
