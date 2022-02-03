@@ -15,7 +15,7 @@ window.onload = function () {
 function testGuess(guessedWord) {
     if (guessedWord == word_of_day) {
         for (var i = 0; i < word_of_day.length; i++) {
-            document.getElementById(curRow + "," + i).style.color = "#147efb";
+            document.getElementById(curRow + "," + i).style.color = "#1982FC";
         }
         alert("Correct!")
     }
@@ -23,10 +23,10 @@ function testGuess(guessedWord) {
         for (var i = 0; i < guessedWord.length; i++) {
             var currentLetter = (guessedWord.substring(i, i + 1))
             if (word_of_day.substring(i, i + 1) == currentLetter) { //correct
-                document.getElementById(curRow + "," + i).style.color = "#147efb";
+                document.getElementById(curRow + "," + i).style.color = "#1982FC";
             }
             else if (word_of_day.includes(currentLetter)) {
-                document.getElementById(curRow + "," + i).style.color = "#53d769";
+                document.getElementById(curRow + "," + i).style.color = "#43CC47";
             }
             document.getElementById((curRow + 1) + ",0").focus()
         }
