@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'font';
+    src: url('font.ttf')  format('truetype')
+  }
+  body {
+    text-align:center;
+    font-family:font;
+  }
+  input {
+    text-align:center;
+    height:50px;
+    width:40px;
+    font-size:200%;
+    margin-right:5px;
+    caret-color: transparent;
+    font-family:font;
+  }
+  p {
+    margin:5px;
+  }
+  h1 {
+    margin:0px;
+  }
