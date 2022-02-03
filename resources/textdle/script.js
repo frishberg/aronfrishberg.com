@@ -51,12 +51,17 @@ function submitGuess() {
     else {
         alert("Wrong Number of Letters.")
     }
+    document.getElementById(curRow + "," + (curCol)).focus()
 }
 
 function createBox(row, col) {
     var node = document.createElement("input");
     node.setAttribute("id", row + "," + col);
     node.setAttribute("maxlength", 1);
+    node.setAttribute("style", "display:inline;")
+    document.getElementById("carrot").appendChild(node);
+    var node = document.createElement("p");
+    node.setAttribute("style", "display:inline;")
     document.getElementById("carrot").appendChild(node);
 }
 
