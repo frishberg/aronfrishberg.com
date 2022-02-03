@@ -1,4 +1,4 @@
-var target_words = ["true", "facts", "haha", "fucking", "coding", "chill", "chilling", "awesome", "hype", "morning", "love", "schmuck", "good"]
+var target_words = ["true", "facts", "haha", "fucking", "coding", "chill", "chilling", "awesome", "hype", "morning", "love", "good"]
 var d = new Date()
 var word_of_day = target_words[(d.getMonth() * d.getDate() * d.getFullYear() * 42) % target_words.length]
 var curRow = 0; var curCol = 0;
@@ -15,18 +15,22 @@ window.onload = function () {
 function testGuess(guessedWord) {
     if (guessedWord == word_of_day) {
         for (var i = 0; i < word_of_day.length; i++) {
-            document.getElementById(curRow + "," + i).style.color = "#1982FC";
+            document.getElementById(curRow + "," + i).style.backgroundColor  = "#1982FC";
+            document.getElementById(curRow + "," + i).style.borderColor = "transparent";
         }
+        curRow = -5; curCol = -5; //breaking my own game so it stops
         alert("Correct!")
     }
     else {
         for (var i = 0; i < guessedWord.length; i++) {
             var currentLetter = (guessedWord.substring(i, i + 1))
             if (word_of_day.substring(i, i + 1) == currentLetter) { //correct
-                document.getElementById(curRow + "," + i).style.color = "#1982FC";
+                document.getElementById(curRow + "," + i).style.backgroundColor  = "#1982FC";
+                document.getElementById(curRow + "," + i).style.borderColor = "transparent";
             }
             else if (word_of_day.includes(currentLetter)) {
-                document.getElementById(curRow + "," + i).style.color = "#43CC47";
+                document.getElementById(curRow + "," + i).style.backgroundColor  = "#43CC47";
+                document.getElementById(curRow + "," + i).style.borderColor = "transparent";
             }
             document.getElementById((curRow + 1) + ",0").focus()
         }
@@ -41,7 +45,12 @@ function submitGuess() {
     for (var i = 0; i < word_of_day.length; i++) {
         result += document.getElementById(curRow + "," + i).value
     }
-    testGuess(result.toLowerCase())
+    if (result.length == word_of_day.length) {
+        testGuess(result.toLowerCase())
+    }
+    else {
+        alert("Wrong Number of Letters.")
+    }
 }
 
 function createBox(row, col) {
@@ -78,4 +87,4 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-setInterval(function () {console.log(curRow + "," + curCol)}, 1000);
+setInterval(function () {document.getElementById(curRow + "," + (curCol)).focus()}, 250);
