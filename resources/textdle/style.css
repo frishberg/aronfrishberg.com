@@ -1,24 +1,30 @@
-@font-face {
+    @font-face {
     font-family: 'font';
-    src: url('font.ttf')  format('truetype')
-  }
-  body {
-    text-align:center;
-    font-family:font;
-  }
-  input {
-    text-align:center;
-    height:50px;
-    width:40px;
-    font-size:200%;
-    margin-right:5px;
+    src: url('font.ttf') format('truetype')
+}
+
+body {
+    text-align: center;
+    font-family: font;
+}
+
+input {
+    text-align: center;
+    height: 50px;
+    width: 40px;
+    font-size: 200%;
+    margin-right: 5px;
     caret-color: transparent;
-    font-family:font;
+    font-family: font;
     text-transform: lowercase;
-  }
-  p {
-    margin:5px;
-  }
-  h1 {
-    margin:0px;
-  }
+}
+
+p {
+    margin: 5px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+@media only screen and (min-width: 768px) {

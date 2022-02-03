@@ -41,7 +41,7 @@ function submitGuess() {
     for (var i = 0; i < word_of_day.length; i++) {
         result += document.getElementById(curRow + "," + i).value
     }
-    testGuess(result)
+    testGuess(result.toLowerCase())
 }
 
 function createBox(row, col) {
