@@ -20,6 +20,7 @@ input {
     caret-color: transparent;
     font-family: font;
     text-transform: lowercase;
+    margin-right: 10px;
 }
 
 p {
