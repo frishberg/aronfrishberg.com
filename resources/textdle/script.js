@@ -17,6 +17,10 @@ window.onload = function () {
     }
 }
 
+function createCustom() {
+    window.location.href = "custom.html";
+}
+
 function testGuess(guessedWord) {
     if (guessedWord == word_of_day) {
         for (var i = 0; i < word_of_day.length; i++) {
@@ -24,7 +28,7 @@ function testGuess(guessedWord) {
             document.getElementById(curRow + "," + i).style.borderColor = "transparent";
         }
         curRow = -5; curCol = -5; //breaking my own game so it stops
-        alert("Correct!")
+        document.getElementById("output").innerHTML = "Bingo!  Nice job."
     }
     else {
         for (var i = 0; i < guessedWord.length; i++) {
@@ -54,7 +58,7 @@ function submitGuess() {
         testGuess(result.toLowerCase())
     }
     else {
-        alert("Wrong Number of Letters.")
+        document.getElementById("output").innerHTML = "Wrong Number of Letters."
     }
     document.getElementById(curRow + "," + (curCol)).focus()
 }
