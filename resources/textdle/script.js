@@ -15,6 +15,7 @@ window.onload = function () {
         }
         createSpacer()
     }
+    document.getElementById("output").innerHTML = word_of_day
 }
 
 function createCustom() {
