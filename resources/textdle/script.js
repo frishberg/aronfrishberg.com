@@ -7,7 +7,7 @@ window.onload = function () {
     var temp = window.location.href;
     if (temp.includes("?")) {
         var info = temp.substring(temp.indexOf("?") + 1)
-        word_of_day = decryptLink(info)
+        word_of_day = CryptoJS.enc.Base64.parse(info).toString(CryptoJS.enc.Utf8);
     }
     for (var i = 0; i < 6; i++) {
         for (var j = 0; j < word_of_day.length; j++) {
@@ -15,7 +15,6 @@ window.onload = function () {
         }
         createSpacer()
     }
-    document.getElementById("output").innerHTML = "Word : " + word_of_day
 }
 
 function createCustom() {
@@ -23,7 +22,6 @@ function createCustom() {
 }
 
 function testGuess(guessedWord) {
-    document.getElementById("output").innerHTML = "Guess : Guessed Word"
     if (guessedWord == word_of_day) {
         for (var i = 0; i < word_of_day.length; i++) {
             document.getElementById(curRow + "," + i).style.backgroundColor  = "#1982FC";

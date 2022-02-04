@@ -6,7 +6,7 @@ function generateLink() {
         var numCode = ((currentLetter.charCodeAt(0) - 96) + 17) % 26
         result += (String.fromCharCode(96 + numCode))
     }
-    document.getElementById("output").setAttribute('value',"https://aronfrishberg.com/resources/textdle/index.html?" + result);
+    document.getElementById("output").setAttribute('value',"https://aronfrishberg.com/resources/textdle/index.html?" + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(word)));
 }
 function copyToClipboard() {
   var copyText = document.getElementById("output");
