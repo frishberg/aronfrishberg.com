@@ -7,7 +7,7 @@ window.onload = function () {
     var temp = window.location.href;
     if (temp.includes("?")) {
         var info = (temp.substring(temp.indexOf("?") + 1)).toLowerCase()
-        word_of_day = CryptoJS.enc.Base64.parse(info).toString(CryptoJS.enc.Utf8);
+        word_of_day = info
     }
     for (var i = 0; i < 6; i++) {
         for (var j = 0; j < word_of_day.length; j++) {
