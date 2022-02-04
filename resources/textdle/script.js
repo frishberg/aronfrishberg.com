@@ -6,7 +6,7 @@ var curRow = 0; var curCol = 0;
 window.onload = function () {
     var temp = window.location.href;
     if (temp.includes("?")) {
-        var info = temp.substring(temp.indexOf("?") + 1)
+        var info = (temp.substring(temp.indexOf("?") + 1)).toLowerCase()
         word_of_day = CryptoJS.enc.Base64.parse(info).toString(CryptoJS.enc.Utf8);
     }
     for (var i = 0; i < 6; i++) {
