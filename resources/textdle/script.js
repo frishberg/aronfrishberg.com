@@ -4,6 +4,11 @@ var word_of_day = target_words[(d.getMonth() * d.getDate() * d.getFullYear() * 4
 var curRow = 0; var curCol = 0;
 
 window.onload = function () {
+    var temp = window.location.href;
+    if (temp.includes("?")) {
+        var info = temp.substring(temp.indexOf("?") + 1)
+        word_of_day = info
+    }
     for (var i = 0; i < 6; i++) {
         for (var j = 0; j < word_of_day.length; j++) {
             createBox(i, j)
