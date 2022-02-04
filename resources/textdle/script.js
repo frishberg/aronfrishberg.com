@@ -8,6 +8,7 @@ window.onload = function () {
     if (temp.includes("?")) {
         var info = temp.substring(temp.indexOf("?") + 1)
         word_of_day = decryptLink(info)
+        alert("word of day set to : " + word_of_day)
     }
     for (var i = 0; i < 6; i++) {
         for (var j = 0; j < word_of_day.length; j++) {
@@ -22,6 +23,7 @@ function createCustom() {
 }
 
 function testGuess(guessedWord) {
+    alert("Guess : " + testGuess)
     if (guessedWord == word_of_day) {
         for (var i = 0; i < word_of_day.length; i++) {
             document.getElementById(curRow + "," + i).style.backgroundColor  = "#1982FC";
