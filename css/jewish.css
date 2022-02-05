@@ -13,14 +13,14 @@ body, input, button {
 	padding:0;
 	text-align:center;
 }
-@font-face {
+/*@font-face {
     font-family: Hansief;
     src: url("Hansief.otf") format("opentype");
 }
 @font-face {
     font-family: font2;
     src: url("font2.ttf") format("truetype");
-}
+}*/
 #thejewhimself {
 	width:calc(25vw);
 	border: 2px solid black;
@@ -63,7 +63,7 @@ input {
 	font-size:500%;
 	right:25px;
 	top:-0px;
-	font-family:font2;
+	font-family: 'Merriweather', serif;;
 }
 @media only screen and (max-width: 1000px) {
 	#thejewhimself {
