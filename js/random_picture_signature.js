@@ -29,6 +29,6 @@ window.onload = function() {
         console.log("college() -> redirects to college statuses")
         console.log("github() -> redirects to this repository")
         console.log("regenerate() -> regenerates signature and picture")
-        console.log("slideshow(t/-) -> slideshow of signatures and pictures")
+        console.log("slideshow(t) -> slideshow of signatures and pictures")
     }
 };

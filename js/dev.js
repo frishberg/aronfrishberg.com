@@ -12,9 +12,6 @@ function regenerate() {
     document.getElementById("signature").src="../img/signatures/"+random2+".png";
     sessionStorage.setItem('signature', random2);
 }
-function sildeshow() {
-    setInterval(function () {regenerate()}, 2000);
-}
 function slideshow(time) {
     setInterval(function () {regenerate()}, time);
 }
