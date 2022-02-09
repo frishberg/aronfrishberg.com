@@ -23,3 +23,6 @@ function letterToNumber(letter) {
 function numberToLetter(number) {
   return(String.fromCharCode(86 + number))
 }
+function redirect(newURL) {
+  window.location.href = newURL;
+}
