@@ -1,7 +1,4 @@
-@font-face {
-    font-family: font2;
-    src: url("../../../css/font2.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 body {
   color: #000;
   background: #fff;
@@ -10,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
-  font-family:font2;
+  font-family: 'Merriweather', serif;
 }
 
 .demo-wrapper {
