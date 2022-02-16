@@ -15,3 +15,7 @@ function regenerate() {
 function slideshow(time) {
     setInterval(function () {regenerate()}, time);
 }
+function nuid() {
+    console.log("002717334")
+    return("002717334")
+}

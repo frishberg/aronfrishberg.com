@@ -30,5 +30,6 @@ window.onload = function() {
         console.log("github() -> redirects to this repository")
         console.log("regenerate() -> regenerates signature and picture")
         console.log("slideshow(t) -> slideshow of signatures and pictures")
+        console.log("nuid() -> get northeastern id")
     }
 };
