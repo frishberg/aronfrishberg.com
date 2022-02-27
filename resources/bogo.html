@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta name="description" content="bogo sort art">
+	<meta name="keywords" content="bogo sort, art, array, coding">
+	<meta name="author" content="Aron Frishberg">
+	<title>Bogo Sort Art - Aron Frishberg</title>
+	<link rel="icon" type="image/png" href="../icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
+	</link>
+	<script src="../js/jewish.js"></script>
+	<style>
+		p,
+		div {
+			margin: 0px;
+			padding: 0px;
+			font-size: 0;
+		}
+
+		#skeleton {
+			text-align: center;
+		}
+	</style>
+	<script>
+		//var n = Number(prompt("n?"))
+		var n = 5
+		var colors = ["#ff0000", "#ef0000", "#df0000", "#cf0000", "#bf0000", "#af0000", "#9f0000", "#8f0000", "#7f0000", "#6f0000", "#5f0000"]
+		var originalArray = []
+		for (var i = 0; i < n; i++) {
+			while (originalArray[i] == null) {
+				var temp = Math.floor(Math.random() * n);
+				if (!(originalArray.includes(temp))) {
+					originalArray[i] = temp
+				}
+			}
+		}
+		function swap(first, second) {
+			var temp = originalArray[first]
+			originalArray[first] = originalArray[second]
+			originalArray[second] = temp
+		}
+		function bogoSort() {
+			var rand1 = Math.floor(Math.random() * n);
+			var rand2 = Math.floor(Math.random() * n);
+			while (rand1 == rand2) {
+				rand2 = Math.floor(Math.random() * n);
+			}
+			swap(rand1, rand2)
+		}
+		function isSorted() {
+			for (var i = 0; i < originalArray.length; i++) {
+				if (originalArray[i] > originalArray[i + 1]) {
+					return false
+				}
+			}
+			return true
+		}
+		window.onload = function () {
+			setInterval(function () {
+				if (!(isSorted())) {
+					console.log(originalArray)
+					drawArray()
+					bogoSort()
+				}
+			}, 1);
+		};
+		function createBox(color) {
+			var node = document.createElement("div");
+			//node.setAttribute("style", "background-color:"+color+"; height:calc("+(90/n)+"vw); width:calc("+(90/n)+"vw); display:inline-block;")
+			node.setAttribute("style", "background-color:" + color + "; height:25px; width:25px; display:inline-block;")
+			document.getElementById("skeleton").appendChild(node);
+		}
+		function drawArray() {
+			for (var i = 0; i < originalArray.length; i++) {
+				createBox(colors[originalArray[i]])
+			}
+			var node = document.createElement("p");
+			document.getElementById("skeleton").appendChild(node);
+		}
+	</script>
+</head>
+
+<body>
+	<a id="sidebar" href="../hub.html">≡</a>
+	<center>
+		<div style="font-size:200%; margin:0; width:calc(85vw);">
+			<h1 style="color:#DC143C;">Bogo Sort Art</h1>
+		</div>
+		<div id="skeleton"></div>
+	</center>
+</body>
