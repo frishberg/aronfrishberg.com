@@ -16,21 +16,58 @@
 			padding: 0px;
 			font-size: 0;
 		}
-
+		button {
+			font-size:150%;
+		}
+		#n-input, #side-length {
+			width:40px;
+		}
 		#skeleton {
 			text-align: center;
 		}
+		#auto-scroll {
+			width:15px;
+		}
 	</style>
 	<script>
-		//var n = Number(prompt("n?"))
-		var n = 5
-		var colors = ["#ff0000", "#ef0000", "#df0000", "#cf0000", "#bf0000", "#af0000", "#9f0000", "#8f0000", "#7f0000", "#6f0000", "#5f0000"]
 		var originalArray = []
-		for (var i = 0; i < n; i++) {
-			while (originalArray[i] == null) {
-				var temp = Math.floor(Math.random() * n);
-				if (!(originalArray.includes(temp))) {
-					originalArray[i] = temp
+		var colorFormats = ["#xx0000", "#xx00ff", "#xxff00", "#xxffff", "#00xx00", "#00xxff", "#ffxx00", "#ffxxff", "#0000xx", "#00ffxx", "#ff00xx", "#ffffxx"]
+		var hex_format = "#xx0000"
+		var n = 0
+		var colors = ["blue", "green", "yellow", "red", "magenta"]
+		var auto_scroll = false
+		var side_length = 0
+		var final_print = false
+		function intToHex(num) {
+			var hex = Number(num).toString(16);
+			if (hex.length < 2) {
+				hex = "0" + hex;
+			}
+			return hex;
+		}
+		function generateColors() {
+			var step = parseInt(256/n)
+			for (var i=0; i<n; i++) {
+				//colors[i] = hex_format.replace("xx", intToHex(step * i))
+				colors[(n-1)-i] = hex_format.replace("xx", intToHex(step * i))
+			}
+			console.log("Colors : " + colors)
+		}
+		function start() {
+			final_print = false
+			hex_format = colorFormats[document.getElementById("color-selection").value]
+			document.getElementById("skeleton").innerHTML = "";
+			n = Number(document.getElementById("n-input").value)
+			auto_scroll = document.getElementById("auto-scroll").checked
+			side_length = Number(document.getElementById("side-length").value)
+			originalArray = []
+			generateColors()
+			for (var i = 0; i < n; i++) {
+				while (originalArray[i] == null) {
+					var temp = Math.floor(Math.random() * n);
+					if (!(originalArray.includes(temp))) {
+						originalArray[i] = temp
+					}
 				}
 			}
 		}
@@ -56,18 +93,23 @@
 			return true
 		}
 		window.onload = function () {
+			start()
 			setInterval(function () {
 				if (!(isSorted())) {
-					console.log(originalArray)
+					//console.log(originalArray)
 					drawArray()
 					bogoSort()
+				}
+				if (final_print==false && isSorted()) {
+					drawArray()
+					final_print=true
 				}
 			}, 1);
 		};
 		function createBox(color) {
 			var node = document.createElement("div");
 			//node.setAttribute("style", "background-color:"+color+"; height:calc("+(90/n)+"vw); width:calc("+(90/n)+"vw); display:inline-block;")
-			node.setAttribute("style", "background-color:" + color + "; height:25px; width:25px; display:inline-block;")
+			node.setAttribute("style", "background-color:" + color + "; height:"+side_length+"px; width:"+side_length+"px; display:inline-block;")
 			document.getElementById("skeleton").appendChild(node);
 		}
 		function drawArray() {
@@ -76,6 +118,9 @@
 			}
 			var node = document.createElement("p");
 			document.getElementById("skeleton").appendChild(node);
+			if (auto_scroll == true) {
+				window.scrollBy(0, side_length);
+			}
 		}
 	</script>
 </head>
@@ -86,6 +131,27 @@
 		<div style="font-size:200%; margin:0; width:calc(85vw);">
 			<h1 style="color:#DC143C;">Bogo Sort Art</h1>
 		</div>
+		<h3>n : <input id="n-input" value=5 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"></input></h3>
+		<h3>side length : <input id="side-length" value=20 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"></input></h3>
+		<h3>auto scroll : <input type="checkbox" id="auto-scroll"></input></h3>
+		<h3>color : 
+		<select name="colors" id="color-selection">
+			<option value="5">blue</option>
+			<option value="0">red</option>
+			<option value="6">orange</option>
+			<option value="1">purple</option>
+			<option value="7">pink</option>
+			<option value="9">turquoise</option>
+			<option value="10">magenta</option>
+			<option value="2">light green</option>
+			<option value="3">light blue</option>
+			<option value="11">light yellow</option>
+			<option value="4">dark green</option>
+			<option value="8">dark blue</option>
+		</select>
+		</h3>
+		<button onClick="start()">Generate</button>
+		<h3></h3>
 		<div id="skeleton"></div>
 	</center>
 </body>
