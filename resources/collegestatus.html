@@ -105,7 +105,16 @@
 		var temp = dates[i-1]
 		var tempDay = Number(temp.substring(0, temp.indexOf("/")))
 		var tempMonth = Number(temp.substring(temp.indexOf("/") + 1))
-  		document.getElementById(i).innerHTML = "(" + dateDifference(tempDay, tempMonth) + " Days Left)"
-	}
+                if (dateDifference(tempDay, tempMonth)>0) {
+  		      document.getElementById(i).innerHTML = "(" + dateDifference(tempDay, tempMonth) + " Days Left)"
+                }
+                else if (dateDifference(tempDay, tempMonth) == 0) {
+                      document.getElementById(i).innerHTML = "(Comes Out Today!)"
+                }
+                else if (dateDifference(tempDay, tempMonth) < 0) {
+                      document.getElementById(i).innerHTML = "(Late Result)"
+                }
+	
+}
 	</script>
 </body>
