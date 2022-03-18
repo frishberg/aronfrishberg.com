@@ -4,7 +4,7 @@
 	<meta name="author" content="Aron Frishberg">
 	<title>College Application Statuses - Aron Frishberg</title>
 	<style>
-	.waiting, #accepted, #rejected, #progress {
+	.waiting, #accepted, #rejected, #progress, #waitlisted {
 		display:inline;
 	}
 	.waiting { 
@@ -28,6 +28,9 @@
 	#rejected:hover {
 		color:rgb(131, 21, 21);
 	}
+        #waitlisted {
+                color:gray;
+        }
 	</style>
 	<link rel="icon" type="image/png" href="../icon.png" />
 	<link rel="stylesheet" type="text/css" href="../css/jewish.css">
@@ -75,7 +78,7 @@
 		<h3>UChicago : <a id="rejected" href="college letters/UChicago.pdf">Rejected.</a></h3>
 		<h3>UMich - Ross : <p class="waiting">Waiting...</p> <p class="daysuntil" id="6">(Late March)</p></h3>
 		<h3>Notre Dame - Mendoza : <a id="rejected" href="">Rejected.</a></h3>
-		<h3>Rochester : <p class="">Waitlisted</p></h3>
+		<h3>Rochester : <p I'd="waitlisted">Waitlisted.</p></h3>
 		<h3>Vanderbilt : <p class="waiting">Waiting...</p> <p class="daysuntil" id="7">(4/1)</p></h3>
 		<h3>WashU - Olin : <p class="waiting">Waiting...</p> <p class="daysuntil" id="8">(4/1)</p></h3>
 	</center>
