@@ -54,11 +54,6 @@ ul li a:before {
     letter-spacing: 500px;
     transition: letter-spacing 0.5s, left 0.5s;
 }
-@media only screen and (max-width: 800px) {
-	ul li a:before {
-		font-size: 3em;
-	}
-}
 ul li a:hover:before {
     content: attr(data-text);
     opacity: 1;
