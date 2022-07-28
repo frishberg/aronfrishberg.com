@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="all_data.js"></script>
+    <script src="checklist.js"></script>
+    <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jews Involved in the Making of Movies">
+    <meta name="keywords" content="python, jews, jewish, celebrities, movies, film">
+    <meta name="author" content="Aron Frishberg">
+    <link rel="icon" type="image/png" href="../../icon.png" />
+    <link rel="stylesheet" type="text/css" href="jewish.css"></link>
+    <script src="../../js/jewish.js"></script>
+</head>
+<body>
+<a id="sidebar" href="../../hub.html">&#8801;</a>
+    <center>
+    <div style="font-size:200%; margin:0; width:calc(85vw);">
+    <h1 style="color:#DC143C;">Jews Involved in the Making of Movies</h1>
+    </div>
+	</center>
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Select Colleges</span>
+		<p></p>
+        <ul class="items">
+            <li><input type="checkbox" id="0" onClick="updateSelected()"/>Alabama</li>
+<li><input type="checkbox" id="1" onClick="updateSelected()"/>American</li>
+<li><input type="checkbox" id="2" onClick="updateSelected()"/>Arizona</li>
+<li><input type="checkbox" id="3" onClick="updateSelected()"/>Auburn</li>
+<li><input type="checkbox" id="4" onClick="updateSelected()"/>Baylor</li>
+<li><input type="checkbox" id="5" onClick="updateSelected()"/>Binghamton</li>
+<li><input type="checkbox" id="6" onClick="updateSelected()"/>Boston College</li>
+<li><input type="checkbox" id="7" onClick="updateSelected()"/>Boston University</li>
+<li><input type="checkbox" id="8" onClick="updateSelected()"/ checked>Brandeis</li>
+<li><input type="checkbox" id="9" onClick="updateSelected()"/>Brigham Young</li>
+<li><input type="checkbox" id="10" onClick="updateSelected()"/>Brown</li>
+<li><input type="checkbox" id="11" onClick="updateSelected()"/>Caltech</li>
+<li><input type="checkbox" id="12" onClick="updateSelected()"/>Carnegie Mellon</li>
+<li><input type="checkbox" id="13" onClick="updateSelected()"/>Case Western Reserve</li>
+<li><input type="checkbox" id="14" onClick="updateSelected()"/>Catholic</li>
+<li><input type="checkbox" id="15" onClick="updateSelected()"/>Central Florida UCF</li>
+<li><input type="checkbox" id="16" onClick="updateSelected()"/>Chicago</li>
+<li><input type="checkbox" id="17" onClick="updateSelected()"/>Cincinnati</li>
+<li><input type="checkbox" id="18" onClick="updateSelected()"/>Clark</li>
+<li><input type="checkbox" id="19" onClick="updateSelected()"/>Clemson</li>
+<li><input type="checkbox" id="20" onClick="updateSelected()"/>Colorado School of Mines</li>
+<li><input type="checkbox" id="21" onClick="updateSelected()"/>Colorado</li>
+<li><input type="checkbox" id="22" onClick="updateSelected()"/>Columbia</li>
+<li><input type="checkbox" id="23" onClick="updateSelected()"/>Connecticut</li>
+<li><input type="checkbox" id="24" onClick="updateSelected()"/>Cornell</li>
+<li><input type="checkbox" id="25" onClick="updateSelected()"/>Dartmouth</li>
+<li><input type="checkbox" id="26" onClick="updateSelected()"/>Dayton</li>
+<li><input type="checkbox" id="27" onClick="updateSelected()"/>Delaware</li>
+<li><input type="checkbox" id="28" onClick="updateSelected()"/>Denver</li>
+<li><input type="checkbox" id="29" onClick="updateSelected()"/>Drexel</li>
+<li><input type="checkbox" id="30" onClick="updateSelected()"/>Duke</li>
+<li><input type="checkbox" id="31" onClick="updateSelected()"/>Emory</li>
+<li><input type="checkbox" id="32" onClick="updateSelected()"/>Florida</li>
+<li><input type="checkbox" id="33" onClick="updateSelected()"/>George Washington</li>
+<li><input type="checkbox" id="34" onClick="updateSelected()"/>Georgetown</li>
+<li><input type="checkbox" id="35" onClick="updateSelected()"/>Georgia Tech</li>
+<li><input type="checkbox" id="36" onClick="updateSelected()"/>Harvard</li>
+<li><input type="checkbox" id="37" onClick="updateSelected()"/>Howard</li>
+<li><input type="checkbox" id="38" onClick="updateSelected()"/>Illinois</li>
+<li><input type="checkbox" id="39" onClick="updateSelected()"/>Indiana</li>
+<li><input type="checkbox" id="40" onClick="updateSelected()"/>Iowa</li>
+<li><input type="checkbox" id="41" onClick="updateSelected()"/>Johns Hopkins</li>
+<li><input type="checkbox" id="42" onClick="updateSelected()"/>Kansas</li>
+<li><input type="checkbox" id="43" onClick="updateSelected()"/>Kentucky</li>
+<li><input type="checkbox" id="44" onClick="updateSelected()"/>Lehigh</li>
+<li><input type="checkbox" id="45" onClick="updateSelected()"/>Loyola Chicago</li>
+<li><input type="checkbox" id="46" onClick="updateSelected()"/>Marquette</li>
+<li><input type="checkbox" id="47" onClick="updateSelected()"/>Maryland</li>
+<li><input type="checkbox" id="48" onClick="updateSelected()"/>Massachusetts Amherst</li>
+<li><input type="checkbox" id="49" onClick="updateSelected()"/>Miami Oh</li>
+<li><input type="checkbox" id="50" onClick="updateSelected()"/>Michigan</li>
+<li><input type="checkbox" id="51" onClick="updateSelected()"/>Minnesota</li>
+<li><input type="checkbox" id="52" onClick="updateSelected()"/>Mississippi</li>
+<li><input type="checkbox" id="53" onClick="updateSelected()"/>Missouri</li>
+<li><input type="checkbox" id="54" onClick="updateSelected()"/>MIT</li>
+<li><input type="checkbox" id="55" onClick="updateSelected()"/>NC State</li>
+<li><input type="checkbox" id="56" onClick="updateSelected()"/>Nebraska</li>
+<li><input type="checkbox" id="57" onClick="updateSelected()"/>New Hampshire</li>
+<li><input type="checkbox" id="58" onClick="updateSelected()"/>North Carolina at Chapel Hill</li>
+<li><input type="checkbox" id="59" onClick="updateSelected()"/>Northeastern</li>
+<li><input type="checkbox" id="60" onClick="updateSelected()"/>Northwestern</li>
+<li><input type="checkbox" id="61" onClick="updateSelected()"/>Notre Dame</li>
+<li><input type="checkbox" id="62" onClick="updateSelected()"/>NYU</li>
+<li><input type="checkbox" id="63" onClick="updateSelected()"/>Ohio St</li>
+<li><input type="checkbox" id="64" onClick="updateSelected()"/>Ohio Univ</li>
+<li><input type="checkbox" id="65" onClick="updateSelected()"/>Oklahoma</li>
+<li><input type="checkbox" id="66" onClick="updateSelected()"/>Oregon</li>
+<li><input type="checkbox" id="67" onClick="updateSelected()"/>Pacific</li>
+<li><input type="checkbox" id="68" onClick="updateSelected()"/>Penn State</li>
+<li><input type="checkbox" id="69" onClick="updateSelected()"/>Penn</li>
+<li><input type="checkbox" id="70" onClick="updateSelected()"/>Pepperdine</li>
+<li><input type="checkbox" id="71" onClick="updateSelected()"/>Pitt</li>
+<li><input type="checkbox" id="72" onClick="updateSelected()"/>Princeton</li>
+<li><input type="checkbox" id="73" onClick="updateSelected()"/>Purdue</li>
+<li><input type="checkbox" id="74" onClick="updateSelected()"/>Rice</li>
+<li><input type="checkbox" id="75" onClick="updateSelected()"/>RIT</li>
+<li><input type="checkbox" id="76" onClick="updateSelected()"/>Rochester</li>
+<li><input type="checkbox" id="77" onClick="updateSelected()"/>RPI</li>
+<li><input type="checkbox" id="78" onClick="updateSelected()"/>Rutgers</li>
+<li><input type="checkbox" id="79" onClick="updateSelected()"/>San Diego St</li>
+<li><input type="checkbox" id="80" onClick="updateSelected()"/>SMU</li>
+<li><input type="checkbox" id="81" onClick="updateSelected()"/>South Carolina</li>
+<li><input type="checkbox" id="82" onClick="updateSelected()"/>South Florida USF</li>
+<li><input type="checkbox" id="83" onClick="updateSelected()"/>St. Louis</li>
+<li><input type="checkbox" id="84" onClick="updateSelected()"/>Stanford</li>
+<li><input type="checkbox" id="85" onClick="updateSelected()"/>Stevens Inst Tech</li>
+<li><input type="checkbox" id="86" onClick="updateSelected()"/>Stony Brook</li>
+<li><input type="checkbox" id="87" onClick="updateSelected()"/>Syracuse</li>
+<li><input type="checkbox" id="88" onClick="updateSelected()"/>TCU</li>
+<li><input type="checkbox" id="89" onClick="updateSelected()"/>Tennessee</li>
+<li><input type="checkbox" id="90" onClick="updateSelected()"/>Texas A&amp;M</li>
+<li><input type="checkbox" id="91" onClick="updateSelected()"/>Tufts</li>
+<li><input type="checkbox" id="92" onClick="updateSelected()"/>Tulane</li>
+<li><input type="checkbox" id="93" onClick="updateSelected()"/>Tulsa</li>
+<li><input type="checkbox" id="94" onClick="updateSelected()"/>U of Miami</li>
+<li><input type="checkbox" id="95" onClick="updateSelected()"/>UAB</li>
+<li><input type="checkbox" id="96" onClick="updateSelected()"/>UC Berkeley</li>
+<li><input type="checkbox" id="97" onClick="updateSelected()"/>UC Davis</li>
+<li><input type="checkbox" id="98" onClick="updateSelected()"/>UC Irvine</li>
+<li><input type="checkbox" id="99" onClick="updateSelected()"/>UC Riverside</li>
+<li><input type="checkbox" id="100" onClick="updateSelected()"/>UC San Diego</li>
+<li><input type="checkbox" id="101" onClick="updateSelected()"/>UC Santa Barbara</li>
+<li><input type="checkbox" id="102" onClick="updateSelected()"/>UC Santa Cruz</li>
+<li><input type="checkbox" id="103" onClick="updateSelected()"/>UCLA</li>
+<li><input type="checkbox" id="104" onClick="updateSelected()"/>Univ at Buffalo</li>
+<li><input type="checkbox" id="105" onClick="updateSelected()"/>USC</li>
+<li><input type="checkbox" id="106" onClick="updateSelected()"/>UT Austin</li>
+<li><input type="checkbox" id="107" onClick="updateSelected()"/>UT Dallas</li>
+<li><input type="checkbox" id="108" onClick="updateSelected()"/>UW Madison</li>
+<li><input type="checkbox" id="109" onClick="updateSelected()"/>Vanderbilt</li>
+<li><input type="checkbox" id="110" onClick="updateSelected()"/>Vermont</li>
+<li><input type="checkbox" id="111" onClick="updateSelected()"/>Villanova</li>
+<li><input type="checkbox" id="112" onClick="updateSelected()"/>Virginia</li>
+<li><input type="checkbox" id="113" onClick="updateSelected()"/>Wake Forest</li>
+<li><input type="checkbox" id="114" onClick="updateSelected()"/>WashU</li>
+<li><input type="checkbox" id="115" onClick="updateSelected()"/>William and Mary</li>
+<li><input type="checkbox" id="116" onClick="updateSelected()"/>WPI</li>
+<li><input type="checkbox" id="117" onClick="updateSelected()"/>Yale</li>
+<li><input type="checkbox" id="118" onClick="updateSelected()"/>Yeshiva</li>
+        </ul>
+      </div>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
