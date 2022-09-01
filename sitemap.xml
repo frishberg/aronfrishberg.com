@@ -80,768 +80,6 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/test_sitemap.xml</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/stories\internship.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/stories\sitemap.xml</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\index.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\netanyahu.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\01theory.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\ackermann.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\category comparison.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\category.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\global vs nobel.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\per decade.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\per year.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\schedule.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\profiles\4100-9007.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\profiles\7813-8029.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\profiles\ar-2457.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\profiles\guess.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\profiles\hb 243.1.49.2924.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\index.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/__pycache__\generate_sitemap.cpython-310.pyc</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/css\computer.otf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/css\font2.ttf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/css\gfont2.ttf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/css\hansief.otf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/css\jewish.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/js\cookies.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/js\dev.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/js\jewish.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/js\random_picture_signature.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\0.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\1.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\2.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\3.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\4.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\5.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\6.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\7.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\signatures\8.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\4100-9007.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\4100-9007.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\7813-8029.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\7813-8029.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\ar-2457.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\ar-2457.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\guess.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\guess.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\hb 243.1.49.2924.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\img\hb 243.1.49.2924.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\breakpoints.min.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\browser.min.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\jquery.min.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\jquery.poptrox.min.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\main.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\js\util.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\css\ben-gurion.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\css\EduSABeginner-VariableFont_wght.ttf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\css\LittleLordFontleroyNF.otf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/watch collection\css\LittleLordFontleroyNF.ttf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.eot</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.svg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.ttf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.woff</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.woff2</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome.otf</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\01.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\02.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\03.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\04.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\05.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\06.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\07.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\08.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\09.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\10.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\11.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\12.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\13.jpg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\14.JPG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\images\fulls\15.JPG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\1000x1000 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\1000x1000.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\100x100 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\100x100.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\10x10 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\10x10.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\200x200 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\200x200.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\20x20 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\20x20.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\50x50 heat.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/img\collatz\50x50.PNG</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/other\array of hexes.zip</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/other\list of hexes.zip</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/other\one-line array of hexes.zip</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/other\one-line list of hexes.zip</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\1.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\10.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\11.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\12.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\13.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\14.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\15.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\16.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\17.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\18.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\19.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\2.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\20.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\21.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\22.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\23.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\24.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\25.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\26.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\27.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\28.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\29.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\3.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\30.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\31.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\32.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\4.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\5.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\6.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\7.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\8.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/environmental_art\9.png</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
         <loc>https://www.aronfrishberg.com/resources\01theory.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
@@ -939,6 +177,90 @@
         </url>
         <url>
         <loc>https://www.aronfrishberg.com/resources\todo.txt</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/css\computer.otf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/css\font2.ttf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/css\gfont2.ttf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/css\hansief.otf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/css\jewish.css</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/stories\internship.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/stories\sitemap.xml</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/other\array of hexes.zip</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/other\list of hexes.zip</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/other\one-line array of hexes.zip</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/other\one-line list of hexes.zip</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\map\html\css.css</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\map\html\index.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/__pycache__\generate_sitemap.cpython-310.pyc</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -1664,7 +986,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Bill & Ted's Excellent Adventure.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Bill and Ted's Excellent Adventure.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -2138,7 +1460,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Cowboys & Aliens.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Cowboys and Aliens.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -2552,7 +1874,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Ernest & Celestine.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Ernest and Celestine.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -3242,7 +2564,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Hustle & Flow.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Hustle and Flow.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -3866,7 +3188,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Lilo & Stitch.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Lilo and Stitch.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -4052,7 +3374,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Marley & Me (film).html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Marley and Me (film).html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -4550,7 +3872,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Oliver & Company.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Oliver and Company.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -4658,7 +3980,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Peter & the Wolf (2006 film).html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Peter and the Wolf (2006 film).html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -4820,7 +4142,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Pride & Prejudice (2005 film).html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Pride and Prejudice (2005 film).html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -5282,7 +4604,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\South Park Bigger, Longer & Uncut.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\South Park Bigger, Longer and Uncut.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -6860,7 +6182,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Thelma & Louise.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Thelma and Louise.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -7226,7 +6548,7 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Wallace & Gromit The Curse of the Were-Rabbit.html</loc>
+        <loc>https://www.aronfrishberg.com/resources\jews_in_movies\Wallace and Gromit The Curse of the Were-Rabbit.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -7406,13 +6728,103 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\main.scss</loc>
+        <loc>https://www.aronfrishberg.com/img\01theory.png</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\noscript.scss</loc>
+        <loc>https://www.aronfrishberg.com/img\ackermann.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\category comparison.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\category.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\global vs nobel.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\per decade.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\per year.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\schedule.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\0.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\1.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\2.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\3.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\4.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\5.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\6.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\7.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\signatures\8.png</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -7454,31 +6866,571 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_breakpoints.scss</loc>
+        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.css</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_functions.scss</loc>
+        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.js</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_mixins.scss</loc>
+        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.min.css</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_vars.scss</loc>
+        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.min.js</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_vendor.scss</loc>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\all_data.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\checklist.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\index.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\index.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\jewish.css</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\us news chart\style.css</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/resources\map\html\data\anti-semitism.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\1.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\10.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\11.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\12.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\13.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\14.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\15.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\16.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\17.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\18.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\19.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\2.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\20.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\21.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\22.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\23.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\24.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\25.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\26.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\27.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\28.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\29.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\3.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\30.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\31.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\32.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\4.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\5.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\6.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\7.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\8.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/environmental_art\9.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\1000x1000 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\1000x1000.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\100x100 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\100x100.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\10x10 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\10x10.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\200x200 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\200x200.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\20x20 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\20x20.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\50x50 heat.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/img\collatz\50x50.PNG</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\index.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\netanyahu.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\index.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\css\ben-gurion.css</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\css\EduSABeginner-VariableFont_wght.ttf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\css\LittleLordFontleroyNF.otf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\css\LittleLordFontleroyNF.ttf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/js\cookies.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/js\dev.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/js\jewish.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/js\random_picture_signature.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\4100-9007.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\4100-9007.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\7813-8029.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\7813-8029.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\ar-2457.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\ar-2457.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\guess.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\guess.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\hb 243.1.49.2924.jpg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\img\hb 243.1.49.2924.png</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\breakpoints.min.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\browser.min.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\jquery.min.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\jquery.poptrox.min.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\main.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\js\util.js</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.eot</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.svg</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.ttf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.woff</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome-webfont.woff2</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\fonts\fontawesome.otf</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\main.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\noscript.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\profiles\4100-9007.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\profiles\7813-8029.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\profiles\ar-2457.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\profiles\guess.html</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/watch collection\profiles\hb 243.1.49.2924.html</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -7533,6 +7485,78 @@
         </url>
         <url>
         <loc>https://www.aronfrishberg.com/drone\assets\sass\components\_table.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_footer.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_header.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_main.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_wrapper.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_breakpoints.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_functions.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_mixins.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_vars.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\libs\_vendor.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_page.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_reset.scss</loc>
+        <lastmod>2022-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        </url>
+        <url>
+        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_typography.scss</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -7628,157 +7652,91 @@
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\all_data.js</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\01.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\checklist.js</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\02.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\index.html</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\03.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\index.js</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\04.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\jewish.css</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\05.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\us news chart\style.css</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\06.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.css</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\07.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.js</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\08.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.min.css</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\09.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/resources\map\dist\svgmap.min.js</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\10.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_page.scss</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\11.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_reset.scss</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\12.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\base\_typography.scss</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\13.jpg</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_footer.scss</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\14.JPG</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_header.scss</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_main.scss</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\sass\layout\_wrapper.scss</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\font-awesome.min.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\main.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\noscript.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/resources\map\html\css.css</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/resources\map\html\index.html</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/resources\map\html\data\anti-semitism.js</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\images\arrow.svg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\images\close.svg</loc>
-        <lastmod>2022-09-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-        </url>
-        <url>
-        <loc>https://www.aronfrishberg.com/drone\assets\css\images\spinner.svg</loc>
+        <loc>https://www.aronfrishberg.com/drone\images\fulls\15.JPG</loc>
         <lastmod>2022-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
