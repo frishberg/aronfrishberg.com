@@ -8,6 +8,7 @@ body, input, button {
 #bar {
 	height:calc(5vh);
 	width:calc(100vw);
+	max-width: 100%;
 	background-color:silver;
 	margin:0;
 	padding:0;
