@@ -75,4 +75,5 @@ select {
 .main {
 	position:relative;
 	left:15px;
+	width:calc(90vw);
 }
