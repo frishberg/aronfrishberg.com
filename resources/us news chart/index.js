@@ -8,7 +8,13 @@ var data = {
 var config = {
     type: 'line',
     data: data,
-    options: {}
+    options: {
+        scales : {
+            y: {
+                reverse: true
+            }
+        }
+    }
 };
 const myChart = new Chart(
     document.getElementById('myChart'),
