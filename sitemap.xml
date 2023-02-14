@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.aronfrishberg.com/justonea.html</loc>
+  <lastmod>2023-01-29T21:50:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.aronfrishberg.com/hub.html</loc>
   <lastmod>2023-01-29T21:50:34+00:00</lastmod>
   <priority>0.80</priority>
