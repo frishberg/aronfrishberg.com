@@ -22,6 +22,10 @@ body, input, button {
     font-family: font2;
     src: url("font2.ttf") format("truetype");
 }*/
+@font-face {
+    font-family: UChicago;
+    src: url("uchicago.ttf") format("truetype");
+}
 #thejewhimself {
 	width:calc(25vw);
 	border: 2px solid black;
