@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
+
+    <div class="links">
+        <a href="datasets.html" id="current-page">Datasets</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="date-line">
+        <p id="date-element"></p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/AronFrish" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/frishberg" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/aronfrishberg" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!--articles-->
+
+    <center>
+
+        <div class="dataset-listings">
+
+            <a href="https://github.com/AronFrish/Archive-of-US-News-College-Rankings-1984-2023">
+                <div class="listing">
+                    <img src="img/dataset-thumbnails/usnews logo.png" alt="Project 1" style="float:left; margin-right: 10px;">
+                    <h2>Archive of U.S. News College Rankings (1984 - 2023)</h2>
+                    <p>This repo contains an archive of all US News national college rankings from 1984 to 2023.  I collected the ranking data from several sources (including <a href="https://publicuniversityhonors.com">publicuniversityhonors.com</a> and <a href="http://andyreiter.com/datasets/">andyreiter.com/datasets/</a>) utiziling Python and the selenium library.
+                    This dataset contains a total of ~6000 datapoints, and contains the data in many formats (.csv, .json, .xlsx) in order to allow for use across all languages.</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/AronFrish/University-Hex-Colors">
+                <div class="listing">
+                    <img src="img/dataset-thumbnails/uchicago logo.png" alt="Project 2" style="float:left; margin-right: 10px;">
+                    <h2>University Hex Colors</h2>
+                    <p>This repo contains the primary hex color codes associated with 100+ universities in the United States.  I initially collected this data using OpenAI's GPT4 model, but then checked over each value by hand to ensure accuracy.  
+                        I stored the data in .json file to allow for easy use across all languages, or easy modification in the case .json is not supported by a language.
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://github.com/AronFrish/US-College-Ranking-Data">
+                <div class="listing">
+                    <img src="img/dataset-thumbnails/college-data-spreadsheet.PNG" alt="Project 3" style="float:left; margin-right: 10px;">
+                    <h2>U.S. College Ranking Data</h2>
+                    <p>This repo contains data points on many of the top universities in the United States.  I spent weeks coding Python programs (utilizing the selenium and requests libraries) scraping data points that range from 
+                        all Niche rankings (campus food quality, safety, professors, ...), acceptance rate, average SAT, # of nobel prizes won, international rankings, cs rankings, and more.  I collected all of this data to create a custom college ranking site (visible <a href="projects/college-ranking-website.html">here</a>) but figured I should publish the data as a standalone as well, for others to use.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <p id="bottom-spacer"></p>
+        
+    </center>
+
+    <!--articles-->
+</body>

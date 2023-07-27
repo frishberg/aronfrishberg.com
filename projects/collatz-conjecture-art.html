@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
+
+    <div class="links">
+        <a href="../datasets.html">Datasets</a>
+        <a href="../projects.html" id="current-page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../about.html">About</a>
+    </div>
+
+    <div class="date-line">
+        <p id="date-element"></p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/AronFrish" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/frishberg" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/aronfrishberg" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <center>
+        <div class="page-content">
+            <h2>Collatz Conjecture Art</h2>
+            <img src="../img/collatz-conjecture-art/10x10.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/10x10 heat.PNG" id="collatz-img">
+            <p></p>
+            <img src="../img/collatz-conjecture-art/20x20.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/20x20 heat.PNG" id="collatz-img">
+            <p></p>
+            <img src="../img/collatz-conjecture-art/50x50.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/50x50 heat.PNG" id="collatz-img">
+            <p></p>
+            <img src="../img/collatz-conjecture-art/100x100.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/100x100 heat.PNG" id="collatz-img">
+            <p></p>
+            <img src="../img/collatz-conjecture-art/200x200.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/200x200 heat.PNG" id="collatz-img">
+            <p></p>
+            <img src="../img/collatz-conjecture-art/1000x1000.png" id="collatz-img">
+            <img src="../img/collatz-conjecture-art/1000x1000 heat.PNG" id="collatz-img">
+            <p></p>
+
+            <p class="article-content">Collatz Conjecture (or the 3n+1 problem) is a famous idea within the
+                field of mathematics.
+                It is known in the field for being an unsolvable problem with "experienced mathematicians
+                even going as far as warning up-and-comers to stay away". The idea behind the conjecture is
+                actually quite simple:
+                taking any number, if it is even, divide it by 2, and if it is odd, multiply it by 3 and add
+                1. Continue this process
+                until you reach 1. The conjecture states that no matter what number you start with, you will
+                always reach 1. Mathematicians
+                have tried for ages find a pattern in this process, but all have failed.</p>
+            <p class="article-content">I had the idea to create art from this conjecture a few years ago, and decided to finally
+                take up the project. My motivation was that
+                in displaying the pattern visually, I might be able to figure something out, but I also
+                figured that no matter what, it would come out looking
+                pretty cool.
+            </p>
+            <p class="article-content">Looking at the art, each "pixel" or square, represents one value. The top left pixel in each
+                generated image represents the value 1, and the value to its right represents 2 and so on.
+                The color that each square recieves is a result of running collatz conjecture on a given
+                number. For example, the value 3 would follow this sequence (3 -> 10 -> 5 -> 16 -> 8 -> 4 ->
+                2 -> 1). This is a total of 7 fluctuations.
+                The art depicts the number of fluctuations. For the rainbow generated images, the color is
+                determined using modulus, as there are only 6 colors used, so the color is determined by
+                colors[fluctuations%6]. For the "heat map" (or orange) generated images,
+                it displays the pure fluctuation values, with a color being closer to orange representing a
+                higher number of fluctuations.
+            </p>
+            <p id="bottom-spacer"></p>
+        </div>
+    </center>
