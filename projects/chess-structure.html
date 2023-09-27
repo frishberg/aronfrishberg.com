@@ -2,8 +2,10 @@
 
 <head>
     <title>Frishberg Chess Structure - Aron Frishberg</title>
-    <meta name="description" content="a chess structure I created where each piece is protected, and protecting at least one other piece">
-    <meta name="keywords" content="chess, interesting, pensive, thinking, magnus carlsen, eric rosen, gotham chess, levy, structure, smart, uchicago">
+    <meta name="description"
+        content="a chess structure I created where each piece is protected, and protecting at least one other piece">
+    <meta name="keywords"
+        content="chess, interesting, pensive, thinking, magnus carlsen, eric rosen, gotham chess, levy, structure, smart, uchicago">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -42,18 +44,34 @@
             <h2>Frishberg Chess Structure</h2>
             <img src="../img/frishberg-chess-structure.PNG">
 
-            <p class="article-content">This all began with a simple idea: an "indestructible" chess structure.  Looking at a 
-                pawn to the back left of a bishop, we see that they each protect eachother, thus making an "indestructible" chess structure.  
-                I had the idea to take this further though.  As a result, I coded a complex Python program that created chess structures 
+            <p class="article-content">This all began with a simple idea: an "indestructible" chess structure. Looking
+                at a
+                pawn to the back left of a bishop, we see that they each protect eachother, thus making an
+                "indestructible" chess structure.
+                I had the idea to take this further though. As a result, I coded a complex Python program that created
+                chess structures
                 until it created the "optimal" structure.</p>
-            <p class="article-content">The basic idea behind it was to find a structure of pieces where every piece was protected by another, and every piece was 
-                protecting at least one other piece.  Furthermore, it would be using all 16 white pieces.  Once completing this, I was presented with a few structures, but they were really apart and in my opinion, inefficient.  
-                At this point in the project, I had a few ideas, but one really hit me.  Optimize the structure for the "number of protections".
+            <p class="article-content">The basic idea behind it was to find a structure of pieces where every piece was
+                protected by another, and every piece was
+                protecting at least one other piece. Furthermore, it would be using all 16 white pieces. Once completing
+                this, I was presented with a few structures, but they were really apart and in my opinion, inefficient.
+                At this point in the project, I had a few ideas, but one really hit me. Optimize the structure for the
+                "number of protections".
             </p>
-            <p class="article-content">To give a specific and simple example, imagine a board with rooks in the top left and bottom right, as well as a queen in the bottom left.  The rooks both protect the queen, but the queen protects both rooks (2 pieces).  This would count as 
-                2 "protections" for the queen, and a total of 4 "protections" for the structure.  My idea was that if I optimized for this, it would slowly shape to be the most efficient board, and really intertwined, as you got closer to the maximum number of "protections".  After 
-                days of coding and waiting for my 2019 PC to compute, I was presented with the structure above, which has a total of 38 "protections" (average of 2.2 "protections" per piece).  Although it doesn't exactly translate over to the chess board, it covers more of the theory, and I thought the idea was really interesting overall.
+            <p class="article-content">To give a specific and simple example, imagine a board with rooks in the top left
+                and bottom right, as well as a queen in the bottom left. The rooks both protect the queen, but the queen
+                protects both rooks (2 pieces). This would count as
+                2 "protections" for the queen, and a total of 4 "protections" for the structure. My idea was that if I
+                optimized for this, it would slowly shape to be the most efficient board, and really intertwined, as you
+                got closer to the maximum number of "protections". After
+                days of coding and waiting for my 2019 PC to compute, I was presented with the structure above, which
+                has a total of 38 "protections" (average of 2.2 "protections" per piece). Although it doesn't exactly
+                translate over to the chess board, it covers more of the theory, and I thought the idea was really
+                interesting overall.
             </p>
+
+            <p><b>Here is the link to the GitHub repo: </b><a
+                    href="https://github.com/AronFrish/Frishberg-Chess-Structure">Frishberg Chess Structure</a></p>
 
             <p id="bottom-spacer"></p>
         </div>
