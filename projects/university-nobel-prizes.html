@@ -12952,7 +12952,6 @@
             document.getElementById("skeleton").innerHTML = "";
             updateRankings();
             for (var i = 0; i < universities.length; i++) {
-                console.log(universities[i] + ": " + university_affilliates[i].length);
                 var laureates = university_affilliates[i]; // Assuming this array contains laureates
                 if (prevScore == university_affilliates[i].length) {
                     add_listing(prevRank, universities[i], university_affilliates[i].length, laureates);
@@ -12985,5 +12984,5 @@
             document.getElementById("alumni_or_professors").addEventListener("change", updatePreferencesAndDisplay);
         };
     </script>
-
+    <script>setTime()</script>
 </body>
