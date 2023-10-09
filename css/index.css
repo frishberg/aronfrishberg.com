@@ -18,6 +18,12 @@ header h1 {
     margin: 0px;
 }
 
+input, select {
+    font-size:16px;
+    font-family: "Droid Seif", serif;
+    color: #2f2f2f;
+}
+
 .date-line {
     text-transform: uppercase;
     text-align: center;
