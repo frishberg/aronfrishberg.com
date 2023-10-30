@@ -3,7 +3,7 @@ window.onload = function () {
 }
 
 function setTime() {
-    document.getElementById("date-element").innerHTML = "CHICAGO, IL - " + new Date().toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }) + " - SIX PAGES";
+    document.getElementById("date-element").innerHTML = "CHICAGO, IL - " + new Date().toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }) + " - FOUR PAGES";
 }
 
 function setChessRatingandTime(ratingELementID, dateElementID) {
