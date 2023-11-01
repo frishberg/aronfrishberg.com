@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../js/index.js"></script>
+    <style>
+        .school-name:hover {
+            cursor: pointer;
+        }
+      </style>
+      
 </head>
 
 <body>
@@ -12859,7 +12865,7 @@
             divNode.style.marginBottom = "10px"; // Adjust the value as needed
 
             // Create a <span> element for the school name
-            var schoolNameSpan = document.createElement("span");
+            var schoolNameSpan = document.createElement("a");
             schoolNameSpan.className = "school-name";
             schoolNameSpan.textContent = rank + 1 + ". " + school_name + " (" + num_affiliates + ")";
 
