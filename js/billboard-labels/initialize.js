@@ -84,7 +84,7 @@ function updateLists() {
     list.appendChild(li);
   }
 
-  var list = document.getElementById("listOfArtists"); //bold the artist name
+  var list = document.getElementById("listOfArtists");
   for (var key in data) {
     var artist = key;
     var cur_labels = (data[key]).join(", ");
@@ -92,6 +92,12 @@ function updateLists() {
       cur_labels = "None";
     }
     var li = document.createElement("li");
+    var b = document.createElement("b");
+    b.appendChild(document.createTextNode(artist));
+    var p = document.createElement("span");
+    p.appendChild(document.createTextNode(": " + cur_labels));
+    li.appendChild(b);
+    li.appendChild(p);
     li.appendChild(document.createTextNode(artist + ": " + cur_labels));
     list.appendChild(li);
   }
