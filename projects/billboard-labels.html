@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Record Labels of the Top 100 Artists - Aron Frishberg</title>
+    <meta name="description" content="a live analysis of the major labels behind the major artists">
+    <meta name="keywords"
+        content="music, major labels, geffen, columbia, records, olivia rodrigo, post malone, record labels, artists">
+    <meta name="author" content="Aron Frishberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../css/icon.ico" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AronFrish/Billboard-Top-100-Artists-Analysis@main/labels.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
+
+    <div class="links">
+        <a href="../datasets.html">Datasets</a>
+        <a href="../projects.html" id="current-page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../about.html">About</a>
+    </div>
+
+    <div class="date-line">
+        <p id="date-element"></p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/AronFrish" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/frishberg" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/aronfrishberg" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <center>
+        <div class="page-content">
+            <h2>Record Labels of the Top 100 Artists</h2>
+
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <p style="font-size:70%;" id="lastUpdated">Last Updated: null</p>
+
+            <h3><a onClick="toggle('listOfArtists')" style="cursor: pointer;">Full List of Artists</a></h3>
+            <ul id="listOfArtists" style="display: none;"></ul>
+
+            <h3><a onClick="toggle('listOfLabels')" style="cursor: pointer;">Full List of Labels</a></h3>
+            <ul id="listOfLabels" style="display: none;"></ul>
+
+            <p class="article-content">A while back I set out to research major record labels, and went through each artist on the Billboard Top 100, looking at their labels and what their labels' parent companies were.  It was a super long process and resulted in a pretty expected list: the major labels dominated the industry.</p>
+            <p class="article-content">I decided it would be a super interesting project to automate this research.  On the back-end of this project, I created a dataset on GitHub, which can be found <a href="https://github.com/AronFrish/Billboard-Top-100-Artists-Analysis">here</a>, which scrapes the Billboard Top 100 list, and then scrapes the wikipedia page of each artist, finding all labels listed in their "infobox".  It's important to note that this will include previous labels and won't be able to detect if a company is a subsidiary of another (like RCA being owned by Sony).</p>
+            <p class="article-content">I then coded a workflow for the GitHub repo that automates the script to run daily, so the data is current every day.  Pairing it with chart.js and some front-end code, you get the graph above, and the full lists of artists labels.</p>
+            <p id="bottom-spacer"></p>
+        </div>
+        <script src="../js/billboard-labels/initialize.js"></script>
+    </center>
