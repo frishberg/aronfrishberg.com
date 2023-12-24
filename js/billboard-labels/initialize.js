@@ -98,7 +98,6 @@ function updateLists() {
     p.appendChild(document.createTextNode(": " + cur_labels));
     li.appendChild(b);
     li.appendChild(p);
-    li.appendChild(document.createTextNode(artist + ": " + cur_labels));
     list.appendChild(li);
   }
 }
