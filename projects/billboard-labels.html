@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../js/index.js"></script>
-    <script src="https://cdn.rawgit.com/AronFrish/Billboard-Top-100-Artists-Analysis/main/labels.js"></script>
+    <script src="https://cdn.rawgit.com/AronFrish/Record-Labels-of-the-Top-100-Artists/main/labels.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -56,7 +56,7 @@
             <ul id="listOfLabels" style="display: none;"></ul>
 
             <p class="article-content">A while back I set out to research major record labels, and went through each artist on the Billboard Top 100, looking at their labels and what their labels' parent companies were.  It was a super long process and resulted in a pretty expected list: the major labels dominated the industry.</p>
-            <p class="article-content">I decided it would be a super interesting project to automate this research.  On the back-end of this project, I created a dataset on GitHub, which can be found <a href="https://github.com/AronFrish/Billboard-Top-100-Artists-Analysis">here</a>, which scrapes the Billboard Top 100 list, and then scrapes the wikipedia page of each artist, finding all labels listed in their "infobox".  It's important to note that this will include previous labels and won't be able to detect if a company is a subsidiary of another (like RCA being owned by Sony).</p>
+            <p class="article-content">I decided it would be a super interesting project to automate this research.  On the back-end of this project, I created a dataset on GitHub, which can be found <b><a href="https://github.com/AronFrish/Record-Labels-of-the-Top-100-Artists">here</a></b>, which scrapes the Billboard Top 100 list, and then scrapes the wikipedia page of each artist, finding all labels listed in their "infobox".  It's important to note that this will include previous labels and won't be able to detect if a company is a subsidiary of another (like RCA being owned by Sony).</p>
             <p class="article-content">I then coded a workflow for the GitHub repo that automates the script to run daily, so the data is current every day.  Pairing it with chart.js and some front-end code, you get the graph above, and the full lists of artists labels.</p>
             <p id="bottom-spacer"></p>
         </div>
