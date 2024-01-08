@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "uchicago";
+    src: url("Fette\ Fraktur.ttf");
+}
+
 body {
     background-color: #f9f7f1;
     font-family: "Droid Seif", serif;
