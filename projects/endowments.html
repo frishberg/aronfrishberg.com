@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Graph of Ivy Plus Endowments (2014-2024) - Aron Frishberg</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords"
+        content="">
+    <meta name="author" content="Aron Frishberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../css/icon.ico" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/endowments/data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
+
+    <div class="links">
+        <a href="../datasets.html">Datasets</a>
+        <a href="../projects.html" id="current-page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../about.html">About</a>
+    </div>
+
+    <div class="date-line">
+        <p id="date-element">
+            </li>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/frishberg" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/frishberg" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/aronfrishberg" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <center>
+        <div class="page-content">
+            <h2>Graph of Ivy Plus Endowments (2014-2024)</h2>
+            <div style="width:80%;">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <p class="article-content">I've always been fascinated by college endowments.  They play a large role 
+                in a University's financial health, as it dictates how much money they can allocate to financial aid, research and other programs.
+                The current size of the endowment determines not only the current financial state of a University, but also the future state of the University.
+            </p>
+            <p class="article-content">I manually compiled (for accuracy) the endowments over the past 10 years of the "Ivy Plus" institutions.  This definition is put forward by the <b><a href="https://ivpluslibraries.org/about/">Ivy Plus Consortium</a></b>, and the definition is maintained by each of its member institutions.  
+            This group generally consists of the most elite universities in the US, including the Ivy league (Princeton, Harvard, ...) as well as other extremely elite universities (MIT, UChicago, ...).</p>
+            <p>I've also created this data as a standalone dataset, which can be found <b><a
+                        href="https://github.com/frishberg/US-College-Ranking-Data">here</a></b></p>
+            <p id="bottom-spacer">
+                </li>
+                <script src="../js/endowments/initialize.js"></script>
+        </div>
+    </center>
+</body>
+
+</html>
