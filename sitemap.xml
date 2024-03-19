@@ -4,86 +4,92 @@
 
     <url>
         <loc>https://aronfrishberg.com</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/datasets.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://aronfrishberg.com/about.html</loc>
-        <lastmod>2024-03-04</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/experience.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aronfrishberg.com/about.html</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aronfrishberg.com/projects/endowments.html</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.65</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects/just-one-a.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://aronfrishberg.com/projects/billboard-labels.html</loc>
-        <lastmod>2024-03-04</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.75</priority>
+        <priority>0.65</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects/university-nobel-prizes.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://aronfrishberg.com/projects/chess-analytica.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <loc>https://aronfrishberg.com/projects/billboard-labels.html</loc>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://aronfrishberg.com/projects/01-theory.html</loc>
-        <lastmod>2024-03-04</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.75</priority>
+        <priority>0.65</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects/chess-structure.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.75</priority>
+        <priority>0.65</priority>
     </url>
     <url>
-        <loc>https://aronfrishberg.com/projects/usnews.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <loc>https://aronfrishberg.com/projects/chess-analytica.html</loc>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.75</priority>
+        <priority>0.65</priority>
+    </url>
+    <url>
+        <loc>https://aronfrishberg.com/projects/01-theory.html</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.65</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects/collatz.html</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.75</priority>
+        <priority>0.65</priority>
+    </url>
+    <url>
+        <loc>https://aronfrishberg.com/projects/usnews.html</loc>
+        <lastmod>2024-03-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.65</priority>
     </url>
     <url>
         <loc>https://aronfrishberg.com/resume.pdf</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <priority>0.65</priority>
     </url>
 </urlset>
