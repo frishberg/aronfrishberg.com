@@ -11,6 +11,13 @@ body {
     margin: 0;
 }
 
+/*highlighter effect*/
+::selection {
+    color: #44442b;
+    background: #ffff99;
+}
+/*highlighter effect*/
+
 header {
     font-family: "Playfair Display", serif;
     font-size: 3rem;
