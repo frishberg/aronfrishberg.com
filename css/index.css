@@ -13,7 +13,7 @@ body {
 
 /*highlighter effect*/
 ::selection {
-    background: #ffff99;
+    background: rgba(130, 255, 173,0.7);
 }
 /*highlighter effect*/
 
@@ -370,3 +370,4 @@ ul {
     }
 
 }
+
