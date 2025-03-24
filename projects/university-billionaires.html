@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Universities with the Most Billionaires - Aron Frishberg",
+  "description": "Explore which universities have produced the highest number of billionaires. Filter them by minimum net worth, country, and see detailed info about each billionaire.",
+  "author": {
+    "@type": "Person",
+    "name": "Aron Frishberg",
+    "url": "https://aronfrishberg.com/about",
+    "sameAs": [
+      "https://linkedin.com/in/frishberg",
+      "https://github.com/frishberg",
+      "https://instagram.com/aronfrishberg"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Aron Frishberg",
+    "url": "https://aronfrishberg.com",
+    "sameAs": [
+      "https://linkedin.com/in/frishberg",
+      "https://github.com/frishberg",
+      "https://instagram.com/aronfrishberg"
+    ]
+  },
+  "datePublished": "2025-03-24",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://aronfrishberg.com/img/previews/university-billionaires.jpg",
+    "width": 1080,
+    "height": 1080
+  },
+  "mainEntityOfPage": "True",
+  "thumbnailUrl": "https://aronfrishberg.com/img/previews/university-billionaires.jpg",
+  "url": "https://aronfrishberg.com/projects/university-billionaires",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://aronfrishberg.com/img/previews/university-billionaires.jpg",
+    "width": 1080,
+    "height": 1080
+  }
+}
+</script>
+
+    <title>Universities with the Most Billionaires</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Explore which universities have produced the highest number of billionaires. Filter them by minimum net worth, country, and see detailed info about each billionaire.">
+    <meta name="keywords"
+        content="billionaires, net worth, data, university, alumni, wealth, ranking">
+    <meta name="author" content="Aron Frishberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Universities with the Most Billionaires" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aronfrishberg.com/universities-billionaires" />
+    <meta property="og:image" content="https://www.aronfrishberg.com/img/previews/university-billionaires.jpg" />
+    <meta property="og:description"
+        content="Which universities produce the most billionaires? Filter by minimum net worth or country, then view each billionaire's net worth, name, and more." />
+    <meta property="og:locale" content="en_US" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../css/icon.ico" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="../js/index.js"></script>
+    <script src="../js/billionaires/data.js"></script>
+    <script src="../js/billionaires/universities.js"></script>
+
+    <!-- EXACT same bullet list styling from your Nobel code -->
+    <style>
+        .school-name:hover {
+            cursor: pointer;
+        }
+        /* The container for each university listing (same as Nobel code) */
+        .listing1 {
+            margin-bottom: 10px; /* the same bottom spacing as in your Nobel page */
+        }
+        /* The bullet list for each associated billionaire (same indentation as Nobel) */
+        .laureate-list {
+            margin-left: 30px;
+            padding: 0;
+        }
+    </style>
+    <!-- POSTED: 03.24.2025 -->
+</head>
+
+<body>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
+
+    <div class="links">
+        <a href="../datasets.html">Datasets</a>
+        <a href="../projects.html" id="current-page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../about.html">About</a>
+    </div>
+
+    <div class="date-line">
+        <p id="date-element"></p>
+    </div>
+
+    <center>
+        <div class="page-content">
+            <h2>Universities with the Most Billionaires</h2>
+            <p>*There is a dataset available with all of the data <b><a
+                href="https://github.com/frishberg/Billionaires-by-Academic-Affiliations">here</a></b></p>
+            <p>**Each university can be clicked to see the selected billionaires associated with that university (all
+                of whom are linked to their Wikipedias)</p>
+
+            <center>
+                <p>Minimum Net Worth ($B):
+                    <input id="min_net_worth" type="text" placeholder="1" value="1" 
+                           style="width:40px; text-align:center;">
+                </p>
+                <p>Country:
+                    <select id="country" style="width:150px; text-align:center;"></select>
+                </p>
+                <div id="skeleton" style="text-align:left; margin-left:20px;"></div>
+            </center>
+
+            <p id="bottom-spacer"></p>
+        </div>
+    </center>
+
+    <script>
+        // EXACT code for converting $ and B to numeric, as in your Nobel snippet but adapted to net worth
+        function parseNetWorthString(str) {
+            var raw = str.replace(/\$/g, '').replace(/,/g, '').trim();
+            raw = raw.replace(/B/i, '');
+            var val = parseFloat(raw);
+            return isNaN(val) ? 0 : val * 1e9;
+        }
+
+        // Build an array of billionaires from data.js
+        var nodes = [];
+        for (var key in data) {
+            var cur = data[key];
+            var numericWorth = parseNetWorthString(cur.net_worth);
+            nodes.push({
+                name: key,
+                link: cur.link,
+                alma_matters: cur.alma_matters,
+                net_worth: cur.net_worth,
+                net_worth_numeric: numericWorth,
+                country: cur.country
+            });
+        }
+
+        // Create a frequency map for countries
+        var countryCounts = {};
+        for (var i = 0; i < nodes.length; i++) {
+            var c = nodes[i].country;
+            if (!countryCounts[c]) {
+                countryCounts[c] = 0;
+            }
+            countryCounts[c]++;
+        }
+
+        // Turn that into an array to sort desc
+        var countryArray = Object.keys(countryCounts).map(function(cc) {
+            return [cc, countryCounts[cc]];
+        });
+        countryArray.sort(function(a,b){ return b[1] - a[1]; });
+
+        // We'll store the matched affiliates for each university
+        var university_affiliates = [];
+
+        // Tie rank
+        var prevRank = 0;
+        var prevScore = -1;
+
+        window.onload = function() {
+            // Populate country <select>
+            var countrySel = document.getElementById("country");
+            var allOpt = document.createElement("option");
+            allOpt.value = "All";
+            allOpt.textContent = "All";
+            countrySel.appendChild(allOpt);
+
+            for (var i = 0; i < countryArray.length; i++) {
+                var opt = document.createElement("option");
+                opt.value = countryArray[i][0];
+                opt.textContent = countryArray[i][0] + " (" + countryArray[i][1] + ")";
+                countrySel.appendChild(opt);
+            }
+
+            updatePreferencesAndDisplay();
+
+            document.getElementById("min_net_worth").addEventListener("change", updatePreferencesAndDisplay);
+            document.getElementById("country").addEventListener("change", updatePreferencesAndDisplay);
+        };
+
+        // Return all billionaires that attended the given university
+        function findBillionairesByUniversity(billionaireList, universityLink) {
+            var result = [];
+            for (var i = 0; i < billionaireList.length; i++) {
+                var b = billionaireList[i];
+                for (var j = 0; j < b.alma_matters.length; j++) {
+                    if (b.alma_matters[j] === universityLink) {
+                        result.push(b);
+                        break;
+                    }
+                }
+            }
+            return result;
+        }
+
+        // Filter by net worth
+        function filterByMinNetWorth(list, minWorth) {
+            var out = [];
+            for (var i = 0; i < list.length; i++) {
+                if (list[i].net_worth_numeric >= minWorth) {
+                    out.push(list[i]);
+                }
+            }
+            return out;
+        }
+
+        // Filter by country
+        function filterByCountry(list, countryVal) {
+            if (countryVal === "All") return list;
+            var out = [];
+            for (var i = 0; i < list.length; i++) {
+                if (list[i].country === countryVal) {
+                    out.push(list[i]);
+                }
+            }
+            return out;
+        }
+
+        // Sort universities by number of affiliates
+        function sortUniversitiesByAffiliates() {
+            // rearrange the parallel arrays: universities & university_affiliates
+            for (var i = 0; i < university_affiliates.length; i++) {
+                for (var j = 0; j < university_affiliates.length - i - 1; j++) {
+                    if (university_affiliates[j].length < university_affiliates[j + 1].length) {
+                        // swap affiliates
+                        var tempAff = university_affiliates[j];
+                        university_affiliates[j] = university_affiliates[j + 1];
+                        university_affiliates[j + 1] = tempAff;
+
+                        // swap universities
+                        var tempUni = universities[j];
+                        universities[j] = universities[j + 1];
+                        universities[j + 1] = tempUni;
+                    }
+                }
+            }
+        }
+
+        // EXACT same function as in your Nobel code, just changed references from "Nobel" to "Billionaire"
+        function add_listing(index, uniLink, count, matchedBillionaires) {
+            if (count === 0) return;
+
+            // "skeleton" is the container where each listing is appended
+            var skeleton = document.getElementById("skeleton");
+
+            // In your Nobel code, we create an outer div with class listing1
+            var divNode = document.createElement("div");
+            divNode.className = "listing1";
+            divNode.style.marginBottom = "10px";
+
+            // Convert "/wiki/Harvard_University" => "Harvard University"
+            var displayName = uniLink.substring(6).replaceAll("_", " ");
+
+            // The clickable school name
+            var schoolNameSpan = document.createElement("a");
+            schoolNameSpan.className = "school-name";
+            schoolNameSpan.textContent = (index + 1) + ". " + displayName + " (" + count + ")";
+
+            divNode.appendChild(schoolNameSpan);
+
+            // An empty UL for the bullet points, hidden by default
+            var bulletUl = document.createElement("ul");
+            bulletUl.className = "laureate-list";
+            bulletUl.style.display = "none";
+
+            // EXACT bullet usage as Nobel: <li> for each billionaire => "Name (net_worth, country)"
+            for (var i = 0; i < matchedBillionaires.length; i++) {
+                var liEl = document.createElement("li");
+                var linkEl = document.createElement("a");
+                linkEl.href = matchedBillionaires[i].link;
+                linkEl.target = "_blank";
+                linkEl.textContent = matchedBillionaires[i].name + " (" + matchedBillionaires[i].net_worth + ", " + matchedBillionaires[i].country + ")";
+                liEl.appendChild(linkEl);
+                bulletUl.appendChild(liEl);
+            }
+
+            divNode.appendChild(bulletUl);
+
+            // Toggle the bullet list on click
+            schoolNameSpan.addEventListener("click", function() {
+                if (bulletUl.style.display === "none") {
+                    bulletUl.style.display = "block";
+                } else {
+                    bulletUl.style.display = "none";
+                }
+            });
+
+            // Finally, append this whole block to the skeleton
+            skeleton.appendChild(divNode);
+        }
+
+        function updatePreferencesAndDisplay() {
+            // parse user inputs
+            var minWorthStr = document.getElementById("min_net_worth").value || "1";
+            var countryVal = document.getElementById("country").value;
+            var minWorthNumeric = parseFloat(minWorthStr) * 1e9 || 0;
+
+            // Filter
+            var filtered = filterByMinNetWorth(nodes, minWorthNumeric);
+            filtered = filterByCountry(filtered, countryVal);
+
+            // Build up affiliates for each university
+            university_affiliates = [];
+            for (var i = 0; i < universities.length; i++) {
+                var matched = findBillionairesByUniversity(filtered, universities[i]);
+                // (optional) sort them by net worth descending
+                matched.sort(function(a,b){ return b.net_worth_numeric - a.net_worth_numeric; });
+                university_affiliates.push(matched);
+            }
+
+            // Sort by # affiliates
+            sortUniversitiesByAffiliates();
+
+            // Clear the skeleton
+            document.getElementById("skeleton").innerHTML = "";
+
+            // Reset tie rank
+            prevRank = 0;
+            prevScore = -1;
+
+            // Re-display
+            for (var i = 0; i < universities.length; i++) {
+                var curCount = university_affiliates[i].length;
+                if (curCount === 0) continue; // skip unis with zero in this filter
+
+                // tie logic identical to Nobel code
+                if (curCount === prevScore) {
+                    add_listing(prevRank, universities[i], curCount, university_affiliates[i]);
+                } else {
+                    add_listing(i, universities[i], curCount, university_affiliates[i]);
+                    prevRank = i;
+                    prevScore = curCount;
+                }
+            }
+        }
+    </script>
+
+    <script>setTime()</script>
+</body>
+</html>
