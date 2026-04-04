@@ -20,12 +20,12 @@
         <changefreq>always</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
+    <!-- <url>
         <loc>https://aronfrishberg.com/experience</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
+    </url> -->
     <url>
         <loc>https://aronfrishberg.com/about</loc>
         <lastmod>2024-03-19</lastmod>
