@@ -1,650 +1,122 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gatsby Robotics</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@300;400;500&family=DM+Sans:wght@700&family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Building Gatsby - Aron Frishberg",
+      "description": "Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, Gatsby is backed by NVIDIA Inception and Entrepreneurs First. Book a robot on-demand through the app - it shows up, cleans, and leaves. $150 flat fee.",
+      "author": {
+        "@type": "Person",
+        "name": "Aron Frishberg",
+        "url": "https://aronfrishberg.com"
+      },
+      "datePublished": "2026-04-12",
+      "url": "https://aronfrishberg.com/gatsby"
     }
+    </script>
 
-    html {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+    <title>Building Gatsby - Aron Frishberg</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, Gatsby is backed by NVIDIA Inception and Entrepreneurs First. Book a humanoid robot on-demand through the Gatsby app - it shows up, cleans your apartment, and leaves. Flat $150 per clean, no hidden fees. A West Egg Labs company building the first fleet of domestic service robots.">
+    <meta name="keywords"
+        content="Gatsby Robotics, gatsby.bot, Gatsby robot, humanoid robot cleaning, robot apartment cleaning, on-demand robot cleaning, San Francisco robot cleaning, Aron Frishberg, Akiva Himelhoch, West Egg Labs, NVIDIA Inception, Entrepreneurs First, humanoid robot, domestic robot, cleaning robot, robot cleaning service, UChicago, robotics startup, humanoid cleaning robot San Francisco, Gatsby Robotics San Francisco, robot maid, autonomous cleaning robot">
+    <meta name="author" content="Aron Frishberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      background: #081C10;
-      color: #DCF0E2;
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
+    <link rel="canonical" href="https://aronfrishberg.com/gatsby" />
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    <meta property="og:title" content="Building Gatsby - Aron Frishberg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aronfrishberg.com/gatsby" />
+    <meta property="og:description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, backed by NVIDIA Inception and Entrepreneurs First." />
+    <meta property="og:image" content="https://aronfrishberg.com/img/gatsby-square.jpeg" />
+    <meta property="og:image:alt" content="Gatsby humanoid robot in a kitchen in San Francisco" />
+    <meta property="og:site_name" content="Aron Frishberg" />
+    <meta property="og:locale" content="en_US" />
 
-    /* ============================================================
-       HERO
-       ============================================================ */
-    .hero {
-      height: 100vh;
-      min-height: 700px;
-      background: #081C10;
-      overflow: hidden;
-      position: relative;
-    }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building Gatsby - Aron Frishberg" />
+    <meta name="twitter:description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Backed by NVIDIA Inception." />
+    <meta name="twitter:image" content="https://aronfrishberg.com/img/gatsby-square.jpeg" />
 
-    .hero-inner {
-      height: 100%;
-      max-width: 1360px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 80px;
-      padding: 0 64px;
-    }
-
-    /* ============================================================
-       DICTIONARY ENTRY
-       ============================================================ */
-    .dict {
-      flex: 1 1 auto;
-      max-width: 520px;
-      z-index: 2;
-    }
-
-    .dict-word {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: clamp(72px, 8.5vw, 140px);
-      color: #DCF0E2;
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
-    }
-
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .dict-meta {
-      display: flex;
-      align-items: baseline;
-      gap: 16px;
-      margin-top: 20px;
-      opacity: 0;
-      transform: translateY(10px);
-      animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
-    }
-
-    .dict-phonetic {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 300;
-      font-size: clamp(16px, 1.4vw, 20px);
-      color: #5EA06E;
-      letter-spacing: 0.5px;
-    }
-
-    .dict-rule {
-      width: 48px;
-      height: 1px;
-      background: rgba(94, 160, 110, 0.35);
-      margin-top: 32px;
-      margin-bottom: 32px;
-      opacity: 0;
-      animation: fadeUp 0.5s ease 1s forwards;
-    }
-
-    .dict-defs {
-      list-style: none;
-      counter-reset: def;
-      opacity: 0;
-      transform: translateY(10px);
-      animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
-    }
-
-    .dict-def {
-      counter-increment: def;
-      padding-left: 28px;
-      position: relative;
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
-      font-size: clamp(15px, 1.15vw, 17px);
-      color: #7AA082;
-      line-height: 1.7;
-    }
-
-    .dict-def + .dict-def {
-      margin-top: 16px;
-    }
-
-    .dict-def::before {
-      content: counter(def) ".";
-      position: absolute;
-      left: 0;
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 400;
-      font-size: 13px;
-      color: #3A5A42;
-      top: 2px;
-    }
-
-    /* ============================================================
-       AMBIENT GLOW
-       ============================================================ */
-    .glow {
-      position: absolute;
-      width: 380px;
-      height: 380px;
-      border-radius: 50%;
-      background: #5EA06E;
-      filter: blur(110px);
-      opacity: 0;
-      right: 6%;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-      pointer-events: none;
-      animation: glowIn 2.5s ease 0.6s forwards, glowBreathe 6s ease-in-out 3s infinite;
-    }
-
-    @keyframes glowIn {
-      to { opacity: 0.1; }
-    }
-
-    @keyframes glowBreathe {
-      0%, 100% { opacity: 0.1; }
-      50% { opacity: 0.16; }
-    }
-
-    /* ============================================================
-       POLAROID PILE — right side
-       ============================================================ */
-    .pile-area {
-      flex: 0 0 auto;
-      position: relative;
-      z-index: 2;
-    }
-
-    .pile-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 36px;
-    }
-
-    .pile {
-      position: relative;
-      width: 340px;
-      height: 390px;
-    }
-
-    /* ============================================================
-       POLAROID CARDS
-       ============================================================ */
-    .card {
-      position: absolute;
-      left: 18px;
-      top: 16px;
-      width: 284px;
-      background: #F5F1EA;
-      border-radius: 2px;
-      padding: 11px 11px 32px;
-      box-shadow:
-        0 1px 1px rgba(0,0,0,0.04),
-        0 3px 6px rgba(0,0,0,0.05),
-        0 10px 28px rgba(0,0,0,0.10);
-      z-index: var(--i, 1);
-      cursor: default;
-
-      /* hidden until tossed */
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .card.tossing {
-      visibility: visible;
-      animation: toss var(--toss-dur, 0.7s) ease-out forwards;
-    }
-
-    .card.landed {
-      animation: none;
-      opacity: 1;
-      visibility: visible;
-      transform: translate(var(--ox), var(--oy)) rotate(var(--r));
-      transition: transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1),
-                  box-shadow 0.45s ease,
-                  opacity 0.45s ease;
-    }
-
-    /* Each card gets unique --td (throw distance), --ta (arc peak),
-       --ts (spin), --to-x/y/r (overshoot), --tb-x/r (bounce)
-       randomized by JS before tossing */
-    @keyframes toss {
-      0% {
-        opacity: 0;
-        transform: translate(calc(var(--ox) + var(--td)), calc(var(--oy) + var(--ta) * 0.3))
-                   rotate(calc(var(--r) + var(--ts)));
-        box-shadow: 0 16px 32px rgba(0,0,0,0.15);
-      }
-      10% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 1;
-        transform: translate(var(--ox), var(--oy)) rotate(var(--r));
-        box-shadow: 0 1px 1px rgba(0,0,0,0.04), 0 3px 6px rgba(0,0,0,0.05), 0 10px 28px rgba(0,0,0,0.10);
-      }
-    }
-
-    /* ============================================================
-       PHOTO
-       ============================================================ */
-    .card-photo {
-      width: 100%;
-      aspect-ratio: 1;
-      overflow: hidden;
-      border-radius: 1px;
-      background: var(--fb);
-      position: relative;
-    }
-
-    .card-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: saturate(1.1) contrast(1.03) brightness(1.02);
-    }
-
-    .card-photo::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      box-shadow: inset 0 0 50px rgba(0,0,0,0.07);
-      pointer-events: none;
-    }
-
-    /* ============================================================
-       CAPTION
-       ============================================================ */
-    .card-text {
-      margin-top: 14px;
-      padding: 0 4px;
-      font-family: 'Permanent Marker', cursive;
-      font-size: 22px;
-      line-height: 1.3;
-      color: #1A1420;
-      text-transform: uppercase;
-      text-align: center;
-      filter: blur(0.25px);
-      -webkit-text-stroke: 0.3px #1A1420;
-    }
-
-    /* ============================================================
-       HOVER — top card lifts, pile breathes
-       ============================================================ */
-    .pile:hover .card.landed:last-child {
-      transform: translate(var(--ox), calc(var(--oy) - 10px)) rotate(var(--r)) scale(1.015);
-      box-shadow:
-        0 2px 2px rgba(0,0,0,0.04),
-        0 8px 16px rgba(0,0,0,0.08),
-        0 20px 48px rgba(0,0,0,0.14);
-    }
-    .pile:hover .card.landed:not(:last-child) {
-      transform: translate(calc(var(--ox) + var(--hx, 0px)), calc(var(--oy) + var(--hy, 0px)))
-                 rotate(calc(var(--r) + var(--hr, 0deg)));
-    }
-
-    /* ============================================================
-       CYCLING
-       ============================================================ */
-    .card.cycling {
-      opacity: 0 !important;
-      transform: translate(var(--ox), calc(var(--oy) - 16px))
-                 rotate(calc(var(--r) + 3deg)) scale(0.97) !important;
-    }
-
-    /* ============================================================
-       TAGLINE — below the pile
-       ============================================================ */
-    .tagline {
-      text-align: center;
-      opacity: 0;
-      transform: translateY(8px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .tagline.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .tagline-cta {
-      color: #D4E8D8;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      line-height: 1.35;
-    }
-
-    .tagline-sig {
-      margin-top: 12px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.14em;
-      color: #D4E8D8;
-      opacity: 0.55;
-    }
-
-    /* ============================================================
-       RESPONSIVE
-       ============================================================ */
-    @media (max-width: 1100px) {
-      .hero-inner {
-        gap: 48px;
-        padding: 0 40px;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner {
-        flex-direction: column;
-        justify-content: center;
-        gap: 56px;
-        padding: 60px 8% 40px;
-        text-align: center;
-      }
-
-      .dict {
-        max-width: 100%;
-      }
-
-      .dict-meta {
-        justify-content: center;
-      }
-
-      .dict-rule {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .dict-defs {
-        text-align: left;
-        max-width: 360px;
-        margin: 0 auto;
-      }
-
-      .dict-word {
-        font-size: clamp(56px, 13vw, 110px);
-      }
-
-      .glow {
-        right: auto;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 280px;
-        height: 280px;
-      }
-
-      .pile-wrapper {
-        transform: scale(0.82);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .dict-word {
-        font-size: clamp(48px, 15vw, 80px);
-      }
-
-      .dict-defs {
-        max-width: 300px;
-      }
-
-      .pile-wrapper {
-        transform: scale(0.65);
-      }
-    }
-  </style>
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="css/icon.ico" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/index.js"></script>
+    <!-- POSTED: 04.12.2026 -->
 </head>
+
 <body>
-  <main>
-    <section class="hero">
-      <div class="glow"></div>
+    <header>
+        <h1>ARON FRISHBERG</h1>
+    </header>
 
-      <div class="hero-inner">
-        <!-- Dictionary entry -->
-        <div class="dict">
-          <h1 class="dict-word">GATSBY</h1>
+    <div class="links">
+        <a href="datasets.html">Datasets</a>
+        <a href="projects.html" id="current-page">Projects</a>
+        <a href="about.html">About</a>
+    </div>
 
-          <div class="dict-meta">
-            <span class="dict-phonetic">/gats · bee/</span>
-          </div>
+    <div class="date-line">
+        <p id="date-element"></p>
+    </div>
 
-          <div class="dict-rule"></div>
+    <center>
+        <div class="page-content">
+            <h2>Building Gatsby</h2>
+            <img src="img/gatsby-square.jpeg" alt="Gatsby humanoid robot in a kitchen in San Francisco">
 
-          <ol class="dict-defs">
-            <li class="dict-def">On-demand robotic services engineered for everyday life.</li>
-            <li class="dict-def">The moment you stop doing chores and start living.</li>
-          </ol>
+            <p class="article-content">As of January 2026, I'm officially dropped out from the University of Chicago to start a robotics company
+                called <b><a href="https://gatsby.bot" target="_blank">Gatsby</a></b>.</p>
+
+            <p class="article-content">The core vision of the company is "enabling human robot interaction". In the short term we're going
+                after a universal painpoint: cleaning. The vision right now is simple — you click a button on your phone, a humanoid robot comes to your apartment,
+                cleans, leaves. That's our schtick. I'd love to say we're building the future, but we've already built it. Right now (4/12/26) we're live
+                in SF and you can download our <b><a href="https://apps.apple.com/us/app/gatsby-robot-cleaning/id6759584279" target="_blank">iOS app</a></b>.
+                We charge a flat $150 per clean regardless of apartment size, which is right at or below what most cleaning services in SF charge.</p>
+
+            <h3>Why cleaning?</h3>
+            <p class="article-content">For our first beachhead in the bigger vision, we landed on cleaning for a few reasons.
+                A) as mentioned above, it's so universally hated. When thinking about the things consumers already hate,
+                the three we came up with were driving someone to the airport, moving and cleaning. The first has already been solved by Uber,
+                the other 2 haven't seen innovation since the invention of the horse cart and broom. B) consumers already have a budget for cleaning.
+                We don't have to create an entire market for home cleaning, people already spend a bunch of money on it. Now it's just about creating a
+                superior service to what exists.</p>
+
+            <h3>Why build this?</h3>
+            <p class="article-content">The idea behind Gatsby is pretty simple: nobody likes cleaning their apartment and
+                the current alternative, hiring a stranger to come into your home, has its own set of problems. Things go missing, it's a violation of privacy,
+                people cancel last minute, you have to mold your schedule around another person's and a surprisingly common complaint was a feeling of guilt.
+                To the last, a lot of cleaners in the US come from outside the country and there's this unspoken agreement that you're underpaying them.
+                We're proposing a solution to all of this @ Gatsby.</p>
+
+            <h3>Why is this different?</h3>
+            <p class="article-content">The key to what we're building at Gatsby is the distribution platform, not the underlying robots.
+                An analogy I give is Cursor v. Claude Code. By definition, Claude Code only uses Anthropic models - Anthropic is both the model builder and distributor.
+                We look at Cursor and they're in a beautiful position - they allow users to use what's best on a given day. If Claude Opus is the best today,
+                but in a week Gemini is the best, users can switch - they're model agnostic. We're proposing the same thing here - we are robot agnostic.
+                You look at some of our (fantastic) competitors, including Sunday, Figure, 1X, all of them are competing on the fundamental robotic models.
+                The theory is this arms race will cause a competition to the bottom - who can make the best/cheapest robot and deploy it well. Joining in this
+                race would be foolish, we're interested in creating the consumer layer for robotics.</p>
+
+            <h3>What's next?</h3>
+            <p class="article-content">Right now, growth. We already have a long waitlist here in SF and the goal is to
+                start rolling out a bunch of cleanings. But cleaning is where we're starting, not where we're ending. The underlying platform we're building - the
+                navigation, the dexterity, the ability to operate autonomously in a real home - that's the real product. Cleaning is our wedge.</p>
+
+            <p class="article-content">We're backed by <b>NVIDIA Inception</b> and <b>Entrepreneurs First</b>, and we're operating under a parent company
+                called West Egg Labs (yes, it's a Gatsby reference — the literary one).</p>
+
+            <p id="bottom-spacer"></p>
         </div>
-
-        <!-- Polaroid pile -->
-        <div class="pile-area">
-          <div class="pile-wrapper">
-            <div class="pile">
-
-              <!-- 1 -->
-              <div class="card" style="--i:1; --r:-3.5deg; --ox:9px; --oy:14px; --hx:5px; --hy:8px; --hr:-0.8deg; --fb:linear-gradient(145deg,#E8C5A0,#D4956A)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">3am tacos</p>
-              </div>
-
-              <!-- 2 -->
-              <div class="card" style="--i:2; --r:2.5deg; --ox:-7px; --oy:9px; --hx:-3px; --hy:6px; --hr:0.5deg; --fb:linear-gradient(145deg,#4A6B4A,#2D4A2D)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">got lost</p>
-              </div>
-
-              <!-- 3 -->
-              <div class="card" style="--i:3; --r:-1.5deg; --ox:5px; --oy:4px; --hx:2px; --hy:4px; --hr:-0.4deg; --fb:linear-gradient(145deg,#4A3A6A,#2A1A4A)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">best night</p>
-              </div>
-
-              <!-- 4 -->
-              <div class="card" style="--i:4; --r:2deg; --ox:-4px; --oy:-1px; --hx:-2px; --hy:3px; --hr:0.3deg; --fb:linear-gradient(145deg,#D4C8B0,#B8A888)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">needed this</p>
-              </div>
-
-              <!-- 5 -->
-              <div class="card" style="--i:5; --r:-2deg; --ox:7px; --oy:6px; --hx:4px; --hy:5px; --hr:-0.6deg; --fb:linear-gradient(145deg,#C8D4A0,#A0B870)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">farmers market on a tuesday</p>
-              </div>
-
-              <!-- 6 -->
-              <div class="card" style="--i:6; --r:3deg; --ox:-8px; --oy:3px; --hx:-4px; --hy:7px; --hr:0.7deg; --fb:linear-gradient(145deg,#D4956A,#B87848)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">pickup game</p>
-              </div>
-
-              <!-- 7 -->
-              <div class="card" style="--i:7; --r:-1deg; --ox:4px; --oy:-3px; --hx:3px; --hy:2px; --hr:-0.3deg; --fb:linear-gradient(145deg,#D4A870,#B88C50)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">happy hour ran long</p>
-              </div>
-
-              <!-- 8 -->
-              <div class="card" style="--i:8; --r:1.5deg; --ox:-5px; --oy:8px; --hx:-2px; --hy:4px; --hr:0.4deg; --fb:linear-gradient(145deg,#7AA07A,#5A8A5A)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">found a new trail</p>
-              </div>
-
-              <!-- 9 -->
-              <div class="card" style="--i:9; --r:-2.5deg; --ox:6px; --oy:2px; --hx:4px; --hy:3px; --hr:-0.5deg; --fb:linear-gradient(145deg,#A0C8A0,#70A070)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">dog park</p>
-              </div>
-
-              <!-- 10 -->
-              <div class="card" style="--i:10; --r:1deg; --ox:-3px; --oy:-4px; --hx:-1px; --hy:2px; --hr:0.2deg; --fb:linear-gradient(145deg,#6A5A4A,#4A3A2A)">
-                <div class="card-photo">
-                  <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=560&h=560&fit=crop&auto=format&q=80" alt="" loading="lazy" />
-                </div>
-                <p class="card-text">open mic night</p>
-              </div>
-
-            </div>
-
-            <!-- Tagline below pile -->
-            <div class="tagline" id="tagline">
-              <div class="tagline-cta">you do the living. we'll do the scrubbing.</div>
-              <div class="tagline-sig">&mdash; gatsby</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    var cards = [].slice.call(document.querySelectorAll('.pile .card'));
-    var pile = document.querySelector('.pile');
-    var tagline = document.getElementById('tagline');
-    var paused = false;
-    var readingTime = 4000;
-
-    // --- Randomize throw physics per card ---
-    function randomizeToss(card) {
-      var s = card.style;
-      s.setProperty('--td',  (320 + Math.random() * 120) + 'px');   // throw distance
-      s.setProperty('--ta',  (-20 - Math.random() * 50) + 'px');    // arc peak height
-      s.setProperty('--ts',  (18 + Math.random() * 24) + 'deg');    // spin amount
-      s.setProperty('--to-x', (-4 - Math.random() * 14) + 'px');    // overshoot x
-      s.setProperty('--to-y', (1 + Math.random() * 6) + 'px');      // overshoot y
-      s.setProperty('--to-r', (-1 - Math.random() * 4) + 'deg');    // overshoot rotation
-      s.setProperty('--tb-x', (0.5 + Math.random() * 4) + 'px');    // bounce-back x
-      s.setProperty('--tb-r', (0.2 + Math.random() * 1.8) + 'deg'); // bounce-back rotation
-      s.setProperty('--toss-dur', (0.6 + Math.random() * 0.2) + 's'); // duration variation
-    }
-
-    // --- Phase 1: Toss cards one by one ---
-    function tossSequence() {
-      var i = 0;
-
-      function tossNext() {
-        if (i >= cards.length) {
-          setTimeout(startCycling, 6000);
-          return;
-        }
-
-        var card = cards[i];
-        randomizeToss(card);
-        card.classList.add('tossing');
-
-        card.addEventListener('animationend', function handler() {
-          card.removeEventListener('animationend', handler);
-          card.classList.add('landed');
-        });
-
-        i++;
-        if (i === 1) {
-          setTimeout(function() { tagline.classList.add('visible'); }, 400);
-        }
-
-        // Vary the pause between tosses too
-        var nextDelay = readingTime + (Math.random() * 600 - 300);
-        setTimeout(tossNext, nextDelay);
-      }
-
-      setTimeout(tossNext, 600);
-    }
-
-    // --- Phase 2: Auto-cycle ---
-    function getTopCard() {
-      var top = cards[0], topZ = 0;
-      cards.forEach(function(c) {
-        var z = parseInt(c.style.zIndex) || parseInt(getComputedStyle(c).zIndex) || 0;
-        if (z > topZ) { topZ = z; top = c; }
-      });
-      return top;
-    }
-
-    function cycleCard() {
-      if (paused) return;
-      var top = getTopCard();
-      if (!top.classList.contains('landed')) return;
-
-      top.classList.add('cycling');
-
-      setTimeout(function() {
-        top.style.transition = 'none';
-        top.classList.remove('cycling');
-        top.style.zIndex = 1;
-
-        cards.forEach(function(c) {
-          if (c !== top) {
-            c.style.zIndex = (parseInt(c.style.zIndex) || parseInt(getComputedStyle(c).zIndex) || 1) + 1;
-          }
-        });
-
-        requestAnimationFrame(function() {
-          requestAnimationFrame(function() {
-            top.style.transition = '';
-          });
-        });
-      }, 480);
-    }
-
-    function startCycling() {
-      setInterval(cycleCard, 6000);
-    }
-
-    // Pause on hover
-    pile.addEventListener('mouseenter', function() { paused = true; });
-    pile.addEventListener('mouseleave', function() { paused = false; });
-
-    // Hide broken images
-    document.querySelectorAll('.card-photo img').forEach(function(img) {
-      img.addEventListener('error', function() { this.style.display = 'none'; });
-    });
-
-    // Go
-    tossSequence();
-  </script>
+    </center>
 </body>
+
 </html>
