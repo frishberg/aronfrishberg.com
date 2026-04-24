@@ -3,12 +3,19 @@
     src: url("Fette\ Fraktur.ttf");
 }
 
+@font-face {
+    font-family: "Chomsky";
+    src: url("chomsky.otf") format("opentype");
+    font-display: swap;
+}
+
 body {
     background-color: #f9f7f1;
-    font-family: "Droid Seif", serif;
+    font-family: Georgia, "Droid Serif", serif;
     font-size: 14px;
     color: #2f2f2f;
     margin: 0;
+    font-feature-settings: "onum";
 }
 
 /*highlighter effect*/
@@ -31,8 +38,1375 @@ header h1 {
 
 input, select {
     font-size:16px;
-    font-family: "Droid Seif", serif;
+    font-family: Georgia, "Droid Serif", serif;
     color: #2f2f2f;
+}
+
+/* ============================================================
+   MASTHEAD — NYT-inspired newspaper masthead
+   ============================================================ */
+
+.masthead {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 40px 0;
+}
+
+.top-strip {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.top-strip p {
+    margin: 0;
+}
+
+.wordmark {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 88px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    margin: 28px 0 0;
+    line-height: 1;
+    color: #2f2f2f;
+}
+
+.masthead-nav {
+    text-align: center;
+    padding: 13px 0;
+    margin-top: 24px;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 3px double #2f2f2f;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.masthead-nav a {
+    margin: 0 28px;
+    padding: 0.08em 0.22em;
+    color: #2f2f2f;
+    text-decoration: none;
+    display: inline-block;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0.1),
+        rgba(255, 225, 0, 0.7) 5%,
+        rgba(255, 225, 0, 0.3)
+    );
+    background-repeat: no-repeat;
+    background-position: 0 60%;
+    background-size: 0 70%;
+    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), color .3s;
+}
+
+.masthead-nav a:hover {
+    color: #2f2f2f;
+    background-size: 100% 70%;
+}
+
+.masthead-nav a#current-page {
+    background-size: 100% 70%;
+}
+
+/* ============================================================
+   LEAD STORY — above the fold
+   ============================================================ */
+
+.lead-story {
+    max-width: 1180px;
+    margin: 36px auto 0;
+    padding: 0 40px;
+}
+
+.lead-story > a {
+    color: #2f2f2f;
+    text-decoration: none;
+    display: block;
+}
+
+.lead-story > a:hover .lead-headline {
+    color: #4a4a4a;
+}
+
+.lead-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.lead-photo {
+    margin: 0;
+}
+
+.lead-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    filter: saturate(0.92) contrast(1.02);
+}
+
+.lead-photo .caption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 10px 0 0;
+    padding-top: 8px;
+    border-top: 1px solid #2f2f2f;
+    color: #3a3a3a;
+}
+
+.kicker {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.lead-headline {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 0.98;
+    letter-spacing: -0.015em;
+    margin: 0 0 18px;
+    color: #2f2f2f;
+    transition: color .5s;
+}
+
+.deck {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 18px;
+    color: #2f2f2f;
+}
+
+.byline {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.lede {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0 0 14px;
+    color: #2f2f2f;
+}
+
+.lede::first-letter {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 66px;
+    float: left;
+    line-height: 0.86;
+    padding: 6px 10px 0 0;
+    color: #2f2f2f;
+}
+
+.continued {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    margin: 14px 0 0;
+    color: #2f2f2f;
+}
+
+.fold-rule {
+    max-width: 1180px;
+    margin: 48px auto 32px;
+    padding: 0 40px;
+    position: relative;
+    border-top: 3px solid #2f2f2f;
+}
+
+.fold-rule span {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f9f7f1;
+    padding: 0 16px;
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+}
+
+/* ============================================================
+   SECTION HEADERS — double rule + sans label
+   ============================================================ */
+
+.section-header {
+    max-width: 1180px;
+    margin: 56px auto 24px;
+    padding: 0 40px;
+}
+
+.section-header h3 {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 14px 0;
+    border-top: 3px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+/* ============================================================
+   SECONDARY FEATURES — two mid-weight stories
+   ============================================================ */
+
+.secondary-features {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.secondary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.secondary-story {
+    text-decoration: none;
+    color: #2f2f2f;
+    display: block;
+}
+
+.secondary-story + .secondary-story {
+    padding-left: 40px;
+    border-left: 1px solid #2f2f2f;
+}
+
+.secondary-story:hover .secondary-headline {
+    color: #4a4a4a;
+}
+
+.secondary-photo {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border: none;
+    filter: saturate(0.92) contrast(1.02);
+}
+
+.secondary-caption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.45;
+    margin: 8px 0 18px;
+    padding-top: 6px;
+    border-top: 1px solid #2f2f2f;
+    color: #3a3a3a;
+}
+
+.sans-kicker {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin: 0 0 8px;
+}
+
+.secondary-headline {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.05;
+    letter-spacing: -0.012em;
+    margin: 0 0 12px;
+    color: #2f2f2f;
+    transition: color .4s;
+}
+
+.secondary-deck {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 14px;
+    color: #2f2f2f;
+}
+
+.secondary-byline {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.secondary-body {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+    color: #2f2f2f;
+}
+
+.secondary-body:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   ARCHIVE GRID — four-up brief-style cards
+   ============================================================ */
+
+.archive-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    row-gap: 36px;
+}
+
+.archive-card {
+    text-decoration: none;
+    color: #2f2f2f;
+    display: block;
+    padding: 0 20px;
+    border-left: 1px solid #2f2f2f;
+}
+
+.archive-card:nth-child(4n+1) {
+    padding-left: 0;
+    border-left: none;
+}
+
+.archive-card:nth-child(4n+4) {
+    padding-right: 0;
+}
+
+.archive-thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    border: none;
+    filter: grayscale(1) contrast(1.05);
+    transition: filter .5s;
+    margin-bottom: 12px;
+}
+
+.archive-card:hover .archive-thumb {
+    filter: grayscale(0) contrast(1);
+}
+
+.archive-card:hover .archive-headline {
+    color: #4a4a4a;
+}
+
+.archive-headline {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.18;
+    letter-spacing: -0.005em;
+    margin: 0 0 8px;
+    color: #2f2f2f;
+    transition: color .4s;
+}
+
+.archive-blurb {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    color: #2f2f2f;
+}
+
+/* ============================================================
+   IN THIS ISSUE — a boxed index with fake page numbers
+   ============================================================ */
+
+.issue-index {
+    max-width: 620px;
+    margin: 60px auto 0;
+    padding: 22px 30px 26px;
+    border: 1px solid #2f2f2f;
+    background: #f9f7f1;
+}
+
+.issue-index h4 {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.issue-index ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.issue-index li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 0;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.issue-index li + li {
+    border-top: 1px dotted #999;
+}
+
+.issue-index a {
+    color: #2f2f2f;
+    text-decoration: none;
+    flex: 1;
+    padding-right: 12px;
+}
+
+.issue-index a:hover {
+    color: #757575;
+}
+
+.issue-index .page-ref {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #757575;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   IMPRINT FOOTER — bottom-of-paper identity
+   ============================================================ */
+
+.imprint {
+    max-width: 1180px;
+    margin: 56px auto 0;
+    padding: 22px 40px 44px;
+    border-top: 3px double #2f2f2f;
+    text-align: center;
+}
+
+.imprint-line {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 4px 0 0;
+    color: #2f2f2f;
+}
+
+.imprint-corrections {
+    max-width: 620px;
+    margin: 26px auto 0;
+    padding: 14px 0 16px;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.55;
+    color: #3a3a3a;
+    text-align: left;
+}
+
+.imprint-corrections strong {
+    font-style: normal;
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* ============================================================
+   Below-the-fold responsive
+   ============================================================ */
+
+@media (max-width: 900px) {
+    .secondary-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .secondary-story + .secondary-story {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 40px;
+        border-top: 1px solid #2f2f2f;
+    }
+    .secondary-features {
+        padding: 0 20px;
+    }
+    .archive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .archive-card:nth-child(4n+1) {
+        padding-left: 20px;
+        border-left: 1px solid #2f2f2f;
+    }
+    .archive-card:nth-child(2n+1) {
+        padding-left: 0;
+        border-left: none;
+    }
+    .archive-section {
+        padding: 0 20px;
+    }
+    .archive-card:nth-child(n+3) {
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid #2f2f2f;
+    }
+    .section-header, .imprint {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .archive-grid {
+        grid-template-columns: 1fr;
+    }
+    .archive-card {
+        padding-left: 0 !important;
+        border-left: none !important;
+    }
+    .archive-card:nth-child(n+2) {
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid #2f2f2f;
+    }
+    .secondary-headline {
+        font-size: 26px;
+    }
+    .secondary-photo {
+        height: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .wordmark {
+        font-size: 56px;
+    }
+    .lead-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .lead-headline {
+        font-size: 38px;
+    }
+    .deck {
+        font-size: 18px;
+    }
+    .masthead {
+        padding: 16px 20px 0;
+    }
+    .lead-story {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wordmark {
+        font-size: 40px;
+    }
+    .top-strip {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+    .masthead-nav a {
+        margin: 0 14px;
+    }
+    .lead-headline {
+        font-size: 32px;
+    }
+}
+
+/* ============================================================
+   ABOUT PAGE — columnist's bio treatment
+   ============================================================ */
+
+.about-article {
+    max-width: 640px;
+    margin: 28px auto 0;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.about-byline {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+    text-align: left;
+}
+
+.about-photo-wrap {
+    margin: 0 0 28px;
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    filter: saturate(0.92) contrast(1.02);
+}
+
+.about-caption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 10px 0 0;
+    padding-top: 8px;
+    border-top: 1px solid #2f2f2f;
+    color: #3a3a3a;
+}
+
+.about-lede {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0 0 16px;
+    color: #2f2f2f;
+}
+
+.about-lede::first-letter {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 66px;
+    float: left;
+    line-height: 0.86;
+    padding: 6px 10px 0 0;
+    color: #2f2f2f;
+}
+
+.about-body {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0 0 16px;
+    color: #2f2f2f;
+}
+
+.about-body a,
+.about-lede a,
+.contact-card a {
+    color: #2f2f2f;
+    text-decoration: none;
+    padding: 0 0.12em;
+    border-bottom: 1px solid #999;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0.1),
+        rgba(255, 225, 0, 0.7) 5%,
+        rgba(255, 225, 0, 0.3)
+    );
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+    background-size: 0 60%;
+    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+}
+
+.about-body a:hover,
+.about-lede a:hover,
+.contact-card a:hover {
+    color: #2f2f2f;
+    background-size: 100% 60%;
+    border-bottom-color: #2f2f2f;
+}
+
+.stat {
+    font-weight: 700;
+    font-feature-settings: "onum";
+}
+
+.contact-card {
+    max-width: 640px;
+    margin: 48px auto 0;
+    padding: 22px 28px 26px;
+    border: 1px solid #2f2f2f;
+    text-align: left;
+}
+
+.contact-card h4 {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.contact-card dl {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 8px 20px;
+    margin: 0;
+}
+
+.contact-card dt {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    align-self: baseline;
+    padding-top: 3px;
+}
+
+.contact-card dd {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #2f2f2f;
+}
+
+.contact-card a {
+    color: #2f2f2f;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+    transition: border-color .3s;
+}
+
+.contact-card a:hover {
+    border-bottom-color: #2f2f2f;
+}
+
+/* ============================================================
+   ARTICLE PAGES — long-form, single-column NYT columnist feel
+   ============================================================ */
+
+.article-page {
+    max-width: 680px;
+    margin: 36px auto 0;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.article-kicker {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.article-headline {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: -0.018em;
+    margin: 0 0 18px;
+    color: #2f2f2f;
+}
+
+.article-deck {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 22px;
+    color: #2f2f2f;
+}
+
+.article-byline {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 26px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.article-hero {
+    margin: 0 0 28px;
+}
+
+.article-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    filter: saturate(0.92) contrast(1.02);
+}
+
+.article-hero figcaption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 10px 0 0;
+    padding-top: 8px;
+    border-top: 1px solid #2f2f2f;
+    color: #3a3a3a;
+}
+
+.article-body {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #2f2f2f;
+}
+
+.article-body p {
+    margin: 0 0 16px;
+}
+
+.article-body p:first-of-type::first-letter {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 66px;
+    float: left;
+    line-height: 0.86;
+    padding: 6px 10px 0 0;
+    color: #2f2f2f;
+}
+
+.article-body a {
+    color: #2f2f2f;
+    text-decoration: none;
+    padding: 0 0.12em;
+    border-bottom: 1px solid #999;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0.1),
+        rgba(255, 225, 0, 0.7) 5%,
+        rgba(255, 225, 0, 0.3)
+    );
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+    background-size: 0 60%;
+    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+}
+
+.article-body a:hover {
+    background-size: 100% 60%;
+    border-bottom-color: #2f2f2f;
+}
+
+.article-body b,
+.article-body strong {
+    font-weight: 700;
+}
+
+.article-body h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+    margin: 32px 0 14px;
+    color: #2f2f2f;
+}
+
+.article-body h4 {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 28px 0 10px;
+    color: #2f2f2f;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.article-body li {
+    margin-bottom: 6px;
+}
+
+.article-body img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 24px 0 8px;
+    border: none;
+    filter: saturate(0.92) contrast(1.02);
+}
+
+.article-body canvas {
+    display: block;
+    max-width: 100%;
+    margin: 24px auto;
+}
+
+/* Inline interactive controls — for Nobel filters, etc. */
+.article-tool {
+    max-width: 680px;
+    margin: 24px auto 32px;
+    padding: 22px 24px;
+    border: 1px solid #2f2f2f;
+    text-align: left;
+}
+
+.article-tool h4 {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.article-tool p {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.article-tool p:last-child {
+    margin-bottom: 0;
+}
+
+.article-tool label,
+.article-tool .tool-label {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+}
+
+.article-tool input,
+.article-tool select {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 2px 6px;
+    text-align: center;
+}
+
+.article-tool input:focus,
+.article-tool select:focus {
+    outline: none;
+    border-bottom-color: #2f2f2f;
+    background: rgba(255, 225, 0, 0.15);
+}
+
+.article-tool-results {
+    max-width: 680px;
+    margin: 0 auto 32px;
+    padding: 0 20px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+    .article-headline {
+        font-size: 34px;
+    }
+    .article-deck {
+        font-size: 17px;
+    }
+}
+
+/* ============================================================
+   DATASETS PAGE — scholarly catalog treatment
+   ============================================================ */
+
+.datasets-intro {
+    max-width: 640px;
+    margin: 4px auto 36px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.datasets-intro p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #3a3a3a;
+    margin: 0;
+}
+
+.datasets-list {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.dataset-entry {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 28px;
+    padding: 24px 0;
+    border-bottom: 1px solid #2f2f2f;
+    text-decoration: none;
+    color: #2f2f2f;
+    align-items: start;
+}
+
+.dataset-entry:first-child {
+    border-top: 1px solid #2f2f2f;
+    padding-top: 28px;
+}
+
+.dataset-thumb {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    border: none;
+    filter: grayscale(1) contrast(1.05);
+    transition: filter .5s;
+}
+
+.dataset-entry:hover .dataset-thumb {
+    filter: grayscale(0) contrast(1);
+}
+
+.dataset-entry:hover .dataset-headline {
+    color: #4a4a4a;
+}
+
+.dataset-entry:hover .dataset-source {
+    color: #2f2f2f;
+}
+
+.dataset-body {
+    text-align: left;
+}
+
+.dataset-body .sans-kicker {
+    margin-bottom: 6px;
+}
+
+.dataset-headline {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    color: #2f2f2f;
+    transition: color .4s;
+}
+
+.dataset-blurb {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0 0 12px;
+    color: #2f2f2f;
+}
+
+.dataset-source {
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #666;
+    transition: color .3s;
+}
+
+/* Responsive: about + datasets */
+@media (max-width: 900px) {
+    .datasets-list {
+        padding: 0 20px;
+    }
+    .dataset-entry {
+        grid-template-columns: 100px 1fr;
+        column-gap: 20px;
+    }
+    .dataset-thumb {
+        width: 100px;
+        height: 100px;
+    }
+    .dataset-headline {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dataset-entry {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+    }
+    .dataset-thumb {
+        width: 100%;
+        height: 180px;
+    }
+    .contact-card {
+        padding: 18px 18px 22px;
+    }
+    .contact-card dl {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .contact-card dt {
+        margin-top: 14px;
+        padding-top: 0;
+    }
+    .contact-card dt:first-child {
+        margin-top: 0;
+    }
+    .contact-card dd {
+        margin-top: 2px;
+    }
+    .datasets-intro p {
+        font-size: 15px;
+    }
+    .dataset-headline {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   MOBILE — tighten every surface at phone widths
+   ============================================================ */
+
+@media (max-width: 600px) {
+    .top-strip {
+        padding: 8px 12px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+    .masthead-nav {
+        padding: 10px 12px;
+    }
+    .masthead-nav a {
+        display: inline-block;
+        margin: 4px 10px;
+    }
+    .article-page {
+        padding: 0 18px;
+        margin-top: 28px;
+    }
+    .article-headline {
+        font-size: 30px;
+        line-height: 1.08;
+    }
+    .article-deck {
+        font-size: 17px;
+    }
+    .article-body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .article-body p:first-of-type::first-letter {
+        font-size: 52px;
+        line-height: 0.9;
+        padding: 4px 8px 0 0;
+    }
+    .article-body h3 {
+        font-size: 20px;
+        margin: 28px 0 12px;
+    }
+    .article-tool {
+        margin: 20px 18px 24px;
+        padding: 18px 18px 22px;
+    }
+    .article-tool p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 14px;
+    }
+    .article-tool p:last-child {
+        margin-bottom: 0;
+    }
+    .article-tool input,
+    .article-tool select {
+        width: 100% !important;
+        max-width: 240px;
+        text-align: left;
+    }
+    .article-tool-results {
+        padding: 0 18px;
+    }
+    .about-article {
+        padding: 0 18px;
+    }
+    .about-lede {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .about-body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .about-lede::first-letter {
+        font-size: 52px;
+        line-height: 0.9;
+        padding: 4px 8px 0 0;
+    }
+    .imprint {
+        padding: 20px 18px 32px;
+    }
+    .imprint-line {
+        font-size: 9px;
+        letter-spacing: 0.15em;
+        line-height: 1.6;
+    }
+    .secondary-features {
+        padding: 0 18px;
+    }
+    .secondary-story + .secondary-story {
+        padding-top: 32px;
+        margin-top: 8px;
+    }
+    .secondary-photo {
+        height: 180px;
+    }
+    .secondary-deck {
+        font-size: 16px;
+    }
+    .secondary-body {
+        font-size: 14px;
+    }
+    .lead-story {
+        padding: 0 18px;
+    }
+    .lead-headline {
+        font-size: 28px;
+        line-height: 1.08;
+    }
+    .deck {
+        font-size: 16px;
+    }
+    .lede {
+        font-size: 16px;
+    }
+    .lede::first-letter {
+        font-size: 52px;
+        line-height: 0.9;
+        padding: 4px 8px 0 0;
+    }
+    .archive-section {
+        padding: 0 18px;
+    }
+    .section-header {
+        padding: 0 18px;
+        margin: 40px auto 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wordmark {
+        font-size: 34px;
+    }
+    .article-headline {
+        font-size: 26px;
+    }
+    .lead-headline {
+        font-size: 24px;
+    }
+    .masthead-nav a {
+        margin: 4px 6px;
+        letter-spacing: 0.16em;
+    }
+}
+
+/* Collatz pair on mobile */
+@media (max-width: 600px) {
+    .collatz-pair {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 .date-line {

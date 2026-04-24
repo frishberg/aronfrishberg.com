@@ -3,63 +3,65 @@
 <html lang="en">
 
 <head>
-    <title>Graph of Ivy Plus Endowments (2014 - 2024) - Aron Frishberg</title>
+    <title>Aron Frishberg | Ivy Plus Endowments</title>
     <meta charset="UTF-8">
-    <meta name="description" content="A comprehensive analysis of Ivy Plus university endowments from 2014 to 2024. Explore detailed graphs and data-driven insights into the financial health and trends of the most elite universities in the US, including Ivy League schools and other top institutions like MIT and UChicago. Compiled for accuracy and academic research.">
-    <meta name="keywords"
-        content="Ivy Plus endowments, university endowment analysis, Ivy League financial trends, endowment data visualization, academic finance research, elite university funding, Princeton Harvard MIT UChicago endowments, endowment growth trends, higher education finance, endowment comparison chart, rankings, endowments, financial aid, harvard endowment, endowment rankings, us news, uchicago endowment, princeton endowment">
+    <meta name="description" content="A decade of Ivy Plus university endowments, plotted. Manually compiled data on the financial health of America's most elite universities.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="../css/icon.ico" />
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../js/index.js"></script>
     <script src="../js/endowments/data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- POSTED: 03.13.2024 -->
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="../datasets.html">Datasets</a>
-        <a href="../projects.html" id="current-page">Projects</a>
-        <!-- <a href="../experience.html">Experience</a> -->
-        <a href="../about.html">About</a>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
+        </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="../datasets.html">Datasets</a>
+            <a href="../projects.html" id="current-page">Projects</a>
+            <a href="../about.html">About</a>
+        </nav>
     </div>
 
-    <div class="date-line">
-        <p id="date-element">
-            </li>
-    </div>
+    <article class="article-page">
+        <p class="article-kicker">Data &middot; Finance</p>
+        <h1 class="article-headline">Ivy Plus Endowments, A Decade in Review</h1>
+        <p class="article-deck">The nation's richest universities, plotted across the past decade. Hand-compiled for accuracy.</p>
+        <p class="article-byline">By Aron Frishberg</p>
 
-    <center>
-        <div class="page-content">
-            <h2>Graph of Ivy Plus Endowments (2014 - 2024)</h2>
-            <div style="width:80%;">
+        <figure class="article-hero">
+            <div style="width:100%;">
                 <canvas id="myChart" width="400" height="400"></canvas>
             </div>
-            <p class="article-content">I've always been fascinated by college endowments.  They play a large role 
-                in a University's financial health, as it dictates how much money they can allocate to financial aid, research and other programs.
-                The current size of the endowment determines not only the current financial state of a University, but also the future state of the University.
-                This can be clearly seen with Harvard, as it was able to start its endowment early (over 100 years before the founding of the United States) and has thus been able to invest 
-                and grow its endowment to over $50B today.  It brings into question the role of endowments and the correct balance between investing in the future and contributing to the current prosperity of the University.
-            </p>
-            <p class="article-content">For accuracy, I manually collected data on the endowments over the past 10 years of the "Ivy Plus" institutions.  This definition is put forward by the <b><a href="https://ivpluslibraries.org/about/">Ivy Plus Consortium</a></b>, and the definition is maintained by each of its member institutions.  
-            This group generally consists of the most elite universities in the US, including the Ivy league (Princeton, Harvard, ...) as well as other extremely elite universities (MIT, UChicago, ...).</p>
-            <p>I've also created this data as a standalone dataset, which can be found <b><a
-                        href="https://github.com/frishberg/Ivy-Plus-Endowment-Data">here</a></b></p>
-            <p id="bottom-spacer">
-                </li>
-                <script src="../js/endowments/initialize.js"></script>
+            <figcaption>Endowment values for each Ivy Plus institution, plotted across the past decade.</figcaption>
+        </figure>
+
+        <div class="article-body">
+            <p>I've always been fascinated by college endowments. They play a large role in a university's financial health, dictating how much money it can allocate to financial aid, research, and other programs. The current size of the endowment determines not only the current financial state of a university, but also the future state. This can be clearly seen with Harvard, which was able to start its endowment early (over 100 years before the founding of the United States) and has thus been able to invest and grow its endowment to over $50B today. It brings into question the role of endowments, and the correct balance between investing in the future and contributing to the current prosperity of the university.</p>
+
+            <p>For accuracy, I manually collected data on the endowments of the "Ivy Plus" institutions across the past decade. The definition is put forward by the <a href="https://ivpluslibraries.org/about/" target="_blank" rel="noopener">Ivy Plus Consortium</a>, and is maintained by each of its member institutions. This group generally consists of the most elite universities in the US, including the Ivy League (Princeton, Harvard, and so on) along with other extremely elite universities (MIT, UChicago, and others).</p>
+
+            <p>I've also published this data as a standalone dataset, which can be found <a href="https://github.com/frishberg/Ivy-Plus-Endowment-Data" target="_blank" rel="noopener">here</a>.</p>
         </div>
-    </center>
+    </article>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
+    <script src="../js/endowments/initialize.js"></script>
+
 </body>
 
 </html>

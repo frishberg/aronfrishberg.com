@@ -19,11 +19,9 @@
     }
     </script>
 
-    <title>Building Gatsby - Aron Frishberg</title>
+    <title>Aron Frishberg | Building Gatsby</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, Gatsby is backed by NVIDIA Inception and Entrepreneurs First. Book a humanoid robot on-demand through the Gatsby app - it shows up, cleans your apartment, and leaves. Flat $150 per clean, no hidden fees. A West Egg Labs company building the first fleet of domestic service robots.">
-    <meta name="keywords"
-        content="Gatsby Robotics, gatsby.bot, Gatsby robot, humanoid robot cleaning, robot apartment cleaning, on-demand robot cleaning, San Francisco robot cleaning, Aron Frishberg, Akiva Himelhoch, West Egg Labs, NVIDIA Inception, Entrepreneurs First, humanoid robot, domestic robot, cleaning robot, robot cleaning service, UChicago, robotics startup, humanoid cleaning robot San Francisco, Gatsby Robotics San Francisco, robot maid, autonomous cleaning robot">
+    <meta name="description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, backed by NVIDIA Inception and Entrepreneurs First. Book a humanoid robot on-demand through the Gatsby app: it shows up, cleans, and leaves. Flat $150 per clean.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,78 +41,66 @@
     <meta name="twitter:description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Backed by NVIDIA Inception." />
     <meta name="twitter:image" content="https://aronfrishberg.com/img/gatsby-square.jpeg" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="css/icon.ico" />
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/index.js"></script>
-    <!-- POSTED: 04.12.2026 -->
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="datasets.html">Datasets</a>
-        <a href="projects.html" id="current-page">Projects</a>
-        <a href="about.html">About</a>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
+        </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="datasets.html">Datasets</a>
+            <a href="projects.html" id="current-page">Projects</a>
+            <a href="about.html">About</a>
+        </nav>
     </div>
 
-    <div class="date-line">
-        <p id="date-element"></p>
-    </div>
+    <article class="article-page">
+        <p class="article-kicker">The Lead &middot; Currently</p>
+        <h1 class="article-headline">Building Gatsby</h1>
+        <p class="article-deck">Notes on starting a company that sends humanoid robots to clean apartments in San Francisco.</p>
+        <p class="article-byline">By Aron Frishberg &middot; San Francisco</p>
 
-    <center>
-        <div class="page-content">
-            <h2>Building Gatsby</h2>
+        <figure class="article-hero">
             <img src="img/gatsby-square.jpeg" alt="Gatsby humanoid robot in a kitchen in San Francisco">
+            <figcaption>A Gatsby robot, at work in a San Francisco apartment.</figcaption>
+        </figure>
 
-            <p class="article-content">As of January 2026, I'm officially dropped out from the University of Chicago to start a robotics company
-                called <b><a href="https://gatsby.bot" target="_blank">Gatsby</a></b>. We're backed by <b>NVIDIA Inception</b> and <b>Entrepreneurs First</b>, and we're operating under a parent company
-                called West Egg Labs (yes, it's a Gatsby reference).</p>
+        <div class="article-body">
+            <p>As of January 2026, I'm officially dropped out from the University of Chicago to start a robotics company called <a href="https://gatsby.bot" target="_blank" rel="noopener">Gatsby</a>. We're backed by <b>NVIDIA Inception</b> and <b>Entrepreneurs First</b>, and we're operating under a parent company called West Egg Labs (yes, it's a Gatsby reference).</p>
 
-            <p class="article-content">The core vision of the company is "enabling human robot interaction". In the short term we're going
-                after a universal painpoint: cleaning. The vision right now is simple: you click a button on your phone, a humanoid robot comes to your apartment,
-                cleans, leaves. That's our schtick. I'd love to say we're building the future, but we've already built it. Right now (4/12/26) we're live
-                in SF and you can download our <b><a href="https://apps.apple.com/us/app/gatsby-robot-cleaning/id6759584279" target="_blank">iOS app</a></b>.
-                We charge a flat $150 per clean regardless of apartment size, the average cleaning service in SF runs $150-$300.</p>
+            <p>The core vision of the company is "enabling human robot interaction". In the short term we're going after a universal painpoint: cleaning. The vision right now is simple: you click a button on your phone, a humanoid robot comes to your apartment, cleans, leaves. That's our schtick. I'd love to say we're building the future, but we've already built it. Right now we're live in SF and you can download our <a href="https://apps.apple.com/us/app/gatsby-robot-cleaning/id6759584279" target="_blank" rel="noopener">iOS app</a>. We charge a flat $150 per clean regardless of apartment size; the average cleaning service in SF runs $150 to $300.</p>
 
             <h3>Why cleaning?</h3>
-            <p class="article-content">For our first beachhead in the bigger vision, we landed on cleaning for a few reasons.
-                A) as mentioned above, it's so universally hated. When thinking about the things consumers already hate,
-                the three we came up with were driving someone to the airport, moving and cleaning. The first has already been solved by Uber,
-                the other 2 haven't seen innovation since the invention of the horse carriage and broom, respectively. B) consumers already have a budget for cleaning.
-                We don't have to create an entire market for home cleaning, people already spend a bunch of money on it. Now it's just about creating a
-                superior service to what exists.</p>
+            <p>For our first beachhead in the bigger vision, we landed on cleaning for a few reasons. First, it's so universally hated. When thinking about the things consumers already hate, the three we came up with were driving someone to the airport, moving, and cleaning. The first has already been solved by Uber; the other two haven't seen innovation since the invention of the horse carriage and the broom, respectively. Second, consumers already have a budget for cleaning. We don't have to create an entire market for home cleaning; people already spend a bunch of money on it. Now it's just about creating a superior service to what exists.</p>
 
             <h3>Why build this?</h3>
-            <p class="article-content">The idea behind Gatsby is pretty simple: nobody likes cleaning their apartment and
-                the current alternative, hiring a stranger to come into your home, has its own set of problems. Things go missing, it's a violation of privacy,
-                people cancel last minute, you have to mold your schedule around another person's and a surprisingly common complaint was a feeling of guilt.
-                We're proposing a solution to all of this @ Gatsby.</p>
+            <p>The idea behind Gatsby is pretty simple: nobody likes cleaning their apartment, and the current alternative, hiring a stranger to come into your home, has its own set of problems. Things go missing, it's a violation of privacy, people cancel last minute, you have to mold your schedule around another person's, and a surprisingly common complaint was a feeling of guilt. We're proposing a solution to all of this at Gatsby.</p>
 
             <h3>Why is this different?</h3>
-            <p class="article-content">The key to what we're building at Gatsby is the distribution platform, not the underlying robots.
-                An analogy I like to give is Cursor v. Claude Code. By definition, Claude Code only uses Anthropic models - Anthropic is both the model builder and distributor.
-                We look at Cursor and they're in a beautiful position - they allow users to use what's best on a given day. If Claude Opus is the best today,
-                but in a week Gemini is the best, users can switch - they're model agnostic. We're proposing the same thing here - we are robot agnostic.
-                You look at some of our (fantastic) "competitors", including Sunday, Figure, 1X, all of them are competing on the fundamental robotic models.
-                The theory is this arms race will cause a competition to the bottom - who can make the best/cheapest robot and deploy it well. Joining in this
-                race would be foolish, we're interested in creating the consumer layer for robotics.</p>
+            <p>The key to what we're building at Gatsby is the distribution platform, not the underlying robots. An analogy I like to give is Cursor versus Claude Code. By definition, Claude Code only uses Anthropic models; Anthropic is both the model builder and distributor. We look at Cursor and they're in a beautiful position: they allow users to use what's best on a given day. If Claude Opus is the best today but in a week Gemini is the best, users can switch. They're model agnostic. We're proposing the same thing here. We are robot agnostic.</p>
+
+            <p>You look at some of our (fantastic) "competitors", including Sunday, Figure, and 1X, and all of them are competing on the fundamental robotic models. The theory is this arms race will cause a competition to the bottom: who can make the best, cheapest robot and deploy it well. Joining in this race would be foolish. We're interested in creating the consumer layer for robotics.</p>
 
             <h3>What's next?</h3>
-            <p class="article-content">Right now, growth. We already have a long waitlist here in SF and the goal is to
-                start rolling out a bunch of cleanings. But cleaning is where we're starting, not where we're ending. The underlying platform we're building - the
-                navigation, the dexterity, the ability to operate autonomously in a real home - that's the real product. Cleaning is our wedge.</p>
-
-
-            <p id="bottom-spacer"></p>
+            <p>Right now, growth. We already have a long waitlist here in SF, and the goal is to start rolling out a bunch of cleanings. But cleaning is where we're starting, not where we're ending. The underlying platform we're building (the navigation, the dexterity, the ability to operate autonomously in a real home) is the real product. Cleaning is our wedge.</p>
         </div>
-    </center>
+    </article>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
 </body>
 
 </html>

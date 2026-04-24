@@ -3,71 +3,79 @@
 <html lang="en">
 
 <head>
-    <title>Aron Frishberg - About</title>
+    <title>Aron Frishberg | About</title>
     <meta charset="UTF-8">
-    <meta name="description" content="A little bit about Aron Frishberg. San Francisco, tea, kayaking, drones, and whatever else is going on.">
-    <meta name="keywords"
-        content="aronfrishberg, aron, frishberg, programming, data, analytics, smart, intelligent, projects, math, computer science, university of chicago, uchicago, business, about page, about the author, Aron Frishberg, personal profile, about the author, Gatsby Robotics, San Francisco, robotics founder, economics and computer science, creative projects, mathematical theories, drone photography, kayaking enthusiast, chess player, programming portfolio, Scarsdale NY, technology and art, project sharing, contact information">
+    <meta name="description" content="A biographical note on Aron Frishberg: CEO and co-founder of Gatsby Robotics, builder of small things on the internet, occasional kayaker.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="css/icon.ico" />
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/index.js"></script>
     <script>
         window.addEventListener('load', function () {
-            setChessRatingandTime("chess-rating", "date");
+            setChessRatingandTime("chess-rating", "chess-date");
         });
     </script>
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="datasets.html">Datasets</a>
-        <a href="projects.html">Projects</a>
-        <!-- <a href="experience.html">Experience</a> -->
-        <a href="about.html" id="current-page">About</a>
-    </div>
-
-    <div class="date-line">
-        <p id="date-element"></p>
-    </div>
-
-    <center>
-        <div class="page-content">
-            <h2>About the Author</h2>
-            <img src="img/profile/headshot-bw.jpg" style="border-radius:50%; width:50%;" alt="Aron Frishberg Profile (Black and White)">
-            <p>Welcome! My name is Aron Frishberg</p>
-            <p>Right off the bat, here's a little about me :</p>
-            <ul>
-                <li>I'm the CEO and co-founder of <a href="gatsby.html">Gatsby Robotics</a>, based in San Francisco, CA. Previously, I was a student at the University of Chicago, where I was double majoring in Economics (specialization
-                    in Business) as well as Computer Science (specialization in Machine Learning).</li>
-                <li>I really enjoy kayaking and taking pictures with my drone</li>
-                <li>I like to create things, especially out of the box things like this website</li>
-                <li>I grew up in Scarsdale, NY and now live in San Francisco, CA</li>
-                <li>My current chess.com rating is <a id="chess-rating"></a> (as of <a id="date"></a>)</li>
-                <li>On top of creating things and working on projects, I really enjoy sharing them. That's the true
-                    purpose of this website - to share some of the things I've worked on, whether it be a mathematical
-                    theory or art.</li>
-            </ul>
-            <p>Contact Info :</p>
-            <ul>
-                <li>Email: <a href="mailto:frishberg@uchicago.edu">frishberg@uchicago.edu</a></li>
-                <li>Phone: <a href="tel:914-646-1820">914-646-1820</a></li>
-                <li>Instagram: <a href="https://instagram.com/aronfrishberg" target="_blank">aronfrishberg</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/frishberg" target="_blank">frishberg</a></li>
-                <li>GitHub: <a href="https://github.com/frishberg" target="_blank">frishberg</a></li>
-            </ul>
-            <p id="bottom-spacer"></p>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
         </div>
-    </center>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="datasets.html">Datasets</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html" id="current-page">About</a>
+        </nav>
+    </div>
+
+    <section class="section-header">
+        <h3>About the Author</h3>
+    </section>
+
+    <article class="about-article">
+        <p class="about-byline">By Aron Frishberg &middot; San Francisco</p>
+
+        <div class="about-photo-wrap">
+            <img src="img/profile/headshot-bw.jpg" class="about-photo" alt="Aron Frishberg">
+            <p class="about-caption">Photographed somewhere between California and the nearest drone.</p>
+        </div>
+
+        <p class="about-lede">Aron Frishberg is the CEO and co-founder of <a href="gatsby.html">Gatsby Robotics</a>, a San Francisco company sending humanoid robots to clean apartments. Before that, he was a student at the University of Chicago, double&#8209;majoring in Computer Science and Economics (specialization in Business). He dropped out to build Gatsby.</p>
+
+        <p class="about-body">He grew up in Scarsdale, New York, and now lives in San Francisco. Outside of work, he kayaks, makes homemade ice cream, and works with robots. He likes to create things, especially ones that don't fit neatly into a category, including this paper.</p>
+
+        <p class="about-body">His chess.com rating, as of this writing, is <span id="chess-rating" class="stat">&hellip;</span> (<span id="chess-date">&hellip;</span>). It changes more often than he'd prefer.</p>
+
+        <p class="about-body">He built this website to share the things he makes, whether a mathematical theory, a dataset, a chess analysis, or a company. He hopes you find something worth reading.</p>
+    </article>
+
+    <aside class="contact-card">
+        <h4>For Correspondence</h4>
+        <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:frishberg@uchicago.edu">frishberg@uchicago.edu</a></dd>
+            <dt>Instagram</dt>
+            <dd><a href="https://instagram.com/aronfrishberg" target="_blank" rel="noopener">@aronfrishberg</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://linkedin.com/in/frishberg" target="_blank" rel="noopener">/in/frishberg</a></dd>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/frishberg" target="_blank" rel="noopener">@frishberg</a></dd>
+        </dl>
+    </aside>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
 </body>
 
 </html>

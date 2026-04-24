@@ -2,75 +2,60 @@
 
 <html lang="en">
 <head>
-    <title>Frishberg Chess Structure - Aron Frishberg</title>
+    <title>Aron Frishberg | Frishberg Chess Structure</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Dive into the strategic depths of Aron Frishberg's Frishberg Chess Structure, a groundbreaking chess formation where each of the 16 white pieces is ingeniously positioned to protect and be protected. Born from a blend of computational prowess and chess strategy, this structure boasts an optimal design with 38 protections, averaging 2.2 protections per piece. Explore the culmination of theory, programming, and chess mastery that challenges traditional gameplay, offering insights into efficient piece arrangement and defensive solidity. Discover more about this fascinating project and its theoretical implications for chess enthusiasts and strategists alike.">
-    <meta name="keywords"
-        content="chess, interesting, pensive, thinking, magnus carlsen, eric rosen, gotham chess, levy, structure, smart, uchicago, chess structure design, Frishberg chess setup, innovative chess strategies, chess piece protection system, advanced chess formations, chess structure optimization, chess programming insights, unique chess setups, chess defensive structures, strategic chess piece arrangement">
+    <meta name="description" content="A Python-generated chess structure where each of sixteen white pieces protects, and is protected by, another piece. Optimized for the maximum number of mutual protections.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="../css/icon.ico" />
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../js/index.js"></script>
-    <!-- POSTED: 07.26.2023 -->
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="../datasets.html">Datasets</a>
-        <a href="../projects.html" id="current-page">Projects</a>
-        <!-- <a href="../experience.html">Experience</a> -->
-        <a href="../about.html">About</a>
-    </div>
-
-    <div class="date-line">
-        <p id="date-element"></p>
-    </div>
-
-    <center>
-        <div class="page-content">
-            <h2>Frishberg Chess Structure</h2>
-            <img src="../img/frishberg-chess-structure.PNG" alt="Frishberg Chess Structure">
-
-            <p class="article-content">This all began with a simple idea: an "indestructible" chess structure. Looking
-                at a
-                pawn to the back left of a bishop, we see that they each protect eachother, thus making an
-                "indestructible" chess structure.
-                I had the idea to take this further though. As a result, I coded a complex Python program that created
-                chess structures
-                until it created the "optimal" structure.</p>
-            <p class="article-content">The basic idea behind it was to find a structure of pieces where every piece was
-                protected by another, and every piece was
-                protecting at least one other piece. Furthermore, it would be using all 16 white pieces. Once completing
-                this, I was presented with a few structures, but they were really apart and in my opinion, inefficient.
-                At this point in the project, I had a few ideas, but one really hit me. Optimize the structure for the
-                "number of protections".
-            </p>
-            <p class="article-content">To give a specific and simple example, imagine a board with rooks in the top left
-                and bottom right, as well as a queen in the bottom left. The rooks both protect the queen, but the queen
-                protects both rooks (2 pieces). This would count as
-                2 "protections" for the queen, and a total of 4 "protections" for the structure. My idea was that if I
-                optimized for this, it would slowly shape to be the most efficient board, and really intertwined, as you
-                got closer to the maximum number of "protections". After
-                days of coding and waiting for my 2019 PC to compute, I was presented with the structure above, which
-                has a total of 38 "protections" (average of 2.2 "protections" per piece). Although it doesn't exactly
-                translate over to the chess board, it covers more of the theory, and I thought the idea was really
-                interesting overall.
-            </p>
-
-            <p><b>Here is the link to the GitHub repo: </b><a
-                    href="https://github.com/frishberg/Frishberg-Chess-Structure">Frishberg Chess Structure</a></p>
-
-            <p id="bottom-spacer"></p>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
         </div>
-    </center>
-    </body>
-    </html>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="../datasets.html">Datasets</a>
+            <a href="../projects.html" id="current-page">Projects</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </div>
+
+    <article class="article-page">
+        <p class="article-kicker">Chess</p>
+        <h1 class="article-headline">The Frishberg Chess Structure</h1>
+        <p class="article-deck">A Python search for the most mutually defended arrangement of chess pieces on a board.</p>
+        <p class="article-byline">By Aron Frishberg</p>
+
+        <figure class="article-hero">
+            <img src="../img/frishberg-chess-structure.PNG" alt="The Frishberg Chess Structure">
+            <figcaption>The optimal structure, at 38 total protections, or 2.2 per piece.</figcaption>
+        </figure>
+
+        <div class="article-body">
+            <p>This all began with a simple idea: an "indestructible" chess structure. Looking at a pawn to the back left of a bishop, we see that they each protect each other, making an "indestructible" chess structure. I had the idea to take this further, though. As a result, I coded a complex Python program that created chess structures until it produced the "optimal" one.</p>
+
+            <p>The basic idea was to find a structure of pieces where every piece was protected by another, and every piece was protecting at least one other piece. Furthermore, it would use all 16 white pieces. Once completing this, I was presented with a few structures, but they were really spread apart and, in my opinion, inefficient. At this point in the project I had a few ideas, but one really hit me: optimize the structure for the "number of protections".</p>
+
+            <p>To give a specific and simple example, imagine a board with rooks in the top left and bottom right, as well as a queen in the bottom left. The rooks both protect the queen, but the queen protects both rooks (2 pieces). This would count as 2 "protections" for the queen, and a total of 4 "protections" for the structure. My idea was that if I optimized for this, it would slowly shape toward the most efficient board, and really intertwined, as you got closer to the maximum number of "protections". After days of coding and waiting for my 2019 PC to compute, I was presented with the structure above, which has a total of 38 "protections" (average of 2.2 "protections" per piece). Although it doesn't exactly translate over to a chess game, it covers more of the theory, and I thought the idea was really interesting overall.</p>
+
+            <p>The code is on GitHub: <a href="https://github.com/frishberg/Frishberg-Chess-Structure" target="_blank" rel="noopener">Frishberg Chess Structure</a>.</p>
+        </div>
+    </article>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
+</body>
+</html>

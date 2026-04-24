@@ -1,114 +1,110 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Aron Frishberg - Datasets</title>
+    <title>Aron Frishberg | Datasets</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore a curated collection of data sets by Aron Frishberg, featuring rich insights into Nobel Prize academic affiliations, Billboard Top 100 artist labels, comprehensive US News College Rankings, and university hex colors. Each dataset, meticulously compiled and hosted on GitHub, serves as a foundational resource for academic research, data analysis projects, and educational exploration. From the dynamics of the music industry to detailed academic and color code data for top universities, Aron's datasets offer a wealth of information for programmers, researchers, and enthusiasts alike.">
-    <meta name="keywords" content="aronfrishberg, aron, frishberg, programming, data, analytics, smart, intelligent, projects, math, computer science, university of chicago, uchicago, business, datasets, data, Aron Frishberg, data sets, GitHub repositories, Nobel Prize affiliations, Billboard Top 100, US News College Rankings, university hex colors, educational data, music industry analytics, academic research, data analytics projects, open-source data, programming and data analysis, data science, university of Chicago projects, data visualization, academic affiliations dataset, record label dataset, college ranking data, hex color codes for universities">
+    <meta name="description" content="Open datasets compiled by Aron Frishberg in service of the projects on this paper. Each is hosted on GitHub and free to reuse.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="css/icon.ico" />
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/index.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="datasets.html" id="current-page">Datasets</a>
-        <a href="projects.html">Projects</a>
-        <!-- <a href="experience.html">Experience</a> -->
-        <a href="about.html">About</a>
-    </div>
-
-    <div class="date-line">
-        <p id="date-element"></p>
-    </div>
-
-    <!--articles-->
-
-    <center>
-
-        <div class="dataset-listings">
-
-            <!--<a href="https://github.com/frishberg/Billionaires-by-Academic-Affiliations">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/university-billionaires.png" style="float:left; margin-right: 10px; border-radius:25px;" alt="University Billionaire Dataset Thumbnail">
-                    <h2>Billionaires by Academic Affiliations</h2>
-                    <p>This repo contains the alma matters of all current billionaires around the world.  It should be noted that this dataset is only as accurate as wikipedia - alma matter lists are scraped from here.  To see this data visually displayed, check out "Universities with the Most Billionaires" on Projects.
-                    </p>
-                </div>
-            </a>-->
-
-            <a href="https://github.com/frishberg/University-Hex-Colors">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/uchicago logo.png" style="float:left; margin-right: 10px; border-radius:25px;" alt="University Hex Colors Dataset Thumbnail">
-                    <h2>University Hex Colors</h2>
-                    <p>This repo contains the primary hex color codes associated with 2000+ universities in the United States.  I was working with the Department of Education's Scoreboard data for another project and had to create this, so I figured I would spin 
-                        this data set off so others could use it.  Using the DOE's list of 2000+ undergrad universities in the US, I coded a program using Perplexity's AI API to scrape each of their primary hex colors.  I stored the data in .json file to allow 
-                        for easy use across all languages, or easy modification in the case .json is not supported by a language.  This data is also used in my US News Graphing Tool to determine the color of each schools graph.
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://github.com/frishberg/Ivy-Plus-Endowment-Data">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/endowments.PNG" style="float:left; margin-right: 10px; border-radius:25px;" alt="Ivy Plus Endowment Data Thumbnail">
-                    <h2>Ivy Plus Endowment Data (2014 - 2024)</h2>
-                    <p>For this repo, I manually went through the endowment data of all Ivy Plus schools (Ivy League + UChicago, Stanford, Duke, CalTech, Hopkins, MIT) and compiled it into a .csv and a .xlsx file.  The data is from 2014 - 2024, and contains the endowment value of each school for each year.  This data is useful for anyone interested in the financials of these schools, or for anyone interested in the financials of schools in general.  This data is also used in my "Graph of Ivy Plus Endowments" project, which can be found on the Projects page.
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://github.com/frishberg/Record-Labels-of-the-Top-100-Artists">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/billboard top 100.jpg" style="float:left; margin-right: 10px; border-radius:25px;" alt="Billboard Top 100 Dataset Thumbnail">
-                    <h2>Record Labels of the Billboard Top 100 Artists</h2>
-                    <p>This repo contains the current list of Billboard Top 100 Artists and their record labels, listed on Wikipedia.  The scraping function runs daily through github (at midnight UTC) so the data is always current.  There are some errors, as the data is scraped from Wikipedia, an openly modifiable website, but the data is accurate for the most part.
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://github.com/frishberg/Nobel-Prizes-by-Academic-Affiliations">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/nobel prize data.png" style="float:left; margin-right: 10px; border-radius:25px;" alt="Nobel Prize Dataset Thumbnail">
-                    <h2>Nobel Prizes by Academic Affiliations</h2>
-                    <p>This repo contains the lifetime academic affiliations of all nobel laureates (1901 - 2024).  Academic affiliations are divided into alma matters and institutions.  For example, Moungi Bawendi (2023) recieved his PhD from UChicago and is now a professor at MIT, so both are listed in their respective categories.  It should be noted that this dataset is only as accurate as wikipedia.  For example, UChicago has 101 nobel prizes as of 2024, yet this dataset only contains 98, as not all laureates have all of their academic affiliations listed on wikipedia.  To see this data visually displayed, check out "Universities with the Most Nobel Prizes" on Projects.
-                    </p>
-                </div>
-            </a>
-            
-            <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/usnews logo.png" style="float:left; margin-right: 10px; border-radius:25px;" alt="US News College Rankings Dataset Thumbnail">
-                    <h2>Archive of U.S. News College Rankings (1984 - 2024)</h2>
-                    <p>This repo contains an archive of all US News national college rankings from 1984 to 2024.  I collected the ranking data from several sources (including publicuniversityhonors.com andyreiter.com/datasets) utiziling Python and the selenium library.
-                    This dataset contains a total of ~6000 datapoints, and contains the data in many formats (.csv, .json, .xlsx) in order to allow for use across all languages.  To see this visually displayed, check out the "Graphing Tool" on Projects.</p>
-                </div>
-            </a>
-
-            <a href="https://github.com/frishberg/US-College-Ranking-Data">
-                <div class="listing">
-                    <img src="img/dataset-thumbnails/college data spreadsheet.PNG" style="float:left; margin-right: 10px; border-radius:25px;" alt="College Ranking Data Thumbnail">
-                    <h2>U.S. College Ranking Data</h2>
-                    <p>This repo contains data points on many of the top universities in the United States.  I spent weeks coding Python programs (utilizing the selenium and requests libraries) scraping data points that range from 
-                        all Niche rankings (campus food quality, safety, professors, ...), acceptance rate, average SAT, # of nobel prizes won, international rankings, cs rankings, and more.  I collected all of this data to create a custom college ranking site but figured I should publish the data as a standalone as well, for others to use.
-                    </p>
-                </div>
-            </a>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
         </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="datasets.html" id="current-page">Datasets</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
 
-        <p id="bottom-spacer"></p>
-        
-    </center>
+    <section class="section-header">
+        <h3>Datasets</h3>
+    </section>
 
-    <!--articles-->
+    <div class="datasets-intro">
+        <p>Open data compiled in service of the projects across this paper. Each file is hosted on GitHub and free to reuse. A credit line, when you use it, is always welcome.</p>
+    </div>
+
+    <section class="datasets-list">
+
+        <a href="https://github.com/frishberg/Nobel-Prizes-by-Academic-Affiliations" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/nobel prize data.png" class="dataset-thumb" alt="Nobel Prize affiliations dataset">
+            <div class="dataset-body">
+                <p class="sans-kicker">Academia</p>
+                <h4 class="dataset-headline">Nobel Prizes, by Academic Affiliation</h4>
+                <p class="dataset-blurb">The lifetime academic affiliations of every Nobel laureate, broken out by alma mater and institution. A laureate appears in both columns where applicable. Moungi Bawendi (2023), for instance, earned his PhD at UChicago and teaches at MIT. Accuracy is bounded by Wikipedia.</p>
+                <p class="dataset-source">github.com/frishberg/Nobel-Prizes-by-Academic-Affiliations &rarr;</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/usnews logo.png" class="dataset-thumb" alt="US News college rankings archive">
+            <div class="dataset-body">
+                <p class="sans-kicker">Rankings</p>
+                <h4 class="dataset-headline">An Archive of U.S. News College Rankings</h4>
+                <p class="dataset-blurb">Every U.S. News national college ranking since the practice began. Collected from several sources with Python and Selenium; roughly six thousand datapoints, published in .csv, .json, and .xlsx for portability.</p>
+                <p class="dataset-source">github.com/frishberg/Archive-of-US-News-College-Rankings &rarr;</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/frishberg/Ivy-Plus-Endowment-Data" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/endowments.PNG" class="dataset-thumb" alt="Ivy Plus endowment data">
+            <div class="dataset-body">
+                <p class="sans-kicker">Finance</p>
+                <h4 class="dataset-headline">Ivy Plus Endowment Data</h4>
+                <p class="dataset-blurb">Endowment values for every Ivy Plus school (Ivy League plus UChicago, Stanford, Duke, Caltech, Johns Hopkins, and MIT) across the past decade, compiled by hand. Useful for anyone interested in the financials of elite universities, or of universities in general.</p>
+                <p class="dataset-source">github.com/frishberg/Ivy-Plus-Endowment-Data &rarr;</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/frishberg/US-College-Ranking-Data" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/college data spreadsheet.PNG" class="dataset-thumb" alt="US college ranking data">
+            <div class="dataset-body">
+                <p class="sans-kicker">Rankings</p>
+                <h4 class="dataset-headline">U.S. College Ranking Data</h4>
+                <p class="dataset-blurb">A composite dataset on the top universities in the United States: Niche ratings across food, safety, and professors; acceptance rates; average SAT scores; Nobel counts; international and computer-science rankings. Compiled over weeks with Selenium and Requests.</p>
+                <p class="dataset-source">github.com/frishberg/US-College-Ranking-Data &rarr;</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/frishberg/Record-Labels-of-the-Top-100-Artists" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/billboard top 100.jpg" class="dataset-thumb" alt="Billboard Top 100 labels dataset">
+            <div class="dataset-body">
+                <p class="sans-kicker">Music</p>
+                <h4 class="dataset-headline">Record Labels of the Billboard Top 100</h4>
+                <p class="dataset-blurb">The current Billboard Top 100 artists paired with their record labels, refreshed daily at midnight UTC by a GitHub Action. Wikipedia&#8209;sourced, so accuracy is approximate but current.</p>
+                <p class="dataset-source">github.com/frishberg/Record-Labels-of-the-Top-100-Artists &rarr;</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/frishberg/University-Hex-Colors" class="dataset-entry" target="_blank" rel="noopener">
+            <img src="img/dataset-thumbnails/uchicago logo.png" class="dataset-thumb" alt="University hex colors dataset">
+            <div class="dataset-body">
+                <p class="sans-kicker">Reference</p>
+                <h4 class="dataset-headline">University Hex Colors</h4>
+                <p class="dataset-blurb">Primary hex color codes for more than two thousand U.S. universities, compiled by pointing Perplexity's AI API at the Department of Education's Scoreboard list. Published as .json for portability. Also used to tint the graphs in the U.S. News ranking tool.</p>
+                <p class="dataset-source">github.com/frishberg/University-Hex-Colors &rarr;</p>
+            </div>
+        </a>
+
+    </section>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
 </body>
 </html>

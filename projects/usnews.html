@@ -3,101 +3,115 @@
 <html lang="en">
 
 <head>
-    <title>US News Ranking Graphing Tool (1984 - 2025) - Aron Frishberg</title>
+    <title>Aron Frishberg | US News Rankings, Across the Decades</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Uncover the evolution of college rankings with Aron Frishberg's interactive Graphing Tool for US News College Rankings from 1984 to 2025. Dive into historical data and trends across decades to analyze how universities have navigated the landscape of academic excellence. Perfect for educators, students, and academic researchers, this tool offers a dynamic way to visualize the progression of colleges over time, shedding light on the competitive world of higher education rankings. Explore, compare, and gain insights into the prestigious rankings of top colleges and universities.">
-    <meta name="keywords"
-        content="us news, rankings, college rankings, university rankings, college, university, harvard, yale, dartmouth, cornell, princeton, uchicago, duke, historical, trends, data, graphing, smart, college search, best colleges, US News college rankings, historical university rankings, college ranking trends, university ranking analytics, educational institution comparison, college rank data visualization, academic ranking analysis, higher education evaluation, US News ranking chart, college ranking changes over time">
+    <meta name="description" content="An interactive graphing tool for the evolution of US News college rankings across four decades. Select any combination of schools to trace their rise and fall.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="../css/icon.ico" />
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../js/index.js"></script>
     <script src="../js/usnews/data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .dropdown-check-list {
             display: inline-block;
+            font-family: Georgia, serif;
+            font-size: 14px;
+            margin-bottom: 24px;
         }
 
         .dropdown-check-list .anchor {
             position: relative;
             cursor: pointer;
             display: inline-block;
-            padding: 5px 50px 5px 10px;
-            border: 1px solid #ccc;
+            padding: 6px 40px 6px 12px;
+            border: 1px solid #2f2f2f;
+            font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
         }
 
         .dropdown-check-list .anchor:after {
             position: absolute;
             content: "";
-            border-left: 2px solid black;
-            border-top: 2px solid black;
-            padding: 5px;
-            right: 10px;
-            top: 20%;
-            -moz-transform: rotate(-135deg);
-            -ms-transform: rotate(-135deg);
-            -o-transform: rotate(-135deg);
-            -webkit-transform: rotate(-135deg);
+            border-left: 2px solid #2f2f2f;
+            border-top: 2px solid #2f2f2f;
+            padding: 4px;
+            right: 12px;
+            top: 25%;
             transform: rotate(-135deg);
         }
 
         .dropdown-check-list .anchor:active:after {
-            right: 8px;
-            top: 21%;
+            right: 10px;
+            top: 27%;
         }
 
         .dropdown-check-list ul.items {
-            padding: 2px;
+            padding: 8px 12px;
             display: none;
             margin: 0;
-            border: 1px solid #ccc;
+            list-style: none;
+            border: 1px solid #2f2f2f;
             border-top: none;
+            max-height: 320px;
+            overflow-y: auto;
+            background: #f9f7f1;
         }
 
         .dropdown-check-list ul.items li {
             list-style: none;
+            font-family: Georgia, serif;
+            font-size: 13px;
+            line-height: 1.6;
+            padding: 1px 0;
+        }
+
+        .dropdown-check-list ul.items input {
+            margin-right: 8px;
         }
 
         .dropdown-check-list.visible .anchor {
-            color: #0094ff;
+            background: rgba(255, 225, 0, 0.3);
         }
 
         .dropdown-check-list.visible .items {
             display: block;
         }
     </style>
-    <!-- POSTED: 07.26.2023 -->
 </head>
 
 <body>
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
 
-    <div class="links">
-        <a href="../datasets.html">Datasets</a>
-        <a href="../projects.html" id="current-page">Projects</a>
-        <!-- <a href="../experience.html">Experience</a> -->
-        <a href="../about.html">About</a>
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
+        </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="../datasets.html">Datasets</a>
+            <a href="../projects.html" id="current-page">Projects</a>
+            <a href="../about.html">About</a>
+        </nav>
     </div>
 
-    <div class="date-line">
-        <p id="date-element">
-            </li>
-    </div>
+    <article class="article-page">
+        <p class="article-kicker">Data &middot; Rankings</p>
+        <h1 class="article-headline">US News Rankings, Across the Decades</h1>
+        <p class="article-deck">An interactive tool for watching elite universities rise and fall across four decades of U.S. News rankings.</p>
+        <p class="article-byline">By Aron Frishberg</p>
 
-    <center>
-        <div class="page-content">
-            <h2>Graphing Tool for US News Rankings (1984 - 2025)</h2>
+        <div style="text-align: center;">
             <div id="list1" class="dropdown-check-list" tabindex="100">
                 <span class="anchor">Select Colleges</span>
-                <p></p>
                 <ul class="items">
                     <li><input type="checkbox" id="0" onClick="updateSelected()" />American University</li>
                     <li><input type="checkbox" id="1" onClick="updateSelected()" />Baylor University</li>
@@ -106,8 +120,7 @@
                     <li><input type="checkbox" id="4" onClick="updateSelected()" />Boston University</li>
                     <li><input type="checkbox" id="5" onClick="updateSelected()" />Brandeis University</li>
                     <li><input type="checkbox" id="6" onClick="updateSelected()" />Brown University</li>
-                    <li><input type="checkbox" id="7" onClick="updateSelected()" />California Institute of Technology
-                    </li>
+                    <li><input type="checkbox" id="7" onClick="updateSelected()" />California Institute of Technology</li>
                     <li><input type="checkbox" id="8" onClick="updateSelected()" />Carnegie Mellon University</li>
                     <li><input type="checkbox" id="9" onClick="updateSelected()" />Case Western Reserve University</li>
                     <li><input type="checkbox" id="10" onClick="updateSelected()" />Clemson University</li>
@@ -123,8 +136,7 @@
                     <li><input type="checkbox" id="20" onClick="updateSelected()" />Indiana University</li>
                     <li><input type="checkbox" id="21" onClick="updateSelected()" />Johns Hopkins University</li>
                     <li><input type="checkbox" id="22" onClick="updateSelected()" />Lehigh University</li>
-                    <li><input type="checkbox" id="23" onClick="updateSelected()" />Massachusetts Institute of
-                        Technology</li>
+                    <li><input type="checkbox" id="23" onClick="updateSelected()" />Massachusetts Institute of Technology</li>
                     <li><input type="checkbox" id="24" onClick="updateSelected()" />New York University</li>
                     <li><input type="checkbox" id="25" onClick="updateSelected()" />North Carolina State University</li>
                     <li><input type="checkbox" id="26" onClick="updateSelected()" />Northeastern University</li>
@@ -134,8 +146,7 @@
                     <li><input type="checkbox" id="30" onClick="updateSelected()" />Pepperdine University</li>
                     <li><input type="checkbox" id="31" onClick="updateSelected()" />Princeton University</li>
                     <li><input type="checkbox" id="32" onClick="updateSelected()" />Purdue University</li>
-                    <li><input type="checkbox" id="33" onClick="updateSelected()" />Rensselaer Polytechnic Institute
-                    </li>
+                    <li><input type="checkbox" id="33" onClick="updateSelected()" />Rensselaer Polytechnic Institute</li>
                     <li><input type="checkbox" id="34" onClick="updateSelected()" />Rice University</li>
                     <li><input type="checkbox" id="35" onClick="updateSelected()" />Rutgers University</li>
                     <li><input type="checkbox" id="36" onClick="updateSelected()" />Southern Methodist University</li>
@@ -146,64 +157,60 @@
                     <li><input type="checkbox" id="41" onClick="updateSelected()" />Tufts University</li>
                     <li><input type="checkbox" id="42" onClick="updateSelected()" />Tulane University</li>
                     <li><input type="checkbox" id="43" onClick="updateSelected()" />UCLA</li>
-                    <li><input type="checkbox" id="44" onClick="updateSelected()" />University of California Berkeley
-                    </li>
+                    <li><input type="checkbox" id="44" onClick="updateSelected()" />University of California Berkeley</li>
                     <li><input type="checkbox" id="45" onClick="updateSelected()" />University of California Davis</li>
                     <li><input type="checkbox" id="46" onClick="updateSelected()" />University of California Irvine</li>
-                    <li><input type="checkbox" id="47" onClick="updateSelected()" />University of California San Diego
-                    </li>
-                    <li><input type="checkbox" id="48" onClick="updateSelected()" />University of California Santa
-                        Barbara</li>
+                    <li><input type="checkbox" id="47" onClick="updateSelected()" />University of California San Diego</li>
+                    <li><input type="checkbox" id="48" onClick="updateSelected()" />University of California Santa Barbara</li>
                     <li><input type="checkbox" id="49" onClick="updateSelected()" checked />University of Chicago</li>
                     <li><input type="checkbox" id="50" onClick="updateSelected()" />University of Connecticut</li>
                     <li><input type="checkbox" id="51" onClick="updateSelected()" />University of Florida</li>
                     <li><input type="checkbox" id="52" onClick="updateSelected()" />University of Illinois</li>
                     <li><input type="checkbox" id="53" onClick="updateSelected()" />University of Maryland</li>
-                    <li><input type="checkbox" id="54" onClick="updateSelected()" />University of Massachusetts Amherst
-                    </li>
+                    <li><input type="checkbox" id="54" onClick="updateSelected()" />University of Massachusetts Amherst</li>
                     <li><input type="checkbox" id="55" onClick="updateSelected()" />University of Miami</li>
                     <li><input type="checkbox" id="56" onClick="updateSelected()" />University of Michigan</li>
                     <li><input type="checkbox" id="57" onClick="updateSelected()" />University of Minnesota</li>
-                    <li><input type="checkbox" id="58" onClick="updateSelected()" />University of North Carolina at
-                        Chapel Hill</li>
+                    <li><input type="checkbox" id="58" onClick="updateSelected()" />University of North Carolina at Chapel Hill</li>
                     <li><input type="checkbox" id="59" onClick="updateSelected()" />University of Notre Dame</li>
                     <li><input type="checkbox" id="60" onClick="updateSelected()" />University of Pennsylvania</li>
                     <li><input type="checkbox" id="61" onClick="updateSelected()" />University of Pittsburgh</li>
                     <li><input type="checkbox" id="62" onClick="updateSelected()" />University of Rochester</li>
-                    <li><input type="checkbox" id="63" onClick="updateSelected()" />University of Southern California
-                    </li>
+                    <li><input type="checkbox" id="63" onClick="updateSelected()" />University of Southern California</li>
                     <li><input type="checkbox" id="64" onClick="updateSelected()" />University of Virginia</li>
                     <li><input type="checkbox" id="65" onClick="updateSelected()" />Vanderbilt University</li>
                     <li><input type="checkbox" id="66" onClick="updateSelected()" />Villanova University</li>
                     <li><input type="checkbox" id="67" onClick="updateSelected()" />Wake Forest University</li>
-                    <li><input type="checkbox" id="68" onClick="updateSelected()" />Washington University in St. Louis
-                    </li>
+                    <li><input type="checkbox" id="68" onClick="updateSelected()" />Washington University in St. Louis</li>
                     <li><input type="checkbox" id="69" onClick="updateSelected()" />Worcester Polytechnic Institute</li>
                     <li><input type="checkbox" id="70" onClick="updateSelected()" />Yale University</li>
                     <li><input type="checkbox" id="71" onClick="updateSelected()" />Yeshiva University</li>
                 </ul>
             </div>
-            <div style="width:80%;">
+        </div>
+
+        <figure class="article-hero">
+            <div style="width:100%;">
                 <canvas id="myChart" width="400" height="400"></canvas>
             </div>
-            <p class="article-content">Each year, the magazine U.S. News ranks college in the United States, as well as
-                internationally.
-                This practice, and the fundamental ideas behind rankings, have come under much scrutiny recently, as
-                people feel it's misleading, unfair,
-                and "gameable". However, I thought this would be a challenging data project, so I decided to take it on.
-                </li>
-            <p class="article-content">Using Python, I collected all U.S. News rankings for "significant" colleges in
-                the United States dating back to 1984, the year that the rankings began. This data is available
-                in a data format on my github. I then used that data, along with chart.js, to make an interactive
-                graphing tool that allows you to see how a college has changed in the rankings over time.
-                </li>
-            <p>I've also created this data as a standalone dataset, which can be found <b><a
-                        href="https://github.com/frishberg/US-College-Ranking-Data">here</a></b></p>
-            <p id="bottom-spacer">
-                </li>
-                <script src="../js/usnews/initialize.js"></script>
+            <figcaption>U.S. News national college rankings, plotted by year. Select schools above to compare.</figcaption>
+        </figure>
+
+        <div class="article-body">
+            <p>Each year, the magazine U.S. News ranks colleges in the United States, as well as internationally. This practice, and the fundamental ideas behind rankings, have come under much scrutiny recently, as people feel it's misleading, unfair, and "gameable". I thought this would be a challenging data project, so I decided to take it on.</p>
+
+            <p>Using Python, I collected all U.S. News rankings for "significant" colleges in the United States dating back to 1984, the year the rankings began. I then used that data, along with chart.js, to make an interactive graphing tool that allows you to see how a college has changed in the rankings over time.</p>
+
+            <p>I've also published this data as a standalone dataset, which can be found <a href="https://github.com/frishberg/US-College-Ranking-Data" target="_blank" rel="noopener">here</a>.</p>
         </div>
-    </center>
+    </article>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
+    <script src="../js/usnews/initialize.js"></script>
+
 </body>
 
 </html>

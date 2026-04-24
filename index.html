@@ -10,8 +10,10 @@
     <meta name="keywords"
         content="aronfrishberg, aron, frishberg, programming, data, analytics, smart, intelligent, projects, math, computer science, university of chicago, uchicago, business, Aron Frishberg, Gatsby Robotics, San Francisco, robotics, humanoid robot, programming portfolio, data science projects, computer science innovation, technology and business insights, software development, data visualization, chess analytics, mathematical theories, Nobel Prize analysis, record labels research, university rankings analysis, Collatz Conjecture art, educational datasets, programming skills showcase, machine learning, economic analysis">
     <meta name="author" content="Aron Frishberg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
         rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="css/icon.ico" />
     <link rel="stylesheet" href="css/index.css">
@@ -21,241 +23,119 @@
 
 <body>
 
-    <header>
-        <h1>ARON FRISHBERG</h1>
-    </header>
-
-    <div class="links">
-        <a href="datasets.html">Datasets</a>
-        <a href="projects.html" id="current-page">Projects</a>
-        <!-- <a href="experience.html">Experience</a> -->
-        <a href="about.html">About</a>
-    </div>
-
-    <div class="date-line">
-        <p id="date-element"></p>
-    </div>
-
-    <!--articles-->
-
-    <center>
-
-        <div class="article-section">
-
-            <div class="article">
-                <a href="gatsby.html">
-                    <div class="filler-div">
-                        <h2 class="hl5">Building Gatsby</h2>
-                        <hr>
-                        <img src="img/previews/gatsby.jpg" alt="Gatsby Robotics - Humanoid Robot Cleaning">
-                        <p class="article-content">Earlier this year, I dropped out of the University of Chicago to start a robotics
-                            company. The company is called Gatsby, and we send humanoid robots to clean apartments in San Francisco.</p>
-                        <p class="article-content">You open the app, pick a time, a robot shows up at your door, cleans your apartment,
-                            and leaves. We're backed by NVIDIA Inception and Entrepreneurs First, and we're just getting started. <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/university-nobel-prizes.html">
-                    <div class="filler-div">
-                        <h2 class="hl4">Universities with the Most Nobel Prizes</h2>
-                        <hr>
-                        <img src="img/previews/university-nobel-prizes.jpg" alt="Universities with the Most Nobel Prizes Data">
-                        <p class="article-content">Heading off to the University of Chicago, I kept hearing that
-                            UChicago had a crazy amount of Nobel Prizes. As an amateur data scientist, I decided I
-                            needed to put this to the test.</p>
-                        <p class="article-content">Using Python, I coded a program that scraped a list of all Nobel
-                            Prize winners from Wikipedia, and then scrape each laureate's wikipedia page to find their
-                            academic affiliations (including alma matters and institutions where they've worked). I then
-                            created this page, which allows for analysis of the data. This includes filters to allow for
-                            specific prize categories, specific time periods and restricting the type of academic
-                            affiliation. <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/endowments.html">
-                    <div class="filler-div">
-                        <h2 class="hl1">Graph of Ivy Plus Endowments (2014 - 2024)</h2>
-                        <hr>
-                        <img src="img/previews/endowments.PNG" alt="Graph of Ivy Plus Endowments (2014 - 2024)">
-                        <p class="article-content">For accuracy, I manually the endowments over the past 10 years of the "Ivy Plus" institutions.  This definition is put forward by the Ivy Plus Consortium, and the definition is maintained by each of its member institutions.  
-                        This group generally consists of the most elite universities in the US, including the Ivy league (Princeton, Harvard, ...) as well as other extremely elite universities (MIT, UChicago, ...).  These schools also have some of the largest endowments in the world, ranging anywhere from $4B to $50B.  <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/just-one-a.html">
-                    <div class="filler-div">
-                        <h2 class="hl3">Just One A Podcast</h2>
-                        <hr>
-                        <img src="img/previews/just-one-a.png" alt="Just One A Podcast">
-                        <p class="article-content">During the finals week of my first semester at Brandeis, I had the idea to
-                            start a podcast where I interviewed people from the Forbes 30 Under 30 list and asked them about 
-                            their experiences starting companies and just about their lives in general.
-                        </p>
-                        <p class="article-content">It was one of the hardest projects I've ever undertaken, including many 
-                            many unanswered emails, but within two months I had interviewed 15 people from the 2023 Forbes 30 Under 30, as well as 
-                            Holly O'Neill, the President of Retail Banking @ BofA.  <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/billboard-labels.html">
-                    <div class="filler-div">
-                        <h2 class="hl2">Record Labels of the Top 100 Artists</h2>
-                        <hr>
-                        <img src="img/previews/billboard top 100.jpg" alt="Billboard Top 100 Artist Analysis">
-                        <p class="article-content">A few years ago, I decided to research the prevalence of major record
-                            labels in popular music. I found that they basically produced everything, unsurprisingly,
-                            although there is a rise in popular independent artists with the democratization of
-                            technology and information.</p>
-                        <p class="article-content">With this project, I wanted to create a tool to analyze the labels of
-                            the Billboard Top 100 Artists. I coded it so that the data would be updated daily (as can be
-                            seen in Datasets) so the tool will always be a live analysis of the major labels behind the
-                            major artists. <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/chess-analytica.html">
-                    <div class="filler-div">
-                        <h2 class="hl5">Chess-Analytica</h2>
-                        <hr>
-                        <img src="img/previews/chess-analytica.PNG" alt="Chess-Analytica Python Library">
-                        <p class="article-content">This idea began a while ago when I coded a project I called "Not
-                            Stockfish". Stockfish is currently the best chess engine in the world, and plays essentially
-                            flawlessly. On the other hand, I'm barely breaking 900 elo on chess.com, so I thought it
-                            would be interesting to create an engine that ran off of my moves.</p>
-                        <p class="article-content">Over the course of the next week or so, I ended up doing just that.
-                            It involved interfacing with the chess.com API, and a bunch of work.</p>
-                        <p class="article-content">I've always wanted to create an open source library of my own and so
-                            a few months later, I had the idea of creating a Python library that made chess analytics
-                            way easier (by making both scraping and analysis simpler). That is the story of how
-                            chess-analytica began. <b>Click to continue.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <!--<div class="article">
-                <a href="projects/university-billionaires.html">
-                    <div class="filler-div">
-                        <h2 class="hl4">Universities with the Most Billionaires</h2>
-                        <hr>
-                        <img src="img/previews/university-billionaires.jpg" alt="Universities with the Most Billionaires Data">
-                        <p class="article-content">After hearing talk about which universities churn out the most billionaire alumni, I got curious. As an amateur data scientist, I decided to build a resource that could finally answer the question.</p>
-                        <p class="article-content">Using Python, I scraped lists of the world's wealthiest individuals, pinpointed their alma maters, and compiled everything into an interactive tool. The page lets you filter by net worth, country, and more—uncovering which schools dominate in minting billionaires. <b>Click to view.</b></p>
-                    </div>
-                </a>
-            </div>-->
-
-            <div class="article">
-                <a href="projects/chess-structure.html">
-                    <div class="filler-div">
-                        <h2 class="hl3">Frishberg Chess Structure</h2>
-                        <hr>
-                        <img src="img/previews/firshberg-chess-structure.PNG" alt="Frishberg Chess Structure">
-                        <p class="article-content">This all began with a simple idea: an "indestructible" chess
-                            structure. Looking at a
-                            pawn to the back left of a bishop, we see that they each protect eachother, thus making an
-                            "indestructible" chess structure.
-                            I had the idea to take this further though. As a result, I coded a complex Python program
-                            that created chess structures
-                            until it created the "optimal" structure.</p>
-                        <p class="article-content">The basic idea behind it was to find a structure of pieces where
-                            every piece was protected by another, and every piece was
-                            protecting at least one other piece. <b>Click to continue.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/01-theory.html">
-                    <div class="filler-div">
-                        <h2 class="hl1">01 Theory</h2>
-                        <hr>
-                        <img src="img/previews/01-theory.png" alt="01 Theory">
-                        <p class="article-content">In 8th grade, I had the idea for a mathematical theory: 01 Theory.
-                            The basic idea is that if you analyzed all numbers, from negative to positive infinity, and
-                            counted the number of '1's and '0's that appeared in
-                            the numbers (ex. 10165 has 2 '1's and 1 '0') that the 1s would not only out number the 0s,
-                            but by an infinite amount.
-                        </p>
-
-                        <p class="article-content">This is due to the simple fact that a number can start with a 1 but
-                            not a 0. In any place that a 0 can appear, a 1 could take its place, but this is not correct
-                            the other way around, due to the fact that a number
-                            can start with a 1. As a result, there will be an infinite number more 1s than 0s.
-                        </p>
-
-                        <p class="article-content">Using my new programming skills, I coded a program in Python that
-                            analyzes the ratio between 1s and 0s and uses MatPlotLib to create a graph. The graph can be
-                            seen above. As can be seen,
-                            the ratio always remains above 1, as there will always be more 1s than 0s, however, the
-                            graph tends downward (to an asymptote of 1) as the numbers get larger.
-                        </p>
-
-                        <p class="article-content">Analysis: This is because if we think about why the ratio is above 1
-                            at all, is because of the first digits of numbers. <b>Click to continue.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/collatz.html">
-                    <div class="filler-div">
-                        <h2 class="hl2">Collatz Conjecture Art</h2>
-                        <hr>
-                        <img src="img/previews/collatz-conjecture-art.png" alt="Collatz Conjecture Art">
-                        <p class="article-content">Collatz Conjecture (or the 3n+1 problem) is a famous idea within the
-                            field of mathematics.
-                            It is known in the field for being an unsolvable problem with "experienced mathematicians
-                            even going as far as warning up-and-comers to stay away". The idea behind the conjecture is
-                            actually quite simple:
-                            taking any number, if it is even, divide it by 2, and if it is odd, multiply it by 3 and add
-                            1. Continue this process
-                            until you reach 1. The conjecture states that no matter what number you start with, you will
-                            always reach 1. Mathematicians
-                            have tried for ages find a pattern in this process, but all have failed. <b>Click to
-                                continue.</b></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="article">
-                <a href="projects/usnews.html">
-                    <div class="filler-div">
-                        <h2 class="hl4">Graphing Tool for US News Rankings (1984 - 2025)</h2>
-                        <hr>
-                        <img src="img/previews/graphing-tool-for-us-news-rankings-(1983-2023).png" alt="Graphing Tool for US News Rankings (1984 - 2025)">
-                        <p class="article-content">Each year, the magazine U.S. News ranks college in the United States,
-                            as well as internationally.
-                            This practice, and the fundamental ideas behind rankings, have come under much scrutiny
-                            recently, as people feel it's misleading, unfair,
-                            and "gameable". However, I thought this would be a challenging data project, so I decided to
-                            take it on.
-                        </p>
-                        <p class="article-content">Using Python, I collected all U.S. News rankings for "significant"
-                            colleges in the United States dating back to 1984, the year that the rankings began. This
-                            data is available
-                            in a data format on my github. I then used that data, along with chart.js, to make an
-                            interactive graphing tool that allows you to see how a college has changed in the rankings
-                            over time. <b>Click to view.</b>
-                        </p>
-                    </div>
-                </a>
-            </div>
-
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
         </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="datasets.html">Datasets</a>
+            <a href="projects.html" id="current-page">Projects</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
 
-    </center>
+    <article class="lead-story">
+        <a href="gatsby.html">
+            <div class="lead-grid">
+                <div class="lead-photo">
+                    <img src="img/previews/gatsby.jpg" alt="Gatsby Robotics, humanoid robot cleaning demonstration">
+                    <p class="caption">A Gatsby demo in San Francisco. The robot arrives at your door, cleans your apartment, and leaves.</p>
+                </div>
+                <div class="lead-text">
+                    <p class="kicker">The Lead &middot; <span id="lead-date">Currently</span></p>
+                    <h2 class="lead-headline">I Dropped Out to Teach a Robot to Clean Your Apartment.</h2>
+                    <p class="deck">Gatsby Robotics sends humanoid robots to clean homes in San Francisco. We're backed by NVIDIA Inception and Entrepreneurs First, and we're just getting started.</p>
+                    <p class="byline">By Aron Frishberg &middot; San Francisco</p>
+                    <p class="lede">Earlier this year, I left the University of Chicago to start a robotics company. The company is called Gatsby, and we send humanoid robots to clean apartments in San Francisco. You open the app, pick a time, a robot shows up at your door, cleans your apartment, and leaves.</p>
+                    <p class="continued">Continued on p. 1 &rarr;</p>
+                </div>
+            </div>
+        </a>
+    </article>
 
-    <!--articles-->
+    <section class="section-header">
+        <h3>Also in This Issue</h3>
+    </section>
+
+    <section class="secondary-features">
+        <div class="secondary-grid">
+            <a href="projects/university-nobel-prizes.html" class="secondary-story">
+                <img src="img/previews/university-nobel-prizes.jpg" class="secondary-photo" alt="Nobel laureates by university">
+                <p class="secondary-caption">Nobel laureates tallied against their academic affiliations. Scraped from Wikipedia, totaled by a Python script.</p>
+                <p class="sans-kicker">Data &middot; Research</p>
+                <h3 class="secondary-headline">The Universities with the Most Nobel Prizes</h3>
+                <p class="secondary-byline">By Aron Frishberg</p>
+                <p class="secondary-body">Heading off to the University of Chicago, I kept hearing that UChicago had a crazy amount of Nobel Prizes. As an amateur data scientist, I decided I needed to put this to the test.</p>
+                <p class="secondary-body">Using Python, I coded a program that scraped a list of all Nobel Prize winners from Wikipedia, and then scrape each laureate's wikipedia page to find their academic affiliations (including alma matters and institutions where they've worked). I then created this page, which allows for analysis of the data. This includes filters to allow for specific prize categories, specific time periods and restricting the type of academic affiliation.</p>
+            </a>
+            <a href="projects/chess-analytica.html" class="secondary-story">
+                <img src="img/previews/chess-analytica.PNG" class="secondary-photo" alt="Chess-Analytica Python library">
+                <p class="secondary-caption">Chess&#8209;Analytica, an open-source Python library published on GitHub.</p>
+                <p class="sans-kicker">Chess &middot; Open Source</p>
+                <h3 class="secondary-headline">Chess-Analytica: A Library of One's Own</h3>
+                <p class="secondary-byline">By Aron Frishberg</p>
+                <p class="secondary-body">This idea began a while ago when I coded a project I called "Not Stockfish". Stockfish is currently the best chess engine in the world, and plays essentially flawlessly. On the other hand, I'm barely breaking 900 elo on chess.com, so I thought it would be interesting to create an engine that ran off of my moves.</p>
+                <p class="secondary-body">Over the course of the next week or so, I ended up doing just that. It involved interfacing with the chess.com API, and a bunch of work.</p>
+                <p class="secondary-body">I've always wanted to create an open source library of my own and so a few months later, I had the idea of creating a Python library that made chess analytics way easier (by making both scraping and analysis simpler). That is the story of how chess-analytica began.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-header">
+        <h3>From the Archives</h3>
+    </section>
+
+    <section class="archive-section">
+        <div class="archive-grid">
+            <a href="projects/endowments.html" class="archive-card">
+                <img src="img/previews/endowments.PNG" class="archive-thumb" alt="Ivy Plus endowments graph">
+                <p class="sans-kicker">Data</p>
+                <h4 class="archive-headline">Ivy Plus Endowments, A Decade in Review</h4>
+                <p class="archive-blurb">The nation's richest universities, plotted across the past decade. Hand-compiled for accuracy.</p>
+            </a>
+            <a href="projects/just-one-a.html" class="archive-card">
+                <img src="img/previews/just-one-a.png" class="archive-thumb" alt="Just One A podcast">
+                <p class="sans-kicker">Media</p>
+                <h4 class="archive-headline">Just One A: The Podcast</h4>
+                <p class="archive-blurb">Fifteen conversations with Forbes 30 Under 30 honorees, plus the President of Retail Banking at Bank of America.</p>
+            </a>
+            <a href="projects/billboard-labels.html" class="archive-card">
+                <img src="img/previews/billboard top 100.jpg" class="archive-thumb" alt="Billboard Top 100 artist analysis">
+                <p class="sans-kicker">Music</p>
+                <h4 class="archive-headline">The Billboard Top 100, by Label</h4>
+                <p class="archive-blurb">A live analysis of which labels own the charts. (Nearly all of them.)</p>
+            </a>
+            <a href="projects/usnews.html" class="archive-card">
+                <img src="img/previews/graphing-tool-for-us-news-rankings-(1983-2023).png" class="archive-thumb" alt="US News rankings tool">
+                <p class="sans-kicker">Data</p>
+                <h4 class="archive-headline">US News Rankings, Across Four Decades</h4>
+                <p class="archive-blurb">An interactive tool for watching elite universities rise and fall across four decades.</p>
+            </a>
+            <a href="projects/chess-structure.html" class="archive-card">
+                <img src="img/previews/firshberg-chess-structure.PNG" class="archive-thumb" alt="Frishberg chess structure">
+                <p class="sans-kicker">Chess</p>
+                <h4 class="archive-headline">The Frishberg Chess Structure</h4>
+                <p class="archive-blurb">A Python search for the most mutually defended arrangement of chess pieces on a board.</p>
+            </a>
+            <a href="projects/01-theory.html" class="archive-card">
+                <img src="img/previews/01-theory.png" class="archive-thumb" alt="01 Theory">
+                <p class="sans-kicker">Mathematics</p>
+                <h4 class="archive-headline">01 Theory</h4>
+                <p class="archive-blurb">On why, across all integers, the ones will always outnumber the zeros, by an infinite margin.</p>
+            </a>
+            <a href="projects/collatz.html" class="archive-card">
+                <img src="img/previews/collatz-conjecture-art.png" class="archive-thumb" alt="Collatz conjecture art">
+                <p class="sans-kicker">Mathematics</p>
+                <h4 class="archive-headline">The Collatz Conjecture, in Art</h4>
+                <p class="archive-blurb">A 3n+1 visualizer that renders an unsolved problem as something closer to a painting.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
 </body>
 
 </html>
