@@ -901,6 +901,10 @@ input, select {
     color: #2f2f2f;
 }
 
+.article-badge {
+    margin: 0 0 28px;
+}
+
 .article-hero {
     margin: 0 0 28px;
 }
