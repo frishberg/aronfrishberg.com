@@ -757,6 +757,42 @@ input, select {
     color: #2f2f2f;
 }
 
+.about-list {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #2f2f2f;
+    margin: 0 0 16px;
+    padding-left: 1.4em;
+}
+
+.about-list li {
+    margin: 0 0 8px;
+}
+
+.about-list a {
+    color: #2f2f2f;
+    text-decoration: none;
+    padding: 0 0.12em;
+    border-bottom: 1px solid #999;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0.1),
+        rgba(255, 225, 0, 0.7) 5%,
+        rgba(255, 225, 0, 0.3)
+    );
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+    background-size: 0 60%;
+    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+}
+
+.about-list a:hover {
+    color: #2f2f2f;
+    background-size: 100% 60%;
+    border-bottom-color: #2f2f2f;
+}
+
 .about-body a,
 .about-lede a,
 .contact-card a {
