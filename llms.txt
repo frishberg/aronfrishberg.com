@@ -1,0 +1,29 @@
+# Aron Frishberg
+
+> Personal site of Aron Frishberg, founder of Gatsby Robotics. Long-form essays, data projects, and open datasets. On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States.
+
+## Currently
+
+- [Building Gatsby](https://aronfrishberg.com/gatsby): Founder's notes on starting Gatsby Robotics in San Francisco, the company that sends humanoid robots to clean apartments. **Update (May 2026): On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States — the first of its kind in the U.S.** Backed by NVIDIA Inception and Entrepreneurs First.
+
+## About
+
+- [About](https://aronfrishberg.com/about): Short biographical note on Aron Frishberg — founder of Gatsby Robotics, formerly at Third Point and Fira (YC W25), previously studied computer science and economics at the University of Chicago before dropping out in January 2026 to build Gatsby.
+- [Experience](https://aronfrishberg.com/experience): Resume and professional history.
+
+## Projects
+
+- [Universities with the Most Nobel Prizes](https://aronfrishberg.com/projects/university-nobel-prizes): Interactive tally of Nobel laureates by university affiliation, scraped from Wikipedia and filterable by category and era.
+- [Universities with the Most Billionaires](https://aronfrishberg.com/projects/university-billionaires): Interactive tool mapping the world's billionaires to the universities they attended, filterable by net worth and country.
+- [The Billboard Top 100, by Label](https://aronfrishberg.com/projects/billboard-labels): Live analysis of which record labels own the Billboard Top 100. Scraped daily from Wikipedia via GitHub Actions.
+- [Chess-Analytica](https://aronfrishberg.com/projects/chess-analytica): Open-source Python library for chess data scraping and analysis. MIT-licensed, on PyPi.
+- [Frishberg Chess Structure](https://aronfrishberg.com/projects/chess-structure): A Python-generated chess structure where each of sixteen white pieces protects, and is protected by, another piece.
+- [Ivy Plus Endowments](https://aronfrishberg.com/projects/endowments): A decade of Ivy Plus university endowments, plotted.
+- [Just One A Podcast](https://aronfrishberg.com/projects/just-one-a): Interviews with Forbes 30 Under 30 honorees, plus the President of Retail Banking at Bank of America.
+- [US News Rankings, Across the Decades](https://aronfrishberg.com/projects/usnews): Interactive graphing tool for the evolution of US News college rankings across four decades.
+- [The Collatz Conjecture, in Art](https://aronfrishberg.com/projects/collatz): A 3n+1 visualizer that renders an unsolved mathematical problem as something closer to a painting.
+- [01 Theory](https://aronfrishberg.com/projects/01-theory): An eighth-grade conjecture on why, across all integers, the ones will always outnumber the zeros by an infinite margin.
+
+## Datasets
+
+- [Datasets](https://aronfrishberg.com/datasets): Open datasets compiled in service of the projects above. Each hosted on GitHub and free to reuse.

@@ -985,6 +985,58 @@ input, select {
     color: #2f2f2f;
 }
 
+.article-body p.article-update {
+    border-top: 3px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 20px 0 18px;
+    margin: 0 0 26px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.article-body p.article-update::first-letter {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    float: none;
+    line-height: inherit;
+    padding: 0;
+    color: inherit;
+}
+
+.article-body p.article-update strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin: 0 0 14px;
+    font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+}
+
+.article-body p.article-update strong::before,
+.article-body p.article-update strong::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #2f2f2f;
+}
+
+.article-body p.article-update + p::first-letter {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 66px;
+    float: left;
+    line-height: 0.86;
+    padding: 6px 10px 0 0;
+    color: #2f2f2f;
+}
+
 .article-body a {
     color: #2f2f2f;
     text-decoration: none;
@@ -1329,6 +1381,11 @@ input, select {
         line-height: 1.6;
     }
     .article-body p:first-of-type::first-letter {
+        font-size: 52px;
+        line-height: 0.9;
+        padding: 4px 8px 0 0;
+    }
+    .article-body p.article-update + p::first-letter {
         font-size: 52px;
         line-height: 0.9;
         padding: 4px 8px 0 0;

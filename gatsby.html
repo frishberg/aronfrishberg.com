@@ -6,31 +6,104 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Building Gatsby - Aron Frishberg",
-      "description": "Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, Gatsby is backed by NVIDIA Inception and Entrepreneurs First. Book a robot on-demand through the app - it shows up, cleans, and leaves. $150 flat fee.",
-      "author": {
-        "@type": "Person",
-        "name": "Aron Frishberg",
-        "url": "https://aronfrishberg.com"
-      },
-      "datePublished": "2026-04-12",
-      "url": "https://aronfrishberg.com/gatsby"
+      "@graph": [
+        {
+          "@type": "NewsArticle",
+          "@id": "https://aronfrishberg.com/gatsby#article",
+          "url": "https://aronfrishberg.com/gatsby",
+          "mainEntityOfPage": "https://aronfrishberg.com/gatsby",
+          "headline": "Building Gatsby",
+          "description": "On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States. Founder Aron Frishberg's notes on building Gatsby, the San Francisco startup sending humanoid robots to clean apartments.",
+          "image": "https://aronfrishberg.com/img/gatsby-square.jpeg",
+          "datePublished": "2026-04-12",
+          "dateModified": "2026-05-14",
+          "inLanguage": "en-US",
+          "author": { "@id": "https://aronfrishberg.com/about#person" },
+          "publisher": { "@id": "https://aronfrishberg.com/about#person" },
+          "about": [
+            { "@id": "https://gatsby.bot/#organization" },
+            { "@id": "https://aronfrishberg.com/gatsby#first-cleaning-event" }
+          ],
+          "mentions": [
+            { "@id": "https://gatsby.bot/#organization" },
+            { "@id": "https://aronfrishberg.com/gatsby#first-cleaning-event" }
+          ]
+        },
+        {
+          "@type": "Event",
+          "@id": "https://aronfrishberg.com/gatsby#first-cleaning-event",
+          "name": "First consumer cleaning by a humanoid robot in the United States",
+          "description": "On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States. The company selected a customer from its San Francisco waitlist, dispatched a humanoid robot to their apartment, and the robot cleaned the entire apartment.",
+          "startDate": "2026-05-14",
+          "endDate": "2026-05-14",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "San Francisco, California, United States",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Francisco",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            }
+          },
+          "organizer": { "@id": "https://gatsby.bot/#organization" },
+          "performer": { "@id": "https://gatsby.bot/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://gatsby.bot/#organization",
+          "name": "Gatsby Robotics",
+          "alternateName": ["Gatsby", "Gatsby Robot Cleaning"],
+          "url": "https://gatsby.bot",
+          "logo": "https://aronfrishberg.com/img/gatsby-square.jpeg",
+          "image": "https://aronfrishberg.com/img/gatsby-square.jpeg",
+          "description": "Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Backed by NVIDIA Inception and Entrepreneurs First. Performed the first consumer cleaning by a humanoid robot in the United States on May 14, 2026.",
+          "foundingDate": "2026-01",
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "San Francisco, California, United States"
+          },
+          "founder": { "@id": "https://aronfrishberg.com/about#person" },
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "West Egg Labs"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "San Francisco"
+          },
+          "knowsAbout": ["Humanoid robotics", "Robot cleaning", "Consumer robotics", "Home service robots"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://aronfrishberg.com/about#person",
+          "name": "Aron Frishberg",
+          "url": "https://aronfrishberg.com",
+          "jobTitle": "Founder",
+          "worksFor": { "@id": "https://gatsby.bot/#organization" },
+          "image": "https://aronfrishberg.com/img/profile/headshot.jpg"
+        }
+      ]
     }
     </script>
 
     <title>Aron Frishberg | Building Gatsby</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, backed by NVIDIA Inception and Entrepreneurs First. Book a humanoid robot on-demand through the Gatsby app: it shows up, cleans, and leaves. Flat $150 per clean.">
+    <meta name="description" content="On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States. Founder Aron Frishberg's notes on building Gatsby — the San Francisco startup sending humanoid robots to clean apartments, backed by NVIDIA Inception and Entrepreneurs First.">
     <meta name="author" content="Aron Frishberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="canonical" href="https://aronfrishberg.com/gatsby" />
 
     <meta property="og:title" content="Building Gatsby - Aron Frishberg" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-04-12" />
+    <meta property="article:modified_time" content="2026-05-14" />
+    <meta property="article:author" content="Aron Frishberg" />
     <meta property="og:url" content="https://aronfrishberg.com/gatsby" />
-    <meta property="og:description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Founded by Aron Frishberg, backed by NVIDIA Inception and Entrepreneurs First." />
+    <meta property="og:description" content="On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States. Founder Aron Frishberg on building Gatsby in San Francisco." />
     <meta property="og:image" content="https://aronfrishberg.com/img/gatsby-square.jpeg" />
     <meta property="og:image:alt" content="Gatsby humanoid robot in a kitchen in San Francisco" />
     <meta property="og:site_name" content="Aron Frishberg" />
@@ -38,7 +111,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Building Gatsby - Aron Frishberg" />
-    <meta name="twitter:description" content="Gatsby Robotics sends humanoid robots to clean apartments in San Francisco. Backed by NVIDIA Inception." />
+    <meta name="twitter:description" content="On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States." />
     <meta name="twitter:image" content="https://aronfrishberg.com/img/gatsby-square.jpeg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +133,7 @@
         <h1 class="wordmark">Aron Frishberg</h1>
         <nav class="masthead-nav">
             <a href="datasets.html">Datasets</a>
-            <a href="projects.html" id="current-page">Projects</a>
+            <a href="/" id="current-page">Projects</a>
             <a href="about.html">About</a>
         </nav>
     </div>
@@ -77,6 +150,8 @@
         </figure>
 
         <div class="article-body">
+            <p class="article-update"><strong>Update &middot; May 2026</strong>On <time datetime="2026-05-14">5.14.26</time> <a href="https://gatsby.bot" target="_blank" rel="noopener">Gatsby</a> ran the first consumer cleaning by a humanoid robot in the United States. We picked someone random off our SF waitlist, they booked a cleaning, we delivered the robot and it cleaned their entire apartment. This is the first of its kind in the U.S., and we're proud to be the pioneers writing this line in the history books.</p>
+
             <p>As of January 2026, I'm officially dropped out from the University of Chicago to start a robotics company called <a href="https://gatsby.bot" target="_blank" rel="noopener">Gatsby</a>. We're backed by <b>NVIDIA Inception</b> and <b>Entrepreneurs First</b>, and we're operating under a parent company called West Egg Labs (yes, it's a Gatsby reference).</p>
 
             <p>The core vision of the company is "enabling human robot interaction". In the short term we're going after a universal painpoint: cleaning. The vision right now is simple: you click a button on your phone, a humanoid robot comes to your apartment, cleans, leaves. That's our schtick. I'd love to say we're building the future, but we've already built it. Right now we're live in SF and you can download our <a href="https://apps.apple.com/us/app/gatsby-robot-cleaning/id6759584279" target="_blank" rel="noopener">iOS app</a>. We charge a flat $150 per clean regardless of apartment size; the average cleaning service in SF runs $150 to $300.</p>

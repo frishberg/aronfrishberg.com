@@ -1,0 +1,13 @@
+# Renamed / removed pages — keep inbound link equity by 301'ing to the canonical replacement.
+
+# Old Nobel laureate page → new university-Nobel-prizes project
+/projects/jewish-nobel-laureates       /projects/university-nobel-prizes  301
+/projects/jewish-nobel-laureates.html  /projects/university-nobel-prizes  301
+
+# Old /nobel shortcut (was a client-side JS redirect)
+/nobel                                 /projects/university-nobel-prizes  301
+/nobel.html                            /projects/university-nobel-prizes  301
+
+# Old /projects index → homepage is the project index
+/projects                              /  301
+/projects.html                         /  301

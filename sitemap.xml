@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://aronfrishberg.com</loc>
+        <loc>https://aronfrishberg.com/</loc>
         <lastmod>2026-04-12</lastmod>
     </url>
     <url>
         <loc>https://aronfrishberg.com/gatsby</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-05-14</lastmod>
     </url>
     <url>
         <loc>https://aronfrishberg.com/about</loc>
-        <lastmod>2026-04-12</lastmod>
-    </url>
-    <url>
-        <loc>https://aronfrishberg.com/projects</loc>
         <lastmod>2026-04-12</lastmod>
     </url>
     <url>
@@ -23,6 +19,10 @@
     <url>
         <loc>https://aronfrishberg.com/projects/university-nobel-prizes</loc>
         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+        <loc>https://aronfrishberg.com/projects/university-billionaires</loc>
+        <lastmod>2025-03-24</lastmod>
     </url>
     <url>
         <loc>https://aronfrishberg.com/projects/endowments</loc>
