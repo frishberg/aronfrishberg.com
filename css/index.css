@@ -9,6 +9,13 @@
     font-display: swap;
 }
 
+/* Motion tokens: one easing curve + duration for every hover, so a link's
+   underline and its highlighter sweep move together as a single gesture. */
+:root {
+    --hover-dur: .5s;
+    --hover-ease: cubic-bezier(.22, .8, .3, 1);
+}
+
 body {
     background-color: #f9f7f1;
     font-family: Georgia, "Droid Serif", serif;
@@ -107,7 +114,7 @@ input, select {
     background-repeat: no-repeat;
     background-position: 0 60%;
     background-size: 0 70%;
-    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), color .3s;
+    transition: background-size var(--hover-dur) var(--hover-ease), color var(--hover-dur) var(--hover-ease);
 }
 
 .masthead-nav a:hover {
@@ -784,7 +791,7 @@ input, select {
     background-repeat: no-repeat;
     background-position: 0 65%;
     background-size: 0 60%;
-    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+    transition: background-size var(--hover-dur) var(--hover-ease), border-bottom-color var(--hover-dur) var(--hover-ease);
 }
 
 .about-list a:hover {
@@ -809,7 +816,7 @@ input, select {
     background-repeat: no-repeat;
     background-position: 0 65%;
     background-size: 0 60%;
-    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+    transition: background-size var(--hover-dur) var(--hover-ease), border-bottom-color var(--hover-dur) var(--hover-ease);
 }
 
 .about-body a:hover,
@@ -869,17 +876,6 @@ input, select {
     font-family: Georgia, serif;
     font-size: 15px;
     color: #2f2f2f;
-}
-
-.contact-card a {
-    color: #2f2f2f;
-    text-decoration: none;
-    border-bottom: 1px solid #999;
-    transition: border-color .3s;
-}
-
-.contact-card a:hover {
-    border-bottom-color: #2f2f2f;
 }
 
 /* ============================================================
@@ -1051,7 +1047,7 @@ input, select {
     background-repeat: no-repeat;
     background-position: 0 65%;
     background-size: 0 60%;
-    transition: background-size .45s cubic-bezier(.22, .8, .3, 1), border-bottom-color .3s;
+    transition: background-size var(--hover-dur) var(--hover-ease), border-bottom-color var(--hover-dur) var(--hover-ease);
 }
 
 .article-body a:hover {
@@ -1527,7 +1523,7 @@ input, select {
 }
 
 a {
-    transition: .5s;
+    transition: color var(--hover-dur) var(--hover-ease);
     color: #2f2f2f;
     text-decoration: none;
 }
