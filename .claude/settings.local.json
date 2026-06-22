@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(start *)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:blog.southparkcommons.com)",
+      "Bash(mkdir -p ../../_tmpframes)",
+      "Bash(ffmpeg -y -i cleaning1.MOV -vf \"scale=-2:'min\\(1280,ih\\)'\" -c:v libx264 -crf 25 -preset veryfast -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 96k cleaning1.mp4)",
+      "Bash(ffmpeg -y -i eyes_v1.MOV -vf \"scale=-2:'min\\(1280,ih\\)'\" -c:v libx264 -crf 25 -preset veryfast -pix_fmt yuv420p -movflags +faststart -an eyes_v1.mp4)",
+      "Bash(ffmpeg -y -i cleaning2.mp4 -vf \"scale=-2:'min\\(1280,ih\\)'\" -c:v libx264 -crf 25 -preset veryfast -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 96k _tmp_c2.mp4)",
+      "Bash(mv -f _tmp_c2.mp4 cleaning2.mp4)",
+      "Bash(ffmpeg -y -ss 8 -i cleaning2.mp4 -frames:v 1 -q:v 3 poster.jpg)",
+      "Bash(ffmpeg -y -ss 10 -i cleaning1.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/c1.jpg)",
+      "Bash(ffmpeg -y -ss 14 -i cleaning2.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/c2.jpg)",
+      "Bash(ffmpeg -y -ss 2 -i eyes_v1.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/eyes.jpg)",
+      "Bash(ffmpeg -y -i entire_team.jpg -vf \"crop=4032:2200:0:300,scale=900:-2,format=gray\" -q:v 3 ../previews/mobot.jpg)"
     ]
   }
 }

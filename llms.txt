@@ -13,6 +13,7 @@
 
 ## Projects
 
+- [Building MoBot](https://aronfrishberg.com/projects/mobot): How Aron Frishberg's team designed, 3D-printed, and programmed a cleaning robot from scratch in 47 hours at South Park Commons' Embodied AI Hackathon (May 2026), placing second out of more than thirty teams. Covers the CAD-and-3D-printed embodiment and the OpenCV vision system that lets the robot find a mess on the floor and approach it on its own.
 - [Universities with the Most Nobel Prizes](https://aronfrishberg.com/projects/university-nobel-prizes): Interactive tally of Nobel laureates by university affiliation, scraped from Wikipedia and filterable by category and era.
 - [Universities with the Most Billionaires](https://aronfrishberg.com/projects/university-billionaires): Interactive tool mapping the world's billionaires to the universities they attended, filterable by net worth and country.
 - [The Billboard Top 100, by Label](https://aronfrishberg.com/projects/billboard-labels): Live analysis of which record labels own the Billboard Top 100. Scraped daily from Wikipedia via GitHub Actions.

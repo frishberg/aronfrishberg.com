@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://aronfrishberg.com/projects/mobot#article",
+          "url": "https://aronfrishberg.com/projects/mobot",
+          "mainEntityOfPage": "https://aronfrishberg.com/projects/mobot",
+          "headline": "Building MoBot",
+          "description": "MoBot: a cleaning robot designed, 3D-printed, and programmed from scratch in 47 hours at South Park Commons' Embodied AI Hackathon, where it took second place. Aron Frishberg on building the embodiment and the OpenCV vision system that lets it find a mess on the floor and go after it on its own.",
+          "image": "https://aronfrishberg.com/img/mobot/poster.jpg",
+          "datePublished": "2026-06-22",
+          "dateModified": "2026-06-22",
+          "inLanguage": "en-US",
+          "author": { "@id": "https://aronfrishberg.com/about#person" },
+          "publisher": { "@id": "https://aronfrishberg.com/about#person" },
+          "about": [ { "@id": "https://aronfrishberg.com/projects/mobot#hackathon" } ],
+          "mentions": [ { "@id": "https://aronfrishberg.com/projects/mobot#hackathon" } ],
+          "keywords": ["robotics", "embodied AI", "computer vision", "OpenCV", "3D printing", "CAD", "hackathon", "cleaning robot"]
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "https://aronfrishberg.com/projects/mobot#demo-video",
+          "name": "MoBot cleaning demonstration",
+          "description": "MoBot, a self-built humanoid-inspired cleaning robot, locating and clearing debris from the carpet at South Park Commons' Embodied AI Hackathon.",
+          "thumbnailUrl": "https://aronfrishberg.com/img/mobot/poster.jpg",
+          "contentUrl": "https://aronfrishberg.com/img/mobot/cleaning2.mp4",
+          "uploadDate": "2026-05-17",
+          "author": { "@id": "https://aronfrishberg.com/about#person" }
+        },
+        {
+          "@type": "Event",
+          "@id": "https://aronfrishberg.com/projects/mobot#hackathon",
+          "name": "Embodied AI Hackathon",
+          "description": "South Park Commons' Embodied AI Hackathon, held May 15-17, 2026 in San Francisco. Aron Frishberg's team built MoBot, a from-scratch cleaning robot, and placed second.",
+          "startDate": "2026-05-15",
+          "endDate": "2026-05-17",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "South Park Commons, San Francisco, California, United States",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Francisco",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            }
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "South Park Commons",
+            "url": "https://www.southparkcommons.com"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://aronfrishberg.com/about#person",
+          "name": "Aron Frishberg",
+          "url": "https://aronfrishberg.com",
+          "image": "https://aronfrishberg.com/img/profile/headshot.jpg"
+        }
+      ]
+    }
+    </script>
+
+    <title>Aron Frishberg | Building MoBot</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="MoBot: a cleaning robot designed, 3D-printed, and programmed from scratch in 47 hours at South Park Commons' Embodied AI Hackathon, where it took second place. Aron Frishberg on building the embodiment and the OpenCV vision system that lets it find a mess on the floor and go after it on its own.">
+    <meta name="author" content="Aron Frishberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://aronfrishberg.com/projects/mobot" />
+
+    <meta property="og:title" content="Building MoBot - Aron Frishberg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-06-22" />
+    <meta property="article:modified_time" content="2026-06-22" />
+    <meta property="article:author" content="Aron Frishberg" />
+    <meta property="og:url" content="https://aronfrishberg.com/projects/mobot" />
+    <meta property="og:description" content="A cleaning robot built from scratch in 47 hours at South Park Commons' Embodied AI Hackathon. Second place, out of more than thirty teams." />
+    <meta property="og:image" content="https://aronfrishberg.com/img/mobot/poster.jpg" />
+    <meta property="og:image:alt" content="MoBot, a self-built cleaning robot, on the carpet at the South Park Commons Embodied AI Hackathon" />
+    <meta property="og:site_name" content="Aron Frishberg" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building MoBot - Aron Frishberg" />
+    <meta name="twitter:description" content="A cleaning robot built from scratch in 47 hours at South Park Commons' Embodied AI Hackathon. Second place." />
+    <meta name="twitter:image" content="https://aronfrishberg.com/img/mobot/poster.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Libre+Franklin:400,700,400italic|Neuton:400,700,800,400italic&display=swap'
+        rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../css/icon.ico" />
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+
+    <style>
+        /* MoBot photo-essay: media paired side-by-side, rounded, and responsive.
+           Rows collapse to a single column on phones. */
+        .mobot-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px auto;
+            align-items: start;
+        }
+        .mobot-figure { margin: 0; text-align: center; }
+        .mobot-figure img,
+        .mobot-figure video,
+        .article-body .mobot-figure img,
+        .article-body .mobot-figure video {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 56vh;
+            margin: 0;
+            border: none;
+            border-radius: 12px;
+            background: #000;
+            vertical-align: bottom;
+            filter: saturate(0.96) contrast(1.02);
+        }
+        .mobot-figure figcaption {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 12.5px;
+            line-height: 1.4;
+            margin: 9px auto 0;
+            padding-top: 7px;
+            border-top: 1px solid #2f2f2f;
+            color: #3a3a3a;
+            display: inline-block;
+            max-width: 100%;
+        }
+        /* A single piece of media spanning the full column — used when an
+           item's orientation doesn't pair cleanly beside another. */
+        .mobot-full { margin: 32px auto; text-align: center; }
+        .mobot-full img,
+        .mobot-full video,
+        .article-body .mobot-full img,
+        .article-body .mobot-full video {
+            width: 100%;
+            max-width: 100%;
+            max-height: 82vh;
+            border-radius: 12px;
+        }
+        /* On wider screens, force a matched row's two items to equal height
+           (e.g. a 9:16 video beside a 3:4 photo) via a shared aspect box.
+           Scoped to >=601px so phones still show each piece uncropped. */
+        @media (min-width: 601px) {
+            .mobot-row--match img,
+            .mobot-row--match video,
+            .article-body .mobot-row--match img,
+            .article-body .mobot-row--match video {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 3 / 4;
+                object-fit: cover;
+                max-height: none;
+            }
+        }
+        /* Phones: stack the pairs, let each piece of media breathe. */
+        @media (max-width: 600px) {
+            .mobot-row { grid-template-columns: 1fr; gap: 26px; margin: 24px auto; }
+            .mobot-figure img,
+            .mobot-figure video,
+            .article-body .mobot-figure img,
+            .article-body .mobot-figure video { max-height: 74vh; border-radius: 10px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="masthead">
+        <div class="top-strip">
+            <p id="top-strip">&nbsp;</p>
+        </div>
+        <h1 class="wordmark">Aron Frishberg</h1>
+        <nav class="masthead-nav">
+            <a href="../datasets.html">Datasets</a>
+            <a href="/" id="current-page">Projects</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </div>
+
+    <article class="article-page">
+        <p class="article-kicker">The Archive &middot; Robotics</p>
+        <h1 class="article-headline">Building MoBot</h1>
+        <p class="article-deck">Notes on designing, printing, and shipping a cleaning robot in 47 hours.</p>
+        <p class="article-byline">By Aron Frishberg &middot; San Francisco</p>
+
+        <div class="mobot-row">
+            <figure class="mobot-figure">
+                <video controls playsinline preload="metadata" poster="../img/mobot/poster.jpg">
+                    <source src="../img/mobot/cleaning2.mp4" type="video/mp4">
+                    Your browser doesn&rsquo;t support embedded video.
+                </video>
+                <figcaption>MoBot, working a patch of carpet at the demo.</figcaption>
+            </figure>
+            <figure class="mobot-figure">
+                <video controls playsinline preload="metadata" poster="../img/mobot/poster1.jpg">
+                    <source src="../img/mobot/cleaning1.mp4" type="video/mp4">
+                    Your browser doesn&rsquo;t support embedded video.
+                </video>
+                <figcaption>The same run, from another angle.</figcaption>
+            </figure>
+        </div>
+
+        <div class="article-body">
+            <p>That clip is the whole reason we built MoBot. In May 2026, South Park Commons ran its first Embodied AI Hackathon, and my team showed up with no hardware and a simple idea: build a little WALL&middot;E that actually cleans. Forty-seven hours later we had a working robot and a second-place finish out of more than thirty teams, several of them led by robotics PhDs.<!-- TODO (Aron): confirm it really was SPC's *first/inaugural* embodied-AI hackathon; if unsure, drop "first". --></p>
+
+            <p>We picked cleaning because it's the hardest version of the easy demo. Anyone can get a robot to drive in a circle. Getting one to look at a real floor, find a mess it has never seen before, drive to it, and deal with it&mdash;that's the part that breaks. We wanted to build the thing that breaks.</p>
+
+            <p>There were five of us, and we built the whole thing on-site&mdash;the body, the electronics, and the software.</p>
+
+            <figure class="mobot-figure mobot-full">
+                <img src="../img/mobot/entire_team.jpg" alt="The five-person team behind MoBot, with the robot, in front of a mural at South Park Commons">
+                <figcaption>The five of us, with MoBot.<!-- TODO (Aron): add the team's full names, left to right. --></figcaption>
+            </figure>
+
+            <p>MoBot started as a face. Before the wheels, before the body could do anything at all, we had a pair of eyes blinking on a screen&mdash;the moment it stopped being a pile of parts and started being a character. The rest of the weekend was the hardware fighting back: at one point a botched 3D print fouled the mechanism, and with no time to reprint, the fix was to take a soldering iron to it and melt the bad piece off by hand.</p>
+
+            <div class="mobot-row mobot-row--match">
+                <figure class="mobot-figure">
+                    <video controls playsinline preload="metadata" poster="../img/mobot/eyes_poster.jpg">
+                        <source src="../img/mobot/eyes_v1.mp4" type="video/mp4">
+                        Your browser doesn&rsquo;t support embedded video.
+                    </video>
+                    <figcaption>The very first version: eyes on a screen.</figcaption>
+                </figure>
+                <figure class="mobot-figure">
+                    <img src="../img/mobot/soldering.jpg" alt="Aron Frishberg using a soldering iron to melt away part of a 3D print">
+                    <figcaption>A soldering iron, melting off a bad print.</figcaption>
+                </figure>
+            </div>
+
+            <p>From there it came together on the floor: an omnidirectional wheelbase so it could drive in any direction, the printed body dropped on top, a Raspberry Pi and an ESP32 wired into the middle, and far too many loose cables.</p>
+
+            <figure class="mobot-figure mobot-full">
+                <img src="../img/mobot/putting_together.jpg" alt="MoBot's wheeled base and printed body being wired together on the floor">
+                <figcaption>Assembly on the floor&mdash;base, body, and a lot of wiring.</figcaption>
+            </figure>
+
+            <p>The brain is a vision system I built and tuned in OpenCV&mdash;it picks messes out of the carpet across different surfaces and lighting, the thing that usually kills a hackathon vision demo the second the room's lights change, and drives the robot over to deal with them. This is what MoBot actually sees:</p>
+
+            <figure class="mobot-figure">
+                <img src="../img/mobot/robot_view.jpg" alt="A laptop showing MoBot's OpenCV vision feed, with detected messes highlighted on the carpet">
+                <figcaption>What MoBot sees: messes flagged on the carpet, in real time.</figcaption>
+            </figure>
+
+            <p>Forty-seven hours isn't enough time to build something good. It's barely enough to build something that works. But MoBot worked&mdash;it saw a real floor, found the mess, and went after it on its own&mdash;and that, in the end, was the whole point.</p>
+        </div>
+    </article>
+
+    <footer class="imprint">
+        <p class="imprint-line">Published at aronfrishberg.com &middot; Est. MMXX &middot; Weather Permitting</p>
+    </footer>
+
+</body>
+
+</html>
