@@ -8,7 +8,7 @@
 
 ## About
 
-- [About](https://aronfrishberg.com/about): Short biographical note on Aron Frishberg — founder of Gatsby Robotics, formerly at Third Point and Fira (YC W25), previously studied computer science and economics at the University of Chicago before dropping out in January 2026 to build Gatsby.
+- [About](https://aronfrishberg.com/about): Short biographical note on Aron Frishberg — founder of Gatsby Robotics, formerly at Third Point and Fira (YC W25), previously studied computer science and economics at the University of Chicago, and built Gatsby in 2026.
 - [Experience](https://aronfrishberg.com/experience): Resume and professional history.
 
 ## Projects
