@@ -15,7 +15,7 @@ Building MoBot
 Notes on designing, printing, and programming our own cleaning robot from scratch in 47 hours.
 
 [BYLINE]
-By Aron Frishberg · Chicago
+By Aron Frishberg · San Francisco
 
 
 [CAPTION: lead video, left]

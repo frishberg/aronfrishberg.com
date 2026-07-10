@@ -13,7 +13,9 @@
       "Bash(ffmpeg -y -ss 10 -i cleaning1.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/c1.jpg)",
       "Bash(ffmpeg -y -ss 14 -i cleaning2.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/c2.jpg)",
       "Bash(ffmpeg -y -ss 2 -i eyes_v1.mp4 -frames:v 1 -q:v 4 -vf scale=400:-2 ../../_tmpframes/eyes.jpg)",
-      "Bash(ffmpeg -y -i entire_team.jpg -vf \"crop=4032:2200:0:300,scale=900:-2,format=gray\" -q:v 3 ../previews/mobot.jpg)"
+      "Bash(ffmpeg -y -i entire_team.jpg -vf \"crop=4032:2200:0:300,scale=900:-2,format=gray\" -q:v 3 ../previews/mobot.jpg)",
+      "PowerShell(Select-String *)",
+      "PowerShell(Rename-Item *)"
     ]
   }
 }

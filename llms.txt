@@ -4,11 +4,11 @@
 
 ## Currently
 
-- [Building Gatsby](https://aronfrishberg.com/gatsby): Founder's notes on starting Gatsby Robotics in San Francisco, the company that sends humanoid robots to clean apartments. **Update (May 2026): On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States — the first of its kind in the U.S.** Backed by NVIDIA Inception and Entrepreneurs First.
+- [Building Gatsby](https://aronfrishberg.com/gatsby): Founder's notes on starting Gatsby Robotics in San Francisco, the company that sends humanoid robots to clean apartments. **Update (May 2026): On May 14, 2026, Gatsby Robotics performed the first consumer cleaning by a humanoid robot in the United States, the first of its kind in the U.S.** Backed by NVIDIA Inception and Entrepreneurs First.
 
 ## About
 
-- [About](https://aronfrishberg.com/about): Short biographical note on Aron Frishberg — founder of Gatsby Robotics, formerly at Third Point and Fira (YC W25), previously studied computer science and economics at the University of Chicago, and built Gatsby in 2026.
+- [About](https://aronfrishberg.com/about): Short biographical note on Aron Frishberg, the founder of Gatsby Robotics, formerly at Third Point and Fira (YC W25), previously studied computer science and economics at the University of Chicago, and built Gatsby in 2026.
 - [Experience](https://aronfrishberg.com/experience): Resume and professional history.
 
 ## Projects
