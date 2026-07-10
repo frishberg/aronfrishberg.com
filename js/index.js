@@ -10,7 +10,7 @@ function setTime() {
     if (topStrip) {
         var vol = toRoman(d.getFullYear() - 2019);
         var issue = getWeekNumber(d);
-        var baseLine = "San Francisco, California &middot; " + longDate + " &middot; Vol. " + vol + ", No. " + issue;
+        var baseLine = "Chicago, Illinois &middot; " + longDate + " &middot; Vol. " + vol + ", No. " + issue;
         topStrip.innerHTML = baseLine;
         fetchWeather().then(function (w) {
             if (w) topStrip.innerHTML = baseLine + " &middot; " + w;
@@ -29,7 +29,7 @@ function setTime() {
 }
 
 function fetchWeather() {
-    var url = "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m,weather_code&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles";
+    var url = "https://api.open-meteo.com/v1/forecast?latitude=41.8781&longitude=-87.6298&current=temperature_2m,weather_code&temperature_unit=fahrenheit&timezone=America%2FChicago";
     return fetch(url)
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) {
